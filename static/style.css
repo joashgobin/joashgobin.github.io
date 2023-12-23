@@ -1,7 +1,36 @@
+*{
+    box-sizing:border-box;
+}
+
 body{
-    color:slategrey;
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    color:#333;
+    background-color:#f4f4f4;
+    padding:20px;
 }
 
 h1,h2,h3,h4,h5,h6{
-    color:grey;
+    font-weight:bold;
+    color:slategrey;
+}
+
+p{
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+button,a{
+    padding:10px 20px;
+    background-color:#007BFF;
+    color:#fff;
+    cursor:pointer;A
+    border-radius:10px;
+    text-decoration:underline;
+    transition:background-color 0.3s ease;
+}
+
+button:hover,a:hover{
+    background-color:#0056b3;
+    text-decoration:underline;
 }
