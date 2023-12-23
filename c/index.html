@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Asynchronous Learning</title>
-    <link rel='stylesheet' href='/static/katex/katex.min.css'>
+    <!-- <link rel='stylesheet' href='/static/katex/katex.min.css'> -->
     <link rel='stylesheet' href='/static/style.css'>
 </head>
 <body> 
@@ -23,10 +23,23 @@
 </ul>
 <h3>Math Formula Test</h3>
 <p>The following formula should be rendered using KaTex:</p>
-<p>$$x^2+5x+6=0$$</p>
-<p>Find the solutions for $x$.</p>
+<p>$$x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}$$</p>
+<p>The above formula can be used to find the roots of a quadratic equation (the solutions for $x$).</p>
 
 
-<script src='/static/katex/katex.min.js'></script>
+<link rel="stylesheet" href="/static/katex/katex.min.css">
+<script defer="" src="/static/katex/katex.min.js"></script>
+<script defer="" src="/static/katex/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="
+    renderMathInElement(
+        document.body,
+        {
+            delimiters: [
+                {left:'$$', right:'$$', display:true},
+                {left:'$', right:'$', display:false}
+            ]
+          }
+    );
+"></script>
 </body>
 </html>
