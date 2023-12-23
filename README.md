@@ -1,3 +1,3 @@
 # Learning C
 
-Analyze the snippet: </c/hello>
+Analyze the snippet: [Hello world](/c/hello)
