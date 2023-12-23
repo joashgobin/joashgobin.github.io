@@ -26,7 +26,7 @@ button,a{
     color:#fff;
     cursor:pointer;A
     border-radius:10px;
-    text-decoration:underline;
+    text-decoration:none;
     transition:background-color 0.3s ease;
 }
 
