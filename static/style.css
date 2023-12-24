@@ -56,21 +56,6 @@ p{
     margin-bottom:20px;
 }
 
-header{
-    position:fixed;
-    top:0;
-    width:100%;
-    heigt:70px;
-    background-color:purple;
-    color:white;
-    z-index:9999;
-}
-
-footer{
-    font-size:0.9rem;
-    color:forestgreen;
-}
-
 pre{
     border-radius:10px;
 }
