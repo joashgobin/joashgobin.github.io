@@ -60,7 +60,7 @@ pre{
     border-radius:10px;
 }
 
-button,a{
+button{
     padding:10px 20px;
     background-color:#007BFF;
     color:#fff;
@@ -70,7 +70,7 @@ button,a{
     transition:background-color 0.3s ease;
 }
 
-button:hover,a:hover{
+button:hover{
     background-color:#0056b3;
     text-decoration:underline;
 }
