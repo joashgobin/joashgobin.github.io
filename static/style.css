@@ -76,7 +76,8 @@ pre,code{
 }
 
 a{
-    color:slategrey;
+    color:black;
+    opacity:0.8;
 }
 
 button{
