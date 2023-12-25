@@ -39,7 +39,7 @@ int main(){
     float angle_in_degrees;
     int correct_inputs = 0;
 
-    do {printf(&quot;Please enter an angle to convert to radians:\n&quot;);
+    do {printf(&quot;Please enter an angle in degrees to convert to radians:\n&quot;);
         correct_inputs = scanf(&quot;%f&quot;,&amp;angle_in_degrees);
         fflush(stdin);
     }while (correct_inputs==0);
@@ -52,6 +52,20 @@ int main(){
 </p>
 <p>Conversely, we can convert from radians back to degrees by multiplying by $180\degree$ and dividing by $\pi$:
 $$\frac{\pi}{3}=\frac{\pi}{3}\times \frac{180\degree}{\pi}=60\degree$$</p>
+<h4>Challenge</h4>
+<p>Convert the following angles to radians:</p>
+<ul>
+<li>$45\degree$</li>
+<li>$360\degree$</li>
+<li>$-135\degree$</li>
+</ul>
+<p>Convert the following angles to degrees:</p>
+<ul>
+<li>$\frac{\pi}{4}\ rad$</li>
+<li>$3\pi \ rad$</li>
+<li>$\frac{-\pi}{5}\ rad$</li>
+</ul>
+<p>Rewrite the C code above to convert an angle in radians, provided by the user, back to degrees.</p>
 
 <script src='/static/highlight/highlight.min.js'></script>
 <script src='/static/highlight/languages/c.min.js'></script>
