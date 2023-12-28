@@ -71,7 +71,7 @@ h6{font-size:1.8rem;}
 ul{
     list-style-type:none;
     margin-left:0;
-    padding-left:0;
+    padding-left:10;
 }
 
 ul li::before{
