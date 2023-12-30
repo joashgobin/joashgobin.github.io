@@ -140,11 +140,49 @@ int main(){
 
 </p>
 <h3>Infinite loops</h3>
-<p>These are loops that have the potential to run forever.</p>
+<p>These are loops that have the potential to run forever.
+
+<pre><code class='c' id='infinite_loop.c'>
+#include &lt;stdio.h&gt;
+
+int main(){
+    while(1){
+        printf(&quot;I wonder when this is gonna be done...\n&quot;);
+    }
+    return 0;
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/constructs/iterative_constructs/infinite_loop.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#infinite_loop.c' onclick='copyToClipboard("infinite_loop.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/constructs/iterative_constructs/infinite_loop.c </strong>
+
+</p>
 <h3>Empty loops</h3>
 <p>These are loops that do no effective work in the program. They may happen by accident
 if we do not take care in how we write our code (usually by putting curly braces in
-the wrong place).</p>
+the wrong place).
+
+<pre><code class='c' id='empty_loop.c'>
+#include &lt;stdio.h&gt;
+
+int main(){
+    printf(&quot;Running an empty loop...\n&quot;);
+    for (int i=0;i&lt;=1000;i++){}
+    printf(&quot;The loop is now finished executing...&quot;);
+    return 0;
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/constructs/iterative_constructs/empty_loop.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#empty_loop.c' onclick='copyToClipboard("empty_loop.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/constructs/iterative_constructs/empty_loop.c </strong>
+
+</p>
 <h2>The goto directive</h2>
 <p>Looping behaviour can be achieved by the use of C's goto directive. We place a label
 before a section of code and tell the computer to <em>go to</em> that section where the label is.
