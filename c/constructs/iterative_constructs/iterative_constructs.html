@@ -173,8 +173,9 @@ int main(){
 </p>
 <p>This algorithm is based on the fact that for an equation:
 $$b=qa+r$$
-the highest common factor (HCF) of <strong>b</strong> and <strong>a</strong> is the HCF of <strong>a</strong> and <strong>r</strong>. The algorithm is ended
-when we get the HCF of <strong>a</strong> and 0:
+the highest common factor (HCF) of <strong>b</strong> and <strong>a</strong> is the HCF of <strong>a</strong> and <strong>r</strong>
+$$HCF(b,a)=HCF(a,r)$$
+The algorithm is terminated when we get the HCF of <strong>a</strong> and 0:
 $$HCF(a,0)=\color{royalblue}a\ \color{black}\text{(the HCF of the two numbers we started with)}$$</p>
 
 <script src='/static/highlight/highlight.min.js'></script>
