@@ -147,17 +147,20 @@ This can be used to achieve a more readable form of the Euclidean algorithm:
 int main(){
     int original_a=14,original_b=12344;
     int a=original_a,b=original_b,quot,rem;
-    // a label called &#x27;start&#x27;
+    
+    // declaring label called &#x27;start&#x27;
     start:
     quot = b/a;
     rem = b%a;
     printf(&quot;%d = %d x %d + %d\n&quot;,b,quot,a,rem);
+    
     if (rem==0){
         printf(&quot;The HCF of %d and %d is %d\n&quot;,original_a,original_b,a);
     }
     else{
         b = a;
         a = rem;
+        // jumping back to the &#x27;start&#x27; label
         goto start;
     }
     return 0;
