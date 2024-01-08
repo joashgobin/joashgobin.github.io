@@ -35,18 +35,22 @@ of the first proposition (the <em>hypothesis/antecedent</em>) OR the second (the
 <pre><code class='c' id='truth_tables.c'>
 #include &lt;stdio.h&gt;
 
+// not p
 int not(int p){
     return !p;
 }
 
+// p or q
 int or(int p,int q){
     return p||q;
 }
 
+// p and q
 int and(int p,int q){
     return p&amp;&amp;q;
 }
 
+// p implies q
 int implies(int p,int q){
     return !p||q;
 }
