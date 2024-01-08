@@ -31,12 +31,13 @@ int implies(int p,int q){
 }
 
 int main(){
-    printf(&quot;p\tq\tp or q\tp and q\tp-&gt;q&quot;);
-    printf(&quot;\n--------------------------------------------\n&quot;);
+    printf(&quot;p\tq\tnot p\tp or q\tp and q\tp-&gt;q&quot;);
+    printf(&quot;\n-------------------------------------------------\n&quot;);
     for (int n=0;n&lt;4;n++){
         int p = n/2;
         int q = n%2;
         printf(&quot;%d\t%d\t&quot;,p,q);
+        printf(&quot;%d\t&quot;,not(p));
         printf(&quot;%d\t&quot;,or(p,q));
         printf(&quot;%d\t&quot;,and(p,q));
         printf(&quot;%d&quot;,implies(p,q));
