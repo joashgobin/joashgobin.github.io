@@ -38,8 +38,8 @@ int main(){
     printf(&quot;p\tq\tnot p\tnot q\tp or q\tp and q\tp-&gt;q\tp-&gt;~q&quot;);
     printf(&quot;\n----------------------------------------------------------------\n&quot;);
     for (int n=0;n&lt;4;n++){
-        int p = n/2;
-        int q = n%2;
+        int p = (n&gt;&gt;1)&amp;1;
+        int q = n&amp;1;
         printf(&quot;%d\t%d\t&quot;,p,q);
         printf(&quot;%d\t&quot;,not(p));
         printf(&quot;%d\t&quot;,not(q));
