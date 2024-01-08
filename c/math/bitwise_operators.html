@@ -35,6 +35,38 @@
 <li>Left shift (<strong>&lt;&lt;</strong>) </li>
 <li>Right shift (<strong>&gt;&gt;</strong>)</li>
 </ul>
+<h2>Bit shifting</h2>
+<p>We can use the <em>&lt;&lt;</em> and <em>&gt;&gt;</em> operators to <em>bit shift</em> a number. Left shifting a number by 1 digit is the same
+as multiplying the number by two. Right shifting the number by 1 digit is the same as an integer division by 2
+(dividing by 2 and round the result downwards).</p>
+<p>We can use the right shift and a logical AND to access each bit in a number:
+
+<pre><code class='c' id='getting_each_bit.c'>
+#include &lt;stdio.h&gt;
+
+int main(){
+    int number = 8;
+    for (int i=0;i&lt;number;i++){
+        printf(&quot;%d in binary: %d %d %d\n&quot;,i,i&gt;&gt;2&amp;1,i&gt;&gt;1&amp;1,i&amp;1);
+    }
+    return 0;
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/math/getting_each_bit.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#getting_each_bit.c' onclick='copyToClipboard("getting_each_bit.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/math/getting_each_bit.c </strong>
+
+</p>
+<p>Doing a logical AND with a number gives us the rightmost bit.</p>
+
+<script src='/static/highlight/highlight.min.js'></script>
+<script src='/static/highlight/languages/c.min.js'></script>
+<script>
+    hljs.highlightAll();
+</script>
 
 
 <link rel="stylesheet" href="/static/katex/katex.min.css">
