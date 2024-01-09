@@ -27,7 +27,67 @@
 <main>
 <p style='darkgrey;opacity:0.5;font-size:0.6rem'>c > constructs > iterative constructs > iterative constructs part 2</p><h1>Iterative Constructs Part 2</h1>
 <p>Here is some more information on how we use iterative constructs.</p>
-<h2>Infinite loops</h2>
+<h2>Continue and break</h2>
+<p>We can use the <strong>continue</strong> and <strong>break</strong> directives in order to control how a loop operates.</p>
+<p><em>Continue</em> is used to tell the computer to immediately jump to the next iteration of the loop.
+If there is any code after this directive used then that code is ignored. In the following code,
+if the number is even then the loop will be advanced to the next iteration instead running the next line
+<strong>printf(&quot;%d is odd\n&quot;,i)</strong>:
+
+<pre><code class='c' id='continue_in_loop.c'>
+#include &lt;stdio.h&gt;
+
+int main(){
+    for (int i=0;i&lt;=10;i++){
+        printf(&quot;%d\n&quot;,i);
+        if (i%2==0){
+            continue;
+        }
+        // not executed if the number is even
+        printf(&quot;%d is odd\n&quot;,i);
+    }
+    printf(&quot;The loop has finished\n&quot;);
+    return 0;
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/constructs/iterative_constructs/continue_in_loop.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#continue_in_loop.c' onclick='copyToClipboard("continue_in_loop.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/constructs/iterative_constructs/continue_in_loop.c </strong>
+
+</p>
+<p><em>Break</em> is used to tell the computer to exit the loop completely. In the following code, the loop
+is exited when <strong>i</strong> becomes 7:
+
+<pre><code class='c' id='break_out_of_loop.c'>
+#include &lt;stdio.h&gt;
+
+int main(){
+    int i=0;
+    while (i&lt;=10){
+        printf(&quot;i is %d\n&quot;,i);
+        if (i==7){
+            break;
+        }
+        i++;
+    }
+    printf(&quot;The loop has finished\n&quot;);
+    return 0;
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/constructs/iterative_constructs/break_out_of_loop.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#break_out_of_loop.c' onclick='copyToClipboard("break_out_of_loop.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/constructs/iterative_constructs/break_out_of_loop.c </strong>
+
+</p>
+<h2>Special types of loops</h2>
+<p>The following are special types of loops we have in C.</p>
+<h3>Infinite loops</h3>
 <p>These are loops that have the potential to run forever.
 
 <pre><code class='c' id='infinite_loop.c'>
@@ -48,7 +108,7 @@ int main(){
 <strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/constructs/iterative_constructs/infinite_loop.c </strong>
 
 </p>
-<h2>Empty loops</h2>
+<h3>Empty loops</h3>
 <p>These are loops that do no effective work in the program. They may happen by accident
 if we do not take care in how we write our code (usually by putting curly braces in
 the wrong place).
