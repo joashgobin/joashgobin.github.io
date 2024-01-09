@@ -1,0 +1,122 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <title>Asynchronous Learning</title>
+    <!-- <link rel='stylesheet' href='/static/katex/katex.min.css'> -->
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css'>
+</head>
+<body>
+
+<header style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:darkgrey;color:black;z-index:9999;'>
+    <div style='display:flex;align-items:center'>
+        <div style='width:10px'></div>
+        <a href='/'>
+            <img src='/static/TeamLogo.png' height=40px>
+        </a>
+        <div style='width:20px'></div>
+        <p style='line-height:1.2;color:#f4f4f4;font-size:1.0rem;font-weight:700'>CFBS NibbleSprouts Project</p>
+    </div>
+</header>
+<div style='height:40px'></div>
+
+<main>
+<p style='darkgrey;opacity:0.5;font-size:0.6rem'>c > input output > input > accepting user input</p><h1>Accepting User Input</h1>
+<p>In C, we can use the function <em>scanf()</em> to accept values from the user.
+There are other functions, some of which we will address later on.</p>
+<p>The basic format for using scanf() is:</p>
+<pre><code class="language-c">scanf(format_string,address_1,address_2,...);
+</code></pre>
+<p>Take for example asking the user for their age:
+
+<pre><code class='c' id='asking_for_age.c'>
+#include &lt;stdio.h&gt;
+
+int main(){
+    int age;
+    printf(&quot;Please enter your age: &quot;);
+    scanf(&quot;%d&quot;,&amp;age);
+    printf(&quot;Wow so you are %d years old huh?!\n&quot;,age);
+    return 0;
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/input_output/input/asking_for_age.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#asking_for_age.c' onclick='copyToClipboard("asking_for_age.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/input_output/input/asking_for_age.c </strong>
+
+</p>
+<h2>The ampersand, &amp;</h2>
+<p>We use the <strong>ampersand (&amp;)</strong> to specify that we want to use the <strong>address (memory location)</strong> of the variable that follows.
+In this case, the variable is age. <em>Scanf()</em> requires the address of the variable in order to change its value.
+This is unlike printf() which takes a copy of the variable (no ampersand is needed in order to get a copy).</p>
+<h3>Printing the memory address of a variable</h3>
+<p>It is good to know the placeholder/format specifier to print memory addresses in C:
+
+<pre><code class='c' id='displaying_memory_addresses.c'>
+#include &lt;stdio.h&gt;
+
+int main(){
+    char character;
+    printf(&quot;Please enter a character: &quot;);
+    scanf(&quot;%c&quot;,&amp;character);
+    printf(&quot;The character you entered (%c) is now located at %p\n&quot;,character,&amp;character);
+    return 0;
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/input_output/input/displaying_memory_addresses.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#displaying_memory_addresses.c' onclick='copyToClipboard("displaying_memory_addresses.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/input_output/input/displaying_memory_addresses.c </strong>
+
+</p>
+
+<script src='/static/highlight/highlight.min.js'></script>
+<script src='/static/highlight/languages/c.min.js'></script>
+<script>
+    hljs.highlightAll();
+</script>
+
+
+<link rel="stylesheet" href="/static/katex/katex.min.css">
+<script defer="" src="/static/katex/katex.min.js"></script>
+<script defer="" src="/static/katex/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="
+    renderMathInElement(
+        document.body,
+        {
+            delimiters: [
+                {left:'$$', right:'$$', display:true},
+                {left:'$', right:'$', display:false}
+            ]
+          }
+    );
+"></script>
+</main>
+
+<hr>
+<footer style='padding:30px;font-size:0.7rem;color:darkgrey'>
+Generated using ChickenFryBytes Studios' static site generator
+</footer>
+
+<script>
+    function copyToClipboard(id){
+        var copyText = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(copyText).then(function(){
+            console.log("Copied "+id+" to clipboard");        
+        }).catch(function(error){
+            console.log("Error copying "+id+" to clipboard; Error: "+error);        
+        });
+    }
+
+    </script>
+</body>
+</html>
