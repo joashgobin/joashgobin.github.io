@@ -15,13 +15,21 @@
 #include &lt;stdio.h&gt;
 
 int main(){
+    // storing the points
     double x1=-2.5,x2=0,y1=0,y2=5;
     printf(&quot;Using the points (%g,%g) and (%g,%g)\n&quot;,x1,y1,x2,y2);
+    
+    // calculating gradient
     double gradient = (y2-y1)/(x2-x1);
     printf(&quot;The gradient of the line is %g\n&quot;,gradient);
+
+    //calculating the y-intercept
     double y_intercept = y1-gradient*x1;
     printf(&quot;The y intercept is %g\n&quot;,y_intercept);
+
+    // displaying the final equation of the straight line
     printf(&quot;Therefore the equation of the line is:\ny=%gx+%g&quot;,gradient,y_intercept);
+    
     return 0;
 }
 
