@@ -9,21 +9,22 @@
 </head>
 <body style='background-color:black'>
 <small style='color:darkgray'>content/c/functions</small>
-<h2 style='color:orange'>f_of_x.c</h2>
+<h2 style='color:orange'>generating_random_number.c</h2>
 <pre>
 <code class='c'>
 #include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt;
 
-double f(int x){
-    double y = x*x+5*x+6;
-    return y;
+int rand_int(int min, int max){
+    int random_number = min+(rand()%(max-min+1));
+    return random_number;
 }
 
 int main(){
-    for (int x=0;x&lt;10;x++){
-        double y = f(x);
-        printf(&quot;(%d,%g)\n&quot;,x,y);
-    }
+    srand(time(NULL));
+    for (int i=0;i&lt;10;i++){
+        printf(&quot;Our number is %d\n&quot;,rand_int(3,10));}
     return 0;
 }
 
