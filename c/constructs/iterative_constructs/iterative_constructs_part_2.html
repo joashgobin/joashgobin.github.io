@@ -28,9 +28,9 @@
 <p style='darkgrey;opacity:0.5;font-size:0.6rem'>c > constructs > iterative constructs > iterative constructs part 2</p><h1>Iterative Constructs Part 2</h1>
 <p>Here is some more information on how we use iterative constructs.</p>
 <h2>Continue and break</h2>
-<p>We can use the <strong>continue</strong> and <strong>break</strong> directives in order to control how a loop operates.</p>
+<p>We can use the <strong>continue</strong> and <strong>break</strong> statements in order to control how a loop operates.</p>
 <p><em>Continue</em> is used to tell the computer to immediately jump to the next iteration of the loop.
-If there is any code after this directive used then that code is ignored. In the following code,
+If there is any code after this statement used then that code is ignored. In the following code,
 if the number is even then the loop will be advanced to the next iteration instead running the next line
 <strong>printf(&quot;%d is odd\n&quot;,i)</strong>:
 
@@ -132,11 +132,11 @@ int main(){
 <strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/constructs/iterative_constructs/empty_loop.c </strong>
 
 </p>
-<h2>The goto directive</h2>
-<p>Looping behaviour can be achieved by the use of C's goto directive. We place a label
+<h2>The goto statement</h2>
+<p>Looping behaviour can be achieved by the use of C's goto statement. We place a label
 before a section of code and tell the computer to <em>go to</em> that section where the label is. </p>
 <h3>The Euclidean algorithm</h3>
-<p>The goto directive can be used to write a more readable form of the Euclidean algorithm:
+<p>The goto statement can be used to write a more readable form of the Euclidean algorithm:
 
 <pre><code class='c' id='goto_euclidean_algorithm.c'>
 #include &lt;stdio.h&gt;
