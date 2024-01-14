@@ -34,7 +34,9 @@ In C, we have two (2) main conditional constructs:</p>
 <li>Switch-case statements</li>
 </ul>
 <h2>If-Else</h2>
-<p>
+<p>These are used to create multiple branching paths in our code. <strong>Only one</strong> branch
+is executed if its condition is satisfied and all branches following it are ignored.
+
 <pre><code class='c' id='if_else.c'>
 #include &lt;stdio.h&gt;
 
@@ -60,7 +62,9 @@ int main()
 
 </p>
 <h2>Switch-case</h2>
-<p>
+<p>In this statement, it is possible for all branches to run if we do not place the <strong>break</strong> statement
+at the end of each case:
+
 <pre><code class='c' id='switch_case.c'>
 #include &lt;stdio.h&gt;
 
