@@ -16,17 +16,24 @@
 #include &lt;string.h&gt;
 
 int main(){
+    // there is no need to manually count the string size so we use []
     char word[] = &quot;Hello there comrade&quot;;
     int count = 0;
 
+    // traversing the string in the forward direction
     for (int i=0;i&lt;strlen(word);i++){
+        
+        // printing the current letter
         printf(&quot;The letter at index %d is %c\n&quot;,i,word[i]);
+        
+        // incrementing count if the current letter is an &#x27;a&#x27;
         if (word[i]==&#x27;a&#x27;){
             count++;
         }
     }
     printf(&quot;We found %d a&#x27;s in \&quot;%s\&quot;\n&quot;,count,word);
 
+    // traversing the string in reverse
     printf(&quot;The reversed word is &quot;);
     for (int i=strlen(word)-1;i&gt;=0;i--){
         printf(&quot;%c&quot;,word[i]);
