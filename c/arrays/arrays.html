@@ -1,0 +1,102 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <title>Asynchronous Learning</title>
+    <!-- <link rel='stylesheet' href='/static/katex/katex.min.css'> -->
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css'>
+</head>
+<body>
+
+<header style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:darkgrey;color:black;z-index:9999;'>
+    <div style='display:flex;align-items:center'>
+        <div style='width:10px'></div>
+        <a href='/'>
+            <img src='/static/TeamLogo.png' height=40px>
+        </a>
+        <div style='width:20px'></div>
+        <p style='line-height:1.2;color:#f4f4f4;font-size:1.0rem;font-weight:700'>CFBS NibbleSprouts Project</p>
+    </div>
+</header>
+<div style='height:40px'></div>
+
+<main>
+<p style='darkgrey;opacity:0.5;font-size:0.6rem'>c > arrays > arrays</p><h1>Arrays</h1>
+<p>Arrays are a way for us to store many values of a certain datatype under the same name.
+Other languages have sets, lists and dictionaries which serve a similar purpose.
+This saves us the time and energy of having to create unique names for each value we want to
+store.</p>
+<p>The format for defining an array is:</p>
+<pre><code class="language-c">type array_name[number_of_values];
+</code></pre>
+<h2>Integer arrays</h2>
+<p>We can <em>populate</em> an integer array by including the values in curly braces:
+
+<pre><code class='c' id='populating_an_integer_array.c'>
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int main(){
+    int numbers[90] = {9,4,5};
+
+    for (int i=0;i&lt;10;i++){
+        printf(&quot;The number at index %d is %d\n&quot;,i,numbers[i]);
+    }
+
+    return 0;
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/arrays/populating_an_integer_array.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#populating_an_integer_array.c' onclick='copyToClipboard("populating_an_integer_array.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/arrays/populating_an_integer_array.c </strong>
+
+</p>
+
+<script src='/static/highlight/highlight.min.js'></script>
+<script src='/static/highlight/languages/c.min.js'></script>
+<script>
+    hljs.highlightAll();
+</script>
+
+
+<link rel="stylesheet" href="/static/katex/katex.min.css">
+<script defer="" src="/static/katex/katex.min.js"></script>
+<script defer="" src="/static/katex/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="
+    renderMathInElement(
+        document.body,
+        {
+            delimiters: [
+                {left:'$$', right:'$$', display:true},
+                {left:'$', right:'$', display:false}
+            ]
+          }
+    );
+"></script>
+</main>
+
+<hr>
+<footer style='padding:30px;font-size:0.7rem;color:darkgrey'>
+Generated using ChickenFryBytes Studios' static site generator
+</footer>
+
+<script>
+    function copyToClipboard(id){
+        var copyText = document.getElementById(id).innerText;
+        navigator.clipboard.writeText(copyText).then(function(){
+            console.log("Copied "+id+" to clipboard");        
+        }).catch(function(error){
+            console.log("Error copying "+id+" to clipboard; Error: "+error);        
+        });
+    }
+
+    </script>
+</body>
+</html>
