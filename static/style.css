@@ -13,8 +13,18 @@
     box-sizing:border-box;
 }
 
+@font-face{
+    font-family: headingFont;
+    src:"./GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.woff2";
+}
+
+@font-face{
+    font-family: regularFont;
+    src:"./GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff2";
+}
+
 body{
-    font-family:Arial, sans-serif;
+    /*font-family:Arial, sans-serif;*/
     line-height:1.6;
     color:#333;
     background-color:#f4f4f4;
@@ -35,13 +45,14 @@ h5{color:var(--text-title-h5);}
 h6{color:var(--text-title-h6);}
 
 h1,h2,h3,h4,h5,h6{
-    font-weight:bold;
+    /*font-weight:bold;*/
     /*color:slategrey;*/
     padding-top:0;
     margin-top:50px;
     padding-bottom:0;
     margin-bottom:0;
     line-height:0.9;
+    font-family: headingFont;
 }
 
 h1:before,h2:before,h3:before,h4:before,h5:before,h6:before{
@@ -55,6 +66,7 @@ h1:after,h2:after,h3:after,h4:after,h5:after,h6:after{
 p{
     line-height:1.6;
     margin-bottom:20px;
+    font-family: regularFont;
 }
 
 h1,h2,h3,h4,h5,h6,p,ul{
