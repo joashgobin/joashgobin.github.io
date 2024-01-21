@@ -120,10 +120,12 @@ a{
 }*/
 
 em{
-    color:steelblue;
+    color:royalblue;
 }
 
-strong{}
+strong{
+    color:white;
+}
 
 button{
     padding:10px 20px;
