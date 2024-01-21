@@ -28,7 +28,7 @@ body{
     line-height:1.6;
     color:#333;
     background-color:#f4f4f4;
-    font-family: regularFont;
+    font-family: regularFont,Arial,sans-serif;
 }
 
 main{
@@ -53,7 +53,7 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom:0;
     margin-bottom:0;
     line-height:0.9;
-    font-family: headingFont;
+    font-family: headingFont,Arial,sans-serif;
 }
 
 h1:before,h2:before,h3:before,h4:before,h5:before,h6:before{
