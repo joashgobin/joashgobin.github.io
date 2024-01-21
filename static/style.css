@@ -15,12 +15,12 @@
 
 @font-face{
     font-family: headingFont;
-    src:"./GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.woff2";
+    src: url("./GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.woff2");
 }
 
 @font-face{
     font-family: regularFont;
-    src:"./GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff2";
+    src: url("./GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff2");
 }
 
 body{
@@ -28,6 +28,7 @@ body{
     line-height:1.6;
     color:#333;
     background-color:#f4f4f4;
+    font-family: regularFont;
 }
 
 main{
@@ -66,7 +67,6 @@ h1:after,h2:after,h3:after,h4:after,h5:after,h6:after{
 p{
     line-height:1.6;
     margin-bottom:20px;
-    font-family: regularFont;
 }
 
 h1,h2,h3,h4,h5,h6,p,ul{
