@@ -59,6 +59,78 @@ int main(){
 <strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/arrays/populating_an_integer_array.c </strong>
 
 </p>
+<p>
+<pre><code class='c' id='traversing_an_integer_array.c'>
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int main(){
+    int numbers[90];
+    
+
+    for (int i=0;i&lt;90;i++){
+        numbers[i] = pow(i+1,3);
+    }
+
+    for (int i=0;i&lt;30;i++){
+        printf(&quot;The number at index %d is %d\n&quot;,i,numbers[i]);
+    }
+
+    return 0;
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/arrays/traversing_an_integer_array.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#traversing_an_integer_array.c' onclick='copyToClipboard("traversing_an_integer_array.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/arrays/traversing_an_integer_array.c </strong>
+
+</p>
+<h2>Strings (character arrays)</h2>
+<p>An array of characters is known as a <strong>string</strong>. We can declare a string using double quotations:</p>
+<pre><code class="language-c">char name[] = &quot;John&quot;;
+</code></pre>
+<p>We can traverse a string:
+
+<pre><code class='c' id='traversing_a_string.c'>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main(){
+    // there is no need to manually count the string size so we use []
+    char word[] = &quot;Hello there comrade&quot;;
+    int count = 0;
+
+    // traversing the string in the forward direction
+    for (int i=0;i&lt;strlen(word);i++){
+        
+        // printing the current letter
+        printf(&quot;The letter at index %d is %c\n&quot;,i,word[i]);
+        
+        // incrementing count if the current letter is an &#x27;a&#x27;
+        if (word[i]==&#x27;a&#x27;){
+            count++;
+        }
+    }
+    printf(&quot;We found %d a&#x27;s in \&quot;%s\&quot;\n&quot;,count,word);
+
+    // traversing the string in reverse
+    printf(&quot;The reversed word is &quot;);
+    for (int i=strlen(word)-1;i&gt;=0;i--){
+        printf(&quot;%c&quot;,word[i]);
+    }
+
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/arrays/traversing_a_string.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#traversing_a_string.c' onclick='copyToClipboard("traversing_a_string.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/arrays/traversing_a_string.c </strong>
+
+</p>
 
 <script src='/static/highlight/highlight.min.js'></script>
 <script src='/static/highlight/languages/c.min.js'></script>
