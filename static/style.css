@@ -29,10 +29,11 @@
 
 body{
     /*font-family:Arial, sans-serif;*/
-    line-height:1.6;
+    line-height:1.5;
     color:#f4f4f4;/*#333;*/
     background-color:var(--darker-bluegray);/*#f4f4f4;*/
     font-family: regularFont,Arial,sans-serif;
+    font-size: 1.15rem;
 }
 
 main{
@@ -78,12 +79,12 @@ h1,h2,h3,h4,h5,h6,p,ul{
 }
 
 
-h1{font-size:2rem;}
-h2{font-size:1.7rem;}
-h3{font-size:1.5rem;}
-h4{font-size:1.5rem;}
-h5{font-size:1.4rem;}
-h6{font-size:1.3rem;}
+h1{font-size:2rem;margin-top:2rem}
+h2{font-size:1.7rem;margin-top:2rem}
+h3{font-size:1.5rem;margin-top:1.8rem}
+h4{font-size:1.5rem;margin-top:1.7rem}
+h5{font-size:1.4rem;margin-top:1.6rem}
+h6{font-size:1.3rem;margin-top:1.5rem}
 
 ul{
     /*list-style-type:none;
