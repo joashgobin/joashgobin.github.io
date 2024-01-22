@@ -121,7 +121,7 @@ a{
     opacity:0.9;
 }
 
-li a{
+li>a{
     margin:8px;
     padding:8px;
     line-height:1.8;
