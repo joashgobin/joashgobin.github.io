@@ -89,7 +89,10 @@ int main(){
 </p>
 <h2>Strings (character arrays)</h2>
 <p>An array of characters is known as a <strong>string</strong>. We can declare a string using double quotations:</p>
-<pre><code class="language-c">char name[] = &quot;John&quot;;
+<pre><code class="language-c">char name[10] = &quot;John Doe&quot;;
+</code></pre>
+<p>We do not need to specify the number of characters if we use the double quotations:</p>
+<pre><code class="language-c">char name[] = &quot;John Doe&quot;;
 </code></pre>
 <p>We can traverse a string:
 
@@ -116,7 +119,7 @@ int main(){
     printf(&quot;We found %d a&#x27;s in \&quot;%s\&quot;\n&quot;,count,word);
 
     // traversing the string in reverse
-    printf(&quot;The reversed word is &quot;);
+    printf(&quot;The reverse of the word is &quot;);
     for (int i=strlen(word)-1;i&gt;=0;i--){
         printf(&quot;%c&quot;,word[i]);
     }
