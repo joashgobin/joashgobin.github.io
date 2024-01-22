@@ -119,6 +119,10 @@ pre,code{
 a{
     color:white;
     opacity:0.9;
+}
+
+li a{
+    margin:4px;
     padding:8px;
 }
 
