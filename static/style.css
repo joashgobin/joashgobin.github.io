@@ -21,11 +21,13 @@
 @font-face{
     font-family: headingFont;
     src: url("./artbrush/Artbrush.ttf");
+    font-display: swap;
 }
 
 @font-face{
     font-family: regularFont;
     src: url("./GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff2");
+    font-display: swap;
 }
 
 body{
