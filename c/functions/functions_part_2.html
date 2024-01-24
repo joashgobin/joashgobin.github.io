@@ -59,7 +59,7 @@ int main(){
 <em>char</em>* is just a way to indicate that the function returns a string. The current time
 is the string being returned.</p>
 <h2>Functions with both arguments and return values</h2>
-<p>When we do functions in algebra we have an input (x) and a return value (y). This can
+<p>When we use functions in Algebra we have an input ($x$) and a return value ($y$). This can
 be achieved in C:
 
 <pre><code class='c' id='f_of_x.c'>
@@ -123,6 +123,23 @@ int main(){
 </script>
 
 
+
+<link rel="stylesheet" href="/static/katex/katex.min.css">
+<script defer src="/static/katex/katex.min.js"></script>
+<script defer src="/static/katex/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="
+    renderMathInElement(
+            document.body,
+            {
+                delimiters: [
+                    {left:'$$', right:'$$', display:true},
+                    {left:'$', right:'$', display:false}
+                    ]
+                }
+            );
+"></script>
+
+    
 </main>
 
 <hr>
