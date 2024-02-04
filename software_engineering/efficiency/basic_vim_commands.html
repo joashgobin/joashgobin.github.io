@@ -117,6 +117,8 @@ and enter Insert mode; The text must be enclosed by two instances of the <em>cha
 <li><strong>[s</strong> - Jump to previous misspelled word</li>
 <li><strong>zg</strong> - Add current word to Vim's dictionary</li>
 <li><strong>zw</strong> - Remove current word from Vim's dictionary</li>
+<li><strong>z=</strong> - Open a list of word suggestions for the current word</li>
+<li><strong>1z=</strong> - Replace the current word with the 1st suggestion in the list of word suggestions</li>
 </ul>
 <h3>Placing the cursor relative to the window</h3>
 <ul>
@@ -138,6 +140,9 @@ and enter Insert mode; The text must be enclosed by two instances of the <em>cha
 <li><strong>:<em>command</em></strong> - Run <em>command</em></li>
 <li><strong>:set spell</strong> - Turn spell check on</li>
 <li><strong>:set nospell</strong> - Turn spell check off</li>
+<li><strong>:norm</strong>+instructions listed out - do list of normal mode instructions</li>
+<li>**:norm ma [s 1z= <code>a** - set mark **a** at current cursor position, jump previous spelling error, correct to the 1st suggestion and then return to the mark **a**. Use &#x27;a instead of </code>a to jump to the beginning of the marked line instead of the
+marked cursor position</li>
 </ul>
 <h2>Visual mode</h2>
 <ul>
