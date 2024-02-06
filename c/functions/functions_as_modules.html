@@ -1,0 +1,97 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <meta name='description' content='Content generated for the ChickenFryBytes Studios NibbleSprouts Project'>
+    <title>Asynchronous Learning</title>
+    <!-- <link rel='stylesheet' href='/static/katex/katex.min.css'> -->
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css'>
+</head>
+<body>
+
+<header style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:#192734;color:black;z-index:9999;'>
+    <div style='display:flex;align-items:center'>
+        <div style='width:10px'></div>
+        <a href='/'>
+            <img src='/static/TeamLogo.png' alt="ChickenFryBytes Studios Logo" height=40px width=40px>
+        </a>
+        <div style='width:20px'></div>
+        <p style='line-height:1.2;color:darkgray;font-size:1.0rem;font-weight:700'>CFBS NibbleSprouts Project</p>
+    </div>
+</header>
+<div style='height:40px'></div>
+
+<main>
+<p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>c > functions > functions as modules</p><h1>Functions as Modules</h1>
+<p>In C, we use functions as the basic unit of modular design. Modular design is the practice of designing a system in <em>modules</em>. A module is any entity with an <em>interface</em> and an <strong>implementation</strong>. The interface provides an abstraction (a simplified view of an entity which omits unimportant details) of the module.</p>
+<p>Functions act as modules in C. The definition of the function determines the interface. Take for example the following:</p>
+<p>
+<pre><code class='c' id='count_to.c'>
+#include &lt;stdio.h&gt;
+
+void count_to(int number){
+    printf(&quot;Let&#x27;s count from 1 to %d\n&quot;,number);
+    for (int i=1;i&lt;=number;i++){
+        printf(&quot;%d\n&quot;,i);
+    }
+}
+
+int main(){
+    count_to(5);
+    count_to(10);
+    return 0;
+}
+
+</code></pre>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
+    <a href='/c/functions/count_to.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
+    <a href='#count_to.c' onclick='copyToClipboard("count_to.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
+</strong>
+<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/functions/count_to.c </strong>
+
+</p>
+<p>By just typing <strong>count_to(number)</strong>, we can use the function. This is the interface. The implementation is the actual body of the function. Appreciate how we do not need to know what the body of the function looks like in order to use it. We only need to know that we must pass an integer into the function.</p>
+<p>We can use a simple diagram to represent this module:</p>
+<div style="">
+<div style="border:2px solid white;width:50%;margin:auto">
+<div style="text-align:center;border-bottom:2px solid white">
+<strong style="">count_to(number)</strong>
+</div>
+<div style="text-align:center">
+<p>implementation</p>
+</div>
+</div>
+</div>
+
+<script src='/static/highlight/highlight.min.js'></script>
+<script src='/static/highlight/languages/c.min.js'></script>
+<script>
+    hljs.highlightAll();
+</script>
+
+
+</main>
+
+<hr>
+<footer style='padding:30px;font-size:0.7rem;color:darkgrey'>
+Generated using ChickenFryBytes Studios' static site generator
+</footer>
+
+<script>
+    function copyToClipboard(id){
+            var copyText = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(copyText).then(function(){
+                console.log("Copied "+id+" to clipboard");        
+                }).catch(function(error){
+                    console.log("Error copying "+id+" to clipboard; Error: "+error);        
+                    });
+                }
+</script>
+    
+</body>
+</html>
+    
