@@ -27,8 +27,13 @@
 
 <main>
 <p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>c > getting started with c</p><h1>Getting Started with C</h1>
-<p>This is the start of the lessons on the C programming language. C is a compiled, statically-typed,
-procedural language.</p>
+<p>This is the start of the lessons on the C programming language. C is an imperative, compiled, statically-typed, portable language.</p>
+<ul>
+<li><em>imperative</em>: we tell the computer how to accomplish a goal; we give it orders</li>
+<li><em>compiled</em>: the computer translates the entire code into an executable/binary code which the machine can then understand</li>
+<li><em>statically-typed</em>: we tell the computer exactly what type of data we want it to use instead of having it guess based on how we use the data; this makes our code run faster because time is not wasted on guessing</li>
+<li><em>portable</em>: we write our code and use the compiler for whichever platform/device we want to run the code on; the compiler then translates it into the machine code for that device thus saving us from having to rewrite different versions of C for different machines; we simply use different compilers</li>
+</ul>
 <h2>Boilerplate</h2>
 <p>Boilerplate is used to refer to the repetitive sections of code that developers have to type with little to no variation.</p>
 <p>Examine the following C code snippet:</p>
@@ -57,6 +62,16 @@ int main(){
 <li>Is this header file necessary for every C program?</li>
 <li>What is the function <em>printf</em> used for?</li>
 <li>Why do we use the &quot; symbol before and after <em>Hello world!</em>?</li>
+</ul>
+<h2>Grammar in C</h2>
+<ul>
+<li>keywords - these are <strong>reserved</strong> identifiers meaning that they cannot be used to mean anything else in your code than was intended by the language creator(s). Examples include <strong>#include</strong>, <strong>int</strong> and <strong>return</strong></li>
+<li>
+punctuations - in the same way we use punctuations as boundaries or markers in the English language, we use them in C to demarcate sections of our code:<ul>
+<li>single-line comments begin with //</li>
+<li>multi-line comments are surrounded by /* and */ </li>
+</ul>
+</li>
 </ul>
 
 <script src='/static/highlight/highlight.min.js'></script>
