@@ -6726,7 +6726,7 @@ class TextNode {
 
 }
 /**
- * This node represents a space, but may render as <mspace.../> or as text,
+ * This node represents a space, but may render as <mspace.
  * depending on the width.
  */
 
