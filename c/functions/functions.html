@@ -156,7 +156,7 @@ Generated using ChickenFryBytes Studios' static site generator
                 logo.style.backgroundColor = "transparent";
             }else{
                 title.style.opacity = 0.0;
-                header.style.backgroundColor = "transparent";   
+                header.style.backgroundColor = "transparent";
                 logo.style.backgroundColor = "#192734";
             }
         }
@@ -167,9 +167,9 @@ Generated using ChickenFryBytes Studios' static site generator
     function copyToClipboard(id){
             var copyText = document.getElementById(id).innerText;
             navigator.clipboard.writeText(copyText).then(function(){
-                console.log("Copied "+id+" to clipboard");        
+                console.log("Copied "+id+" to clipboard");
                 }).catch(function(error){
-                    console.log("Error copying "+id+" to clipboard; Error: "+error);        
+                    console.log("Error copying "+id+" to clipboard; Error: "+error);
                     });
                 }
 </script>
