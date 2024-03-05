@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5,h6{
     line-height:0.9;
     /*font-family: headingFont,Arial,sans-serif;*/
     /*font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;*/
-    letter-spacing:1px;
+    letter-spacing:-1px;
 }
 
 h1:before,h2:before,h3:before,h4:before,h5:before,h6:before{
