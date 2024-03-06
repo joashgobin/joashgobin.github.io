@@ -158,7 +158,8 @@ button{
 }
 
 .mcq{
-    margin-left:0px;
+    margin-left:-14px;
+    color:darkgrey;
 }
 
 .mcq button{
