@@ -160,6 +160,8 @@ button{
 .mcq button{
     background-color:royalblue;
     font-size:1.1rem;
+    border:2px solid royalblue;
+    margin:4px;
 }
 
 .mcq li{
