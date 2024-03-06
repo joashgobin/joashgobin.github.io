@@ -157,6 +157,10 @@ button{
     transition:background-color 0.3s ease;
 }
 
+.mcq{
+    margin-left:0px;
+}
+
 .mcq button{
     background-color:royalblue;
     font-size:1.1rem;
