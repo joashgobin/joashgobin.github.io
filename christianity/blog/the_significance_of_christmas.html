@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<header id="header" style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:#192734;color:black;z-index:9999;'>
+<header id="header" style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:transparent;color:black;z-index:9999;'>
     <div style='display:flex;align-items:center'>
         <div style='width:10px'></div>
         <a href='/'>
@@ -62,12 +62,12 @@ Generated using ChickenFryBytes Studios' static site generator
             const scrollPosition = window.scrollY || document.documentElement.scrollTop;
             if (scrollPosition<10){
                 title.style.opacity = 1.0;
-                header.style.backgroundColor = "#192734";
+                //header.style.backgroundColor = "#192734";
                 logo.style.backgroundColor = "transparent";
             }else{
                 title.style.opacity = 0.0;
-                header.style.backgroundColor = "transparent";
-                logo.style.backgroundColor = "#192734";
+                //header.style.backgroundColor = "transparent";
+                logo.style.backgroundColor = "slategrey";
             }
         }
         );
