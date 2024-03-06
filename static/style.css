@@ -159,6 +159,7 @@ button{
 
 .mcq button{
     background-color:royalblue;
+    font-size:1.1rem;
 }
 
 button:hover{
