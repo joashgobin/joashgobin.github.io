@@ -1,0 +1,40 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Code Snippet from the ChickenFryBytes Studios NibbleSprouts Project'>
+    <title>Code Snippet</title>
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css'>
+</head>
+<body style='background-color:black'>
+<small style='color:darkgray'>c > files</small>
+<h2 style='color:orange'>reading_from_a_file.c</h2>
+<pre>
+<code class='c'>
+#include &lt;stdio.h&gt;
+
+int main(){
+    // string variable to store temporary data
+    char buffer[100];
+    FILE* fp = fopen(&quot;my_file.txt&quot;,&quot;r&quot;);
+    // loop through the contents until the end of the file is found
+    while(fscanf(fp,&quot;%s&quot;,buffer)!=EOF){
+        // for every iteration, buffer is used to store the string detected
+        printf(&quot;%s\n&quot;,buffer);
+    }
+    return 0;
+}
+
+
+</code>
+</pre>
+<script src='/static/highlight/highlight.min.js'></script>
+<script src='/static/highlight/languages/c.min.js'></script>
+<script>
+    hljs.highlightAll();
+</script>
+</body>
+</html>

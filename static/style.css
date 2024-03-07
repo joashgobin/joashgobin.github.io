@@ -167,6 +167,7 @@ button{
     font-size:1.1rem;
     border:2px solid royalblue;
     margin:4px;
+    text-align:left;
 }
 
 .mcq li{
