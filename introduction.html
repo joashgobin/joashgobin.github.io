@@ -70,7 +70,7 @@ specifying book chapter and verse:
 their markdown editor to copy and paste Scripture.</p>
 <h3>Quiz questions</h3>
 <p>You can add questions to a page with the following format:
-<p>Water is a polar substance <span style='color:slategrey'>(Tap/click an answer below)</span></p><ul class='mcq' style=''><li class='correct'><button>True</button></li><li class='incorrect'><button>False</button></li></ul></p>
+<p>Water is a polar substance <span style='color:slategrey'>(Tap/click an answer below)</span></p><ul class='mcq' style=''><li class='incorrect'><button>False</button></li><li class='correct'><button>True</button></li></ul></p>
 <h4>Planned features</h4>
 <p>The following features are to be implemented:</p>
 <ul>
@@ -141,26 +141,28 @@ Generated using ChickenFryBytes Studios' static site generator
 </script>
     
 <script>
-        const choices = document.querySelectorAll('.correct,.incorrect');
-        choices.forEach(choice=>{
-            choice.addEventListener('click',
-                function(event){
-                    const mcq = this.parentNode;
-                    const incorrect_choices = mcq.querySelectorAll('.incorrect button');
-                    const correct_choices = mcq.querySelectorAll('.correct button');
-                    incorrect_choices.forEach(choice=>{
-                        choice.style.backgroundColor='transparent';
-                        choice.style.color='crimson';
-                        choice.style.border = '2px solid crimson';
-                        });
-                    correct_choices.forEach(choice=>{
-                        choice.style.backgroundColor='limegreen';
-                        choice.style.color='black';
-                        choice.style.fontWeight='bold';
-                        choice.style.border = '2px solid limegreen';
+        function handleClick(){
+                const mcq = this.parentNode.parentNode;
+                this.innerHTML = "<span style='color:yellow'>x </span>"+this.innerHTML;
+                const incorrect_choices = mcq.querySelectorAll('.incorrect button');
+                const correct_choices = mcq.querySelectorAll('.correct button');
+                incorrect_choices.forEach(choice=>{
+                    choice.style.backgroundColor='transparent';
+                    choice.style.color='crimson';
+                    choice.style.border = '2px solid crimson';
+                    choice.removeEventListener('click',handleClick);
                     });
-                    }
-            );
+                correct_choices.forEach(choice=>{
+                    choice.style.backgroundColor='limegreen';
+                    choice.style.color='black';
+                    choice.style.fontWeight='bold';
+                    choice.style.border = '2px solid limegreen';
+                    choice.removeEventListener('click',handleClick);
+                    });
+                }
+        const choices = document.querySelectorAll('.correct button,.incorrect button');
+        choices.forEach(choice=>{
+            choice.addEventListener('click',handleClick);
 
             });</script>
 </body>
