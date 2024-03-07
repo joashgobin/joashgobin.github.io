@@ -170,6 +170,10 @@ button{
     text-align:left;
 }
 
+.mcq button:hover,.mcq button:focus,.mcq button:active{
+    text-decoration:none;
+}
+
 .mcq li{
 }
 
