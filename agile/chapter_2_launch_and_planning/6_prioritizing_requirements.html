@@ -1,0 +1,121 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <meta name='description' content='Content generated for the ChickenFryBytes Studios NibbleSprouts Project'>
+    <title>Asynchronous Learning</title>
+    <!-- <link rel='stylesheet' href='/static/katex/katex.min.css'> -->
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css'>
+</head>
+<body>
+
+<header id="header" style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:transparent;color:black;z-index:9999;'>
+    <div style='display:flex;align-items:center'>
+        <div style='width:10px'></div>
+        <a href='/'>
+            <img id="logo" src='/static/TeamLogo.png' style="border-radius:100%" alt="ChickenFryBytes Studios Logo" height=40px width=40px>
+        </a>
+        <div style='width:12px'></div>
+        <p id="title" style='line-height:1.2;color:darkgray;font-size:1.0rem;font-weight:700'>CFBS NibbleSprouts Project</p>
+    </div>
+</header>
+<div style='height:40px'></div>
+
+<main>
+<p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>agile > chapter 2 launch and planning > 6 prioritizing requirements</p><h1>Prioritizing Requirements</h1>
+<p>In the agile approach, the more business value a requirement can deliver, the higher its priority.
+There are certain techniques we can use in order to more easily determine what is of the more business value than the others.</p>
+<p>We can create a <em>requirements stack</em> for our product. This is simply a list of requirements of varying degrees of potential business value. This stack will then be prioritized using a prioritization technique.</p>
+<h2>MoSCoW</h2>
+<p>This is a simple technique. Notice the letters being capitalized:</p>
+<ul>
+<li>M for Must - these are the mandatory requirements. If these are not fulfilled then we do not have a minimum viable product (MVP) e.g. the home page of a website</li>
+<li>S for Should - these are very important and can make your product unique but they are not essential e.g. the logo for your business on the home page</li>
+<li>C for Could - these are optional and work must only be done on them if the Must and Should are fulfilled e.g. links to your business' Facebook and Instagram pages</li>
+<li>W for Would - it is unlikely that these requirements will be fulfilled. They are usually only addressed if all of the other requirements are fulfilled and there is plenty time left in the project timeline e.g. email notifications for regular visitors to your website</li>
+</ul>
+<h3>Example</h3>
+<p>For a website:</p>
+<ul>
+<li>
+Must<ul>
+<li>Home page</li>
+<li>About page</li>
+</ul>
+</li>
+<li>
+Should<ul>
+<li>Company logo</li>
+<li>Consistent color scheme</li>
+</ul>
+</li>
+<li>
+Could<ul>
+<li>Links to social media pages and other resources</li>
+<li>User login page</li>
+</ul>
+</li>
+<li>
+Would<ul>
+<li>Email notifications</li>
+<li>Fancy animations</li>
+</ul>
+</li>
+</ul>
+<h2>The Kano Model</h2>
+<p>This technique was developed by Professor Noriaki Kano in the 1980s. As opposed to the functionality prioritization done in MoSCoW, the Kano model is focused on prioritizing what will lead to the most economic value and sales.</p>
+<p>We organize the requirements into 3 groups:</p>
+<ul>
+<li>Value-added requirements - these improve the chances of purchase. They set your product apart from the competition e.g. businesses would want an AI chatbot built into their website to allow users to have any questions answered without the business owner having to employ full-time staff to reply to these questions</li>
+<li>Linear requirements - the value of these increase with the quality of their implementation e.g. better animations and styling choices by a professional web designer lead to a higher perceived value and businesses would pay more for these kinds of websites</li>
+<li>Basic requirements - these are expected to be a part of the product. The customer does not see a product fulfilling these as anything special or noteworthy e.g. every website needs a home page and an about page but users take them for granted and do not see them as adding any particular value to the website</li>
+</ul>
+<h2>Ranking-based prioritization model</h2>
+<p>Here we prioritize the stack by their perceived order of importance. Unlike in MoSCoW, the Must requirements can have Should requirements mixed in between them.</p>
+<p>For example, in MoSCoW we would create the home page and about pages and then look to add the company logo and consistent styling. In the ranking-based model, we would create the home page and add the company logo and styling to it. Then we do the same for the about page.</p>
+<p>This model sees us prioritizing requirements based on the order in which we would execute them. It doesn't make sense to build all the pages on a website and only then style them just because the Must is higher priority than the Should.</p>
+<p>Points are awarded to each requirement by the stakeholders and the points for each requirement are summed up. The requirements with more points are placed higher up on the list.</p>
+<h2>Factors to consider when prioritizing requirements</h2>
+<p>After the stakeholders prioritize the requirements, adjustments have to be made by the work team. For example, the product owner might deem a login page to be of the most business value but the work team knows that a home page with a link to the login page must be built before the login page. This makes the home page more important with respect to execution.</p>
+<p>This is called progressive planning - the process of regularly re-evaluating the order of the requirements.</p>
+<h2>The requirements backlog</h2>
+<p>After we reorder the requirements stack according to business value and execution order, it is considered to be the <em>project backlog</em>. We thus use this term to refer to the prioritized set of requirements.</p>
+
+
+</main>
+
+<hr>
+<footer style='padding:30px;font-size:0.7rem;color:darkgrey'>
+Generated using ChickenFryBytes Studios' static site generator
+</footer>
+<script>
+
+
+        const header = document.querySelector("#header");
+        const title = document.querySelector("#title");
+        const logo = document.querySelector("#logo");
+        window.addEventListener('scroll',
+        function (){
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            if (scrollPosition<10){
+                title.style.opacity = 1.0;
+                //header.style.backgroundColor = "#192734";
+                logo.style.backgroundColor = "transparent";
+            }else{
+                title.style.opacity = 0.0;
+                //header.style.backgroundColor = "transparent";
+                logo.style.backgroundColor = "slategrey";
+            }
+        }
+        );
+</script>
+
+
+
+</body>
+</html>
+    
