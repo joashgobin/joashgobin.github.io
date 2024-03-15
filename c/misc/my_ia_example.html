@@ -1,0 +1,122 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Code Snippet from the ChickenFryBytes Studios NibbleSprouts Project'>
+    <title>Code Snippet</title>
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css'>
+</head>
+<body style='background-color:black'>
+<small style='color:darkgray'>c > misc</small>
+<h2 style='color:orange'>my_ia_example.c</h2>
+<pre>
+<code class='c'>
+/*Teacher management system
+ *
+ * Functional requirements:
+ * - store teacher information
+ * - read teacher information
+ * - calculate net salary from gross salary
+ *
+ * Non-functional requirements (acceptance criteria):
+ * - Error handling for incorrect inputs
+ * - Messages to notify when a mistake is made
+ *
+ */
+
+#include &lt;stdio.h&gt;
+
+struct Teacher{
+    char fname[100];
+    char lname[100];
+    int age;
+    double height;
+    float gross_salary;
+};
+
+typedef struct Teacher Teacher;
+
+// function prototypes
+void get_all_teachers_from_database();
+void add_teacher_to_database(Teacher);
+float calculate_net_salary(float);
+void add_teacher(void);
+
+
+float calculate_net_salary(float gross_salary){
+    float tax_rate = 0.3;
+    return gross_salary*(1.0-tax_rate);
+}
+
+void get_all_teachers_from_database(){
+    Teacher current_teacher;
+    FILE* fp = fopen(&quot;my_file.txt&quot;,&quot;r&quot;);
+    while(fscanf(fp,&quot;%s %s %d %lf %f&quot;,current_teacher.fname,current_teacher.lname,&amp;current_teacher.age,&amp;current_teacher.height,&amp;current_teacher.gross_salary)!=EOF){
+        printf(&quot;Found teacher &#x27;%s %s&#x27;  with age: %d years, height: %g cm, gross salary: $%.2f\n&quot;,current_teacher.fname,current_teacher.lname,current_teacher.age,current_teacher.height,current_teacher.gross_salary);
+        printf(&quot;Their net salary is %.2f\n&quot;,calculate_net_salary(current_teacher.gross_salary));
+    }
+    fclose(fp);
+}
+
+
+void add_teacher_to_database(Teacher teacher){
+    FILE* fp = fopen(&quot;my_file.txt&quot;,&quot;a&quot;);
+    fprintf(fp,&quot;%s %s %d %g %f\n&quot;,teacher.fname,teacher.lname,teacher.age,teacher.height,teacher.gross_salary);
+    fclose(fp);
+}
+
+void add_teacher(void){
+    Teacher new_teacher;
+    printf(&quot;Input the teacher&#x27;s name:\n&quot;);
+    scanf(&quot;%s %s&quot;,new_teacher.fname,new_teacher.lname);
+    printf(&quot;Input the teacher&#x27;s age in years:\n&quot;);
+    scanf(&quot;%d&quot;,&amp;new_teacher.age);
+    printf(&quot;Input the teacher&#x27;s height in cm:\n&quot;);
+    scanf(&quot;%lf&quot;,&amp;new_teacher.height);
+    printf(&quot;Input the teacher&#x27;s gross salary:\n&quot;);
+    scanf(&quot;%f&quot;,&amp;new_teacher.gross_salary);
+
+    printf(&quot;Adding teacher &#x27;%s %s&#x27;, age: %d years, height: %g cm, gross salary: $%.2f\n&quot;,new_teacher.fname,new_teacher.lname,new_teacher.age,new_teacher.height,new_teacher.gross_salary);
+    add_teacher_to_database(new_teacher);
+}
+
+void menu(){
+    int choice;
+    printf(&quot;Please choose an option:\n&quot;);
+    printf(&quot;1 - Add a teacher\n&quot;);
+    printf(&quot;2 - See all teachers\n&quot;);
+    scanf(&quot;%d&quot;,&amp;choice);
+
+    switch(choice){
+        case 1:
+            add_teacher();
+            break;
+        case 2:
+            get_all_teachers_from_database();
+            break;
+        default:
+            printf(&quot;Invalid choice\n&quot;);
+    }
+}
+
+int main(void){
+    Teacher teachers[100];
+    while(1){
+        menu();
+    }
+    return 0;
+}
+
+
+</code>
+</pre>
+<script src='/static/highlight/highlight.min.js'></script>
+<script src='/static/highlight/languages/c.min.js'></script>
+<script>
+    hljs.highlightAll();
+</script>
+</body>
+</html>
