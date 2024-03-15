@@ -1,0 +1,81 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <meta name='description' content='Content generated for the ChickenFryBytes Studios NibbleSprouts Project'>
+    <title>Asynchronous Learning</title>
+    <!-- <link rel='stylesheet' href='/static/katex/katex.min.css'> -->
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css'>
+</head>
+<body>
+
+<header id="header" style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:transparent;color:black;z-index:9999;'>
+    <div style='display:flex;align-items:center'>
+        <div style='width:10px'></div>
+        <a href='/'>
+            <img id="logo" src='/static/TeamLogo.png' style="border-radius:100%" alt="ChickenFryBytes Studios Logo" height=40px width=40px>
+        </a>
+        <div style='width:12px'></div>
+        <p id="title" style='line-height:1.2;color:darkgray;font-size:1.0rem;font-weight:700'>CFBS NibbleSprouts Project</p>
+    </div>
+</header>
+<div style='height:40px'></div>
+
+<main>
+<p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>agile > chapter 2 launch and planning > 9 splitting requirements</p><h1>Splitting requirements</h1>
+<p>It is essential that we do not create <em>epics</em> when preparing user stories. An epic cannot be completed in a single iteration and this makes it harder to implement and manage if a change occurs at the end of the current iteration.</p>
+<p>Epics are too generalized. This leads to the estimation of the work required to implement them too difficult. It also makes it difficult for us to determine if the work required to complete the user story is finished.</p>
+<blockquote>
+<p>As a student, I want to be able to use the learning management system in order to achieve academic success.</p>
+</blockquote>
+<p>The definition of &quot;Done&quot; for this epic is too difficult to define. It might even be outside of the scope of what is achievable by using the product.</p>
+<p>When the scope is too large or too vague, we need to <em>divide the requirement</em> into smaller, more manageable ones.</p>
+<h2>How to split requirements</h2>
+<ul>
+<li>Planning poker - each team member estimates the number of hours it would take to complete a requirement. Requirements with a large number of hours should be split into smaller requirements, each having much smaller hour counts</li>
+<li>Ensuring that each user story can be completed within a single iteration. Do not increase the length of the iteration in order to accommodate larger user stories - just break the requirement into smaller ones e.g. a login system can be split into a login feature and a logout feature. A science class topic plan can be split into the lecture, the lab experiment and the evaluation quiz</li>
+</ul>
+<h2>Best practices</h2>
+<ul>
+<li>Do not divide requirements according to who has to complete them</li>
+<li>Separate requirements according to their dependencies e.g. a lab experiment needs the equipment to be collected but a lecture does not thus we can have the lab be one requirement and the lecture another</li>
+</ul>
+
+
+</main>
+
+<hr>
+<footer style='padding:30px;font-size:0.7rem;color:darkgrey'>
+Generated using ChickenFryBytes Studios' static site generator
+</footer>
+<script>
+
+
+        const header = document.querySelector("#header");
+        const title = document.querySelector("#title");
+        const logo = document.querySelector("#logo");
+        window.addEventListener('scroll',
+        function (){
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            if (scrollPosition<10){
+                title.style.opacity = 1.0;
+                //header.style.backgroundColor = "#192734";
+                logo.style.backgroundColor = "transparent";
+            }else{
+                title.style.opacity = 0.0;
+                //header.style.backgroundColor = "transparent";
+                logo.style.backgroundColor = "slategrey";
+            }
+        }
+        );
+</script>
+
+
+
+</body>
+</html>
+    
