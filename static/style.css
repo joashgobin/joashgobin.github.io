@@ -42,11 +42,13 @@ body{
     min-height:800px;
 }
 
+
 code{
     font-size:1rem;
 }
 
 main{
+    min-height:800px;
     padding:20px;
     max-width:750px;
     margin:0 auto;
