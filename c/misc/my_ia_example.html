@@ -19,6 +19,7 @@
  * Functional requirements:
  * - store teacher information
  * - read teacher information
+ * - add teacher information
  * - calculate net salary from gross salary
  *
  * Non-functional requirements (acceptance criteria):
@@ -45,6 +46,10 @@ void add_teacher_to_database(Teacher);
 float calculate_net_salary(float);
 void add_teacher(void);
 
+void clear_input_buffer(){
+    int ch;
+    while((ch=getchar())!=&#x27;\n&#x27;&amp;&amp;ch!=EOF);
+}
 
 float calculate_net_salary(float gross_salary){
     float tax_rate = 0.3;
@@ -70,14 +75,33 @@ void add_teacher_to_database(Teacher teacher){
 
 void add_teacher(void){
     Teacher new_teacher;
+    int correct_values;
     printf(&quot;Input the teacher&#x27;s name:\n&quot;);
     scanf(&quot;%s %s&quot;,new_teacher.fname,new_teacher.lname);
+    accept_age:
     printf(&quot;Input the teacher&#x27;s age in years:\n&quot;);
-    scanf(&quot;%d&quot;,&amp;new_teacher.age);
+    correct_values = scanf(&quot;%d&quot;,&amp;new_teacher.age);
+    if (correct_values!=1){
+        printf(&quot;That is not an integer!\n&quot;);
+        clear_input_buffer();
+        goto accept_age;
+    }
+    accept_height:
     printf(&quot;Input the teacher&#x27;s height in cm:\n&quot;);
-    scanf(&quot;%lf&quot;,&amp;new_teacher.height);
+    correct_values = scanf(&quot;%lf&quot;,&amp;new_teacher.height);
+    if (correct_values!=1){
+        printf(&quot;That is not a real number!\n&quot;);
+        clear_input_buffer();
+        goto accept_height;
+    }
+    accept_salary:
     printf(&quot;Input the teacher&#x27;s gross salary:\n&quot;);
-    scanf(&quot;%f&quot;,&amp;new_teacher.gross_salary);
+    correct_values = scanf(&quot;%f&quot;,&amp;new_teacher.gross_salary);
+    if (correct_values!=1){
+        printf(&quot;That is not a real number!\n&quot;);
+        clear_input_buffer();
+        goto accept_salary;
+    }
 
     printf(&quot;Adding teacher &#x27;%s %s&#x27;, age: %d years, height: %g cm, gross salary: $%.2f\n&quot;,new_teacher.fname,new_teacher.lname,new_teacher.age,new_teacher.height,new_teacher.gross_salary);
     add_teacher_to_database(new_teacher);
@@ -89,6 +113,8 @@ void menu(){
     printf(&quot;1 - Add a teacher\n&quot;);
     printf(&quot;2 - See all teachers\n&quot;);
     scanf(&quot;%d&quot;,&amp;choice);
+
+    clear_input_buffer();
 
     switch(choice){
         case 1:
@@ -103,7 +129,6 @@ void menu(){
 }
 
 int main(void){
-    Teacher teachers[100];
     while(1){
         menu();
     }
