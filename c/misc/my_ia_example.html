@@ -61,11 +61,10 @@ void get_all_teachers_from_database(){
     FILE* fp = fopen(&quot;my_file.txt&quot;,&quot;r&quot;);
     while(fscanf(fp,&quot;%s %s %d %lf %f&quot;,current_teacher.fname,current_teacher.lname,&amp;current_teacher.age,&amp;current_teacher.height,&amp;current_teacher.gross_salary)!=EOF){
         printf(&quot;Found teacher &#x27;%s %s&#x27;  with age: %d years, height: %g cm, gross salary: $%.2f\n&quot;,current_teacher.fname,current_teacher.lname,current_teacher.age,current_teacher.height,current_teacher.gross_salary);
-        printf(&quot;Their net salary is %.2f\n&quot;,calculate_net_salary(current_teacher.gross_salary));
+        printf(&quot;Their net salary is %.2f\n\n&quot;,calculate_net_salary(current_teacher.gross_salary));
     }
     fclose(fp);
 }
-
 
 void add_teacher_to_database(Teacher teacher){
     FILE* fp = fopen(&quot;my_file.txt&quot;,&quot;a&quot;);
