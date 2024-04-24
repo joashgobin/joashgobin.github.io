@@ -27,8 +27,31 @@
 
 <main>
 <p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>agile > chapter 3 iterative and incremental execution and delivery > 2 using the release plan</p><h1>Using the Release Plan</h1>
+<p>We need to have a sustainable pace when completing a project in an agile manner. Velocity is the number of story points we complete per iteration.</p>
+<p>We use the number of story points burned for each iteration. We may complete 14 story points in one iteration and 16 points in another. This gives us a velocity of about 15 points. If we initially planned 20 points per iteration in the project roadmap then we adjust this value to 15. This means that less work will be expected in each iteration than we first planned but we will be able to present to the product owner a more realistic view of the project and its completion.</p>
+<h2>Calculating project progress</h2>
+<p>We use the concept of earned value to measure project progress. This is found using the formula:
+$$\text{earned value}=\frac{\text{project budget}}{\text{total number of story points}}\times \text{number of points completed so far}$$</p>
+<p>The total expected value to be gained from the project is the product of the economic value per story point and the total expected number of points to be completed.</p>
 
 
+
+<link rel="stylesheet" href="/static/katex/katex.min.css">
+<script defer src="/static/katex/katex.min.js"></script>
+<script defer src="/static/katex/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="
+    renderMathInElement(
+            document.body,
+            {
+                delimiters: [
+                    {left:'$$', right:'$$', display:true},
+                    {left:'$', right:'$', display:false}
+                    ]
+                }
+            );
+"></script>
+
+    
 </main>
 
 <hr>
