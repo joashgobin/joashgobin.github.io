@@ -127,6 +127,10 @@ and enter Insert mode; The text must be enclosed by two instances of the <em>cha
 <li><strong>z=</strong> - Open a list of word suggestions for the current word</li>
 <li><strong>1z=</strong> - Replace the current word with the 1st suggestion in the list of word suggestions</li>
 </ul>
+<h2>Search and replace</h2>
+<ul>
+<li><strong>%s/<em>old_string</em>/<em>next_string</em>/g</strong> - replace <em>old_string</em> with <em>new_string</em> globally</li>
+</ul>
 <h3>Placing the cursor relative to the window</h3>
 <ul>
 <li><strong>L</strong> - Place the cursor low</li>
@@ -189,6 +193,14 @@ marked cursor position</li>
 <li><strong>:reg</strong> - view the registers in vim</li>
 <li><strong>&quot;1y</strong> - yank into register 1</li>
 <li><strong>&quot;1p</strong> - paste from register 1</li>
+<li><strong>&quot;+y</strong> - yank into system register</li>
+<li><strong>&quot;+p</strong> - paste from system register</li>
+</ul>
+<h3>Macros</h3>
+<ul>
+<li><strong>qa</strong>+commands+<strong>q</strong> - start recording macro in register a</li>
+<li><strong>@a</strong> - replay macro stored in a</li>
+<li><strong>@@</strong> - replay last macro</li>
 </ul>
 <h2>File browsing</h2>
 <ul>
