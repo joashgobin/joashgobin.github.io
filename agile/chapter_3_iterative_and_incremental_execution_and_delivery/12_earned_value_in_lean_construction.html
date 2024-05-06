@@ -26,53 +26,18 @@
 <div style='height:40px'></div>
 
 <main>
-<p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>c > math > equation of a straight line</p><h1>Equation of a Straight Line</h1>
-<p>Any straight line can be written in the standard form:
-$$y=mx+c$$</p>
-<p>The gradient, $m$ is given by the formula:
-$$m=\frac{y_2-y_1}{x_2-x_1}$$</p>
-<p>The y-intercept, $c$ can be found by substituting the gradient and any of the points
-(in this case we use $(x_1,y_1)$) into the standard form of the line equation:
-$$y_1=mx_1+c$$
-$$\therefore c=y_1-mx_1$$</p>
-<p>The following code snippet shows how we can replicate this in C:
-
-<pre><code class='c' id='finding_the_equation_of_a_line_given_two_points.c'>
-#include &lt;stdio.h&gt;
-
-int main(){
-    // storing the points
-    double x1=-2.5,x2=0,y1=0,y2=5;
-    printf(&quot;Using the points (%g,%g) and (%g,%g)\n&quot;,x1,y1,x2,y2);
-    
-    // calculating gradient
-    double gradient = (y2-y1)/(x2-x1);
-    printf(&quot;The gradient of the line is %g\n&quot;,gradient);
-
-    //calculating the y-intercept
-    double y_intercept = y1-gradient*x1;
-    printf(&quot;The y intercept is %g\n&quot;,y_intercept);
-
-    // displaying the final equation of the straight line
-    printf(&quot;Therefore the equation of the line is:\ny=%gx+%g&quot;,gradient,y_intercept);
-    
-    return 0;
-}
-
-</code></pre>
-<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>
-    <a href='/c/math/finding_the_equation_of_a_line_given_two_points.html' target='_blank' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#8599; Open</a>
-    <a href='#finding_the_equation_of_a_line_given_two_points.c' onclick='copyToClipboard("finding_the_equation_of_a_line_given_two_points.c")' style='width:18px;border:5px solid #007BFF;border-radius:5px;color:white;background-color:#007BFF;text-decoration:none'>&#128203; Copy</a>
-</strong>
-<strong style='color:darkgrey;margin-bottom:0;padding-bottom:0;font-size:0.7rem'>c/math/finding_the_equation_of_a_line_given_two_points.c </strong>
-
-</p>
-
-<script src='/static/highlight/highlight.min.js'></script>
-<script src='/static/highlight/languages/c.min.js'></script>
-<script>
-    hljs.highlightAll();
-</script>
+<p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>agile > chapter 3 iterative and incremental execution and delivery > 12 earned value in lean construction</p><h1>Earned Value in Lean Construction Projects</h1>
+<p>Successful management of the three (3) parameters leads to positive outcomes. Thus minimizing costs isn't the only to achieve success in a project. Earned value method originated in factories where engineers deemed the cost variance to be the difference between the actual cost (what is spent) compared to the earned standards (what is achieved). There are three (3) dimensions of work:</p>
+<ol>
+<li>Planned value (PV) - the budget allocated to the scheduled work. It is also known as the budget at completion (BAC) and is used as a performance measurement baseline (PMB).</li>
+<li>Earned value (EV) - the measure of work in terms of the budget. It is the percentage completion of the project and is measured relative to the approved budget.</li>
+<li>Actual/real cost (AC) - the actual cost incurred by work carried out in a specific period.</li>
+</ol>
+<p>You may have expected to pay $500 for 5 weeks of work (EV) of a 12-week project with a budget of $1200 (PV) but end up paying $700 (AC) due to research needs and acquisition of expertise. Here the CPI would be less than 1, meaning that we are spending more than we initially planned.</p>
+<p>According to PMBOK, we find the estimate at completion (EAC) by adding the actual costs (AC) and the estimate to completion (ETC):
+$$\text{EAC}=\text{AC}+\text{ETC}$$</p>
+<p>There are different ways of determining the ETC variable.</p>
+<p>There are several ways that the earned value management (EVM) method can be related to Lean philosophy. Lean seeks to minimize wastage and this can be achieved by monitoring for and adapting to apparent and predicted changes in the scope, costs and schedule of the project. EVM helps us to do this monitoring.</p>
 
 
 
@@ -122,17 +87,7 @@ onload="
         );
 </script>
 
-<script>
-    function copyToClipboard(id){
-            var copyText = document.getElementById(id).innerText;
-            navigator.clipboard.writeText(copyText).then(function(){
-                console.log("Copied "+id+" to clipboard");
-                }).catch(function(error){
-                    console.log("Error copying "+id+" to clipboard; Error: "+error);
-                    });
-                }
-</script>
-    
+
 
 </body>
 </html>
