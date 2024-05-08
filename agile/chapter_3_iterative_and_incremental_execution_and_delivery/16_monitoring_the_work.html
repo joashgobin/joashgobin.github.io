@@ -1,0 +1,77 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <meta name='description' content='Content generated for the ChickenFryBytes Studios NibbleSprouts Project'>
+    <title>Asynchronous Learning</title>
+    <!-- <link rel='stylesheet' href='/static/katex/katex.min.css'> -->
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css?v=1.4'>
+</head>
+<body>
+
+<header id="header" style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:transparent;color:black;z-index:9999;'>
+    <div style='display:flex;align-items:center'>
+        <div style='width:10px'></div>
+        <a href='/'>
+            <img id="logo" src='/static/TeamLogo.webp' style="border-radius:100%" alt="ChickenFryBytes Studios Logo" height=40px width=40px>
+        </a>
+        <div style='width:12px'></div>
+        <p id="title" style='line-height:1.2;color:darkgray;font-size:1.0rem;font-weight:700'>CFBS NibbleSprouts Project</p>
+    </div>
+</header>
+<div style='height:40px'></div>
+
+<main>
+<p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>agile > chapter 3 iterative and incremental execution and delivery > 16 monitoring the work</p><h1>Monitoring the Work</h1>
+<p>We use the idea of velocity as an indicator of the progress of work - in the traditional approach, we would have used many formulae, reports and tools.</p>
+<h2>Status of the iteration</h2>
+<p>Recall that in agile, the scope is determined by the schedule and budget, not the other way around. For an iteration, determining the completion status is as simple as looking at the Kanban board a.k.a. the task panel.</p>
+<p>The tasks on the Kanban board each have an estimated time required for completion. We can tell iteration progress by summing up the number of hours for the tasks that are currently moving across the board. It is also possible for us to consider the time elapsed for each tasks but because we discourage having really long tasks (therefore splitting them up into smaller ones), it is highly unlikely that keeping track of the number of hours spent on each tasks might turn out to be a wasteful practice.</p>
+<p>Having more tasks on the left side of the board means that the work in the iteration is still in its initial stages - this is fine in the iteration's beginning but we should be concerned if the cards are not moving to the right as time passes.</p>
+<p>Another way to determine the state of work is to look at the burndown diagram. We want the real line to be below the ideal line - the iteration is ahead of where it is expected to be.</p>
+<h2>Status of an agile project</h2>
+<p>We can determine if the project is on track by extrapolating from the burndown (the graph of story points remaining versus time elapsed) a function that indicates the velocity of the project forward into the future. In this way, we predict where we expect the project to be, given the current rate at which the work team is moving requirements into the fulfilled state.</p>
+<p>The ideal line on the burndown has a negative gradient and cuts the time axis where we expect the project should end. We will finish ahead of time as long as the real line remains below the ideal. The gradient of the real line (usually negative for a progressing project) on the burndown indicates to us the rate at which we are actually completing tasks. When there is a positive gradient for the real line, it means that there is some increase in the total number of story points left to be completed.</p>
+<p>Agile management software usually generate the burndown automatically. There are also burnup diagrams which behave in a similar manner but have an ideal line that ascends to the total number of points instead.</p>
+<p>We calculate the velocity by finding the average number of story points completed in each iteration.</p>
+
+
+</main>
+
+<footer style='padding:30px;font-size:0.7rem;color:darkgrey;text-align:center'>
+<p>Generated using <a href='https://chickenfrybytes.com'>ChickenFryBytes Studios</a>' static site generator. Check out our other websites <a href='https://buyinguyana.com'>BuyInGuyana</a> and <a href='https://learn.chickenfrybytes.com'>Project NibbleSprouts</a>.
+</p>
+
+<p>Created by Joash Gobin.</p>
+</footer>
+<script>
+
+
+        const header = document.querySelector("#header");
+        const title = document.querySelector("#title");
+        const logo = document.querySelector("#logo");
+        window.addEventListener('scroll',
+        function (){
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            if (scrollPosition<10){
+                title.style.opacity = 1.0;
+                //header.style.backgroundColor = "#192734";
+                logo.style.backgroundColor = "transparent";
+            }else{
+                title.style.opacity = 0.0;
+                //header.style.backgroundColor = "transparent";
+                logo.style.backgroundColor = "slategrey";
+            }
+        }
+        );
+</script>
+
+
+
+</body>
+</html>
+    
