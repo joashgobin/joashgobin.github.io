@@ -1,0 +1,94 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <meta name='description' content='Content generated for the ChickenFryBytes Studios NibbleSprouts Project'>
+    <title>Asynchronous Learning</title>
+    <!-- <link rel='stylesheet' href='/static/katex/katex.min.css'> -->
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css?v=1.4'>
+</head>
+<body>
+
+<header id="header" style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:transparent;color:black;z-index:9999;'>
+    <div style='display:flex;align-items:center'>
+        <div style='width:10px'></div>
+        <a href='/'>
+            <img id="logo" src='/static/TeamLogo.webp' style="border-radius:100%" alt="ChickenFryBytes Studios Logo" height=40px width=40px>
+        </a>
+        <div style='width:12px'></div>
+        <p id="title" style='line-height:1.2;color:darkgray;font-size:1.0rem;font-weight:700'>CFBS NibbleSprouts Project</p>
+    </div>
+</header>
+<div style='height:40px'></div>
+
+<main>
+<p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>agile > chapter 8 lean management > 5 lean for services</p><h1>Lean for Services</h1>
+<p>Measurement is essential to Lean management - we cannot control and improve upon what we are not aware of.</p>
+<p>We also prioritize sections in the value flow where there is greater waste - no use in removing 1% waste somewhere when we should be focusing on the 10% waste somewhere else.</p>
+<h2>TPM (Total Productive Maintenance) indicators: MTTR and MTBF</h2>
+<p>TPM is a methodology focused on measuring the times in which a service or product is contributing its value. Some of these times are:</p>
+<ul>
+<li>MTTD (mean time to detect)</li>
+<li>MTTR (mean time to repair)</li>
+<li>MTTRS (mean time to restore service)</li>
+<li>MTBF (mean time between failures)</li>
+<li>MTBSI (mean time between system incidents)</li>
+</ul>
+<h2>Failure and incident</h2>
+<p>A failure occurs when a component stops or experiences a problem (overheating, slow-down, abnormal operation). It is considered to be an incident when the operation of the service, or the performance of a product, deteriorates. Failures can thus occur without becoming incidents.</p>
+<h2>The importance of having a &quot;complete kit&quot; of indicators</h2>
+<p>We record the values of these indicators because Lean is about metrics - we cannot fix what we cannot detect.</p>
+<h2>Guarantee indicators for the management of a service without losses</h2>
+<p>A service must have 2 things:</p>
+<ul>
+<li>Utility - provide value was not previously available</li>
+<li>
+Guarantee - provide this value while operating within acceptable ranges for:<ul>
+<li>availability (lack of access issues)</li>
+<li>continuity (lack of incidents)</li>
+<li>capacity (lack of performance issues)</li>
+<li>security (lack of safety problems)</li>
+</ul>
+</li>
+</ul>
+
+
+</main>
+
+<footer style='padding:30px;font-size:0.7rem;color:darkgrey;text-align:center'>
+<p>Generated using <a href='https://chickenfrybytes.com'>ChickenFryBytes Studios</a>' static site generator. Check out our other websites <a href='https://buyinguyana.com'>BuyInGuyana</a> and <a href='https://learn.chickenfrybytes.com'>Project NibbleSprouts</a>.
+</p>
+
+<p>Created by Joash Gobin.</p>
+</footer>
+<script>
+
+
+        const header = document.querySelector("#header");
+        const title = document.querySelector("#title");
+        const logo = document.querySelector("#logo");
+        window.addEventListener('scroll',
+        function (){
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            if (scrollPosition<10){
+                title.style.opacity = 1.0;
+                //header.style.backgroundColor = "#192734";
+                logo.style.backgroundColor = "transparent";
+            }else{
+                title.style.opacity = 0.0;
+                //header.style.backgroundColor = "transparent";
+                logo.style.backgroundColor = "slategrey";
+            }
+        }
+        );
+</script>
+
+
+
+</body>
+</html>
+    

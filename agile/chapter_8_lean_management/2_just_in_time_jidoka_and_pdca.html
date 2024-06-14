@@ -1,0 +1,103 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <meta name='description' content='Content generated for the ChickenFryBytes Studios NibbleSprouts Project'>
+    <title>Asynchronous Learning</title>
+    <!-- <link rel='stylesheet' href='/static/katex/katex.min.css'> -->
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css?v=1.4'>
+</head>
+<body>
+
+<header id="header" style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:transparent;color:black;z-index:9999;'>
+    <div style='display:flex;align-items:center'>
+        <div style='width:10px'></div>
+        <a href='/'>
+            <img id="logo" src='/static/TeamLogo.webp' style="border-radius:100%" alt="ChickenFryBytes Studios Logo" height=40px width=40px>
+        </a>
+        <div style='width:12px'></div>
+        <p id="title" style='line-height:1.2;color:darkgray;font-size:1.0rem;font-weight:700'>CFBS NibbleSprouts Project</p>
+    </div>
+</header>
+<div style='height:40px'></div>
+
+<main>
+<p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>agile > chapter 8 lean management > 2 just in time jidoka and pdca</p><h1>Just-In-Time, Jidoka and PDCA</h1>
+<p>The two pillars of the Lean approach: Just-In-Time (JIT) and Jidoka. The tools are continuous improvement(Kaizen), standardized work interactions and action plan (PDCA).</p>
+<p>JIT is a production system that manufactures and delivers just what is needed, when needed and in the quantity needed - the inventory lack excesses.</p>
+<h2>Jidoka</h2>
+<p>This is based on providing machinery with a system that detects failure or anomaly in production - this ensures quality and prevents loss of time due to quality control by machinery workers. The root cause is addressed and this prevents future recurrence.</p>
+<p>The steps are:</p>
+<ul>
+<li>a problem is located (automatically by sensors)</li>
+<li>line production is stopped momentarily</li>
+<li>quick solutions are established to correct the effects of the problem - this allows for production to be resumed as we diagnose the issue</li>
+<li>the root causes of the problem are investigated and a definitive solution is implemented</li>
+</ul>
+<p>The problems can come from the machinery itself or from the people operating the machinery.</p>
+<h2>PDCA (Plan-Do-Check-Act)</h2>
+<p>This is also known as a Deming Cycle. It is used for continuous improvement - we propose a change, measure the effects of the change, control the results and execute corrective actions.</p>
+<p>It can be related to the DIKW approach:</p>
+<ul>
+<li>Data</li>
+<li>Information</li>
+<li>Knowledge</li>
+<li>Wisdom</li>
+</ul>
+<p>The 7 steps in the improvement cycle are:</p>
+<ol>
+<li>identify the improvement strategy (what we want to improve)</li>
+<li>define what must be measured to carry out this strategy</li>
+<li>capture the data (carry out measurements)</li>
+<li>process the data, eliminating incorrect readings, erroneous data, exceptions, etc.</li>
+<li>
+analyze the information:<ul>
+<li>does the data show trends</li>
+<li>can conclusions be drawn about its evolution over time</li>
+<li>are there relevant indicators that can be interpreted</li>
+</ul>
+</li>
+<li>present and use the information - according to the conclusions obtained, express them in a simple way and present them to the people who must make the decisions</li>
+<li>implement the improvements - if so decided, invest the resources in the implementation of the best decisions based on the conclusions presented</li>
+</ol>
+
+
+</main>
+
+<footer style='padding:30px;font-size:0.7rem;color:darkgrey;text-align:center'>
+<p>Generated using <a href='https://chickenfrybytes.com'>ChickenFryBytes Studios</a>' static site generator. Check out our other websites <a href='https://buyinguyana.com'>BuyInGuyana</a> and <a href='https://learn.chickenfrybytes.com'>Project NibbleSprouts</a>.
+</p>
+
+<p>Created by Joash Gobin.</p>
+</footer>
+<script>
+
+
+        const header = document.querySelector("#header");
+        const title = document.querySelector("#title");
+        const logo = document.querySelector("#logo");
+        window.addEventListener('scroll',
+        function (){
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            if (scrollPosition<10){
+                title.style.opacity = 1.0;
+                //header.style.backgroundColor = "#192734";
+                logo.style.backgroundColor = "transparent";
+            }else{
+                title.style.opacity = 0.0;
+                //header.style.backgroundColor = "transparent";
+                logo.style.backgroundColor = "slategrey";
+            }
+        }
+        );
+</script>
+
+
+
+</body>
+</html>
+    
