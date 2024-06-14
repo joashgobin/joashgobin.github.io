@@ -1,0 +1,106 @@
+
+<!DOCTYPE html><html lang='en'>
+<head>
+<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
+    <meta name='description' content='Content generated for the ChickenFryBytes Studios NibbleSprouts Project'>
+    <title>Asynchronous Learning</title>
+    <!-- <link rel='stylesheet' href='/static/katex/katex.min.css'> -->
+    <link rel='stylesheet' href='/static/highlight/styles/base16/ros-pine.css'>
+    <link rel='stylesheet' href='/static/style.css?v=1.4'>
+</head>
+<body>
+
+<header id="header" style='position:fixed;top:0;left:0;margin:0px;padding:4px;width:100%;background-color:transparent;color:black;z-index:9999;'>
+    <div style='display:flex;align-items:center'>
+        <div style='width:10px'></div>
+        <a href='/'>
+            <img id="logo" src='/static/TeamLogo.webp' style="border-radius:100%" alt="ChickenFryBytes Studios Logo" height=40px width=40px>
+        </a>
+        <div style='width:12px'></div>
+        <p id="title" style='line-height:1.2;color:darkgray;font-size:1.0rem;font-weight:700'>CFBS NibbleSprouts Project</p>
+    </div>
+</header>
+<div style='height:40px'></div>
+
+<main>
+<p style='color:darkgrey;opacity:0.8;font-size:0.6rem'>agile > chapter 7 other agile approaches scaling agile and tools > 18 deployment of devops</p><h1>Deployment of DevOps</h1>
+<p>The common signs of distancing between Dev and Ops are:</p>
+<ul>
+<li>we do not discover bugs in software until well into the life cycle</li>
+<li>we are agile in development but not in release to production</li>
+<li>developers and/or testers cannot simulate production</li>
+<li>it is not possible to determine which problems arose in development, tests or already in production</li>
+<li>there is talk of &quot;many human mistakes&quot; during development and deployment</li>
+<li>dev considers their work to be done once deployed in preproduction</li>
+<li>every time a problem appears, we see &quot;finger pointing&quot;</li>
+</ul>
+<h2>Some steps towards DevOps</h2>
+<ul>
+<li>form work groups with people covering Dev+Ops+QA</li>
+<li>improve the agile environment</li>
+<li>analyze the development and release life cycle, gaps, metrics, etc.</li>
+<li>evaluate new technologies to automate deployments, tests, metric collection, etc.</li>
+<li>correctly select the first application or line of business to implement DevOps - the one with the most delays or problems</li>
+<li>get quick wins and give visibility to DevOps</li>
+</ul>
+<h2>Some tips and good practices</h2>
+<ul>
+<li>event management must share many events with development, not just with operations</li>
+<li>design the infrastructure to respond to functional requirements, not the other way around</li>
+<li>have pre-production environments</li>
+<li>the same team for development will do &quot;level 2&quot; for incidents</li>
+<li>Scrum or pair programming for development</li>
+<li>consider ITIL</li>
+<li>
+metrics:<ul>
+<li>number of releases per unit of time</li>
+<li>escaped defects</li>
+<li>operations backlog (releases pending to be carried out in production)</li>
+<li>MTRS (also MTTR)</li>
+<li>SLAs compliance</li>
+</ul>
+</li>
+<li>&quot;shifting left&quot; - do normal work earlier in the work cycle</li>
+<li>continuous integration</li>
+<li>bidirectional information exchange between Operations and Development</li>
+</ul>
+
+
+</main>
+
+<footer style='padding:30px;font-size:0.7rem;color:darkgrey;text-align:center'>
+<p>Generated using <a href='https://chickenfrybytes.com'>ChickenFryBytes Studios</a>' static site generator. Check out our other websites <a href='https://buyinguyana.com'>BuyInGuyana</a> and <a href='https://learn.chickenfrybytes.com'>Project NibbleSprouts</a>.
+</p>
+
+<p>Created by Joash Gobin.</p>
+</footer>
+<script>
+
+
+        const header = document.querySelector("#header");
+        const title = document.querySelector("#title");
+        const logo = document.querySelector("#logo");
+        window.addEventListener('scroll',
+        function (){
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            if (scrollPosition<10){
+                title.style.opacity = 1.0;
+                //header.style.backgroundColor = "#192734";
+                logo.style.backgroundColor = "transparent";
+            }else{
+                title.style.opacity = 0.0;
+                //header.style.backgroundColor = "transparent";
+                logo.style.backgroundColor = "slategrey";
+            }
+        }
+        );
+</script>
+
+
+
+</body>
+</html>
+    
