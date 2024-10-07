@@ -1,0 +1,18 @@
+body{
+    margin:0;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+section{
+    margin:0;
+    padding: 4rem 2rem;
+}
+
+section:nth-child(odd){
+    background-color:black;
+    color:white;
+}
