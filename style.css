@@ -1,10 +1,19 @@
 body{
     margin:0;
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-size: 1.15rem;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+h1{
+    font-size: 2.6rem;
+}
+
+h2{
+    font-size: 2.4rem;
 }
 
 section{
@@ -15,4 +24,33 @@ section{
 section:nth-child(odd){
     background-color:black;
     color:white;
+}
+
+header{
+    display: flex;
+    padding: 0.5rem;
+}
+
+header nav>ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header nav>ul>li{
+    padding: 0 0.5rem;
+}
+
+.expand-h{
+    flex-grow: 1;
+}
+
+footer{
+    background-color: royalblue;
+    color:white;
+    padding: 3rem;
+}
+
+.logo{
+    height: 4rem;
+    border-radius: 100%;
 }
