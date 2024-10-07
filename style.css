@@ -54,3 +54,23 @@ footer{
     height: 4rem;
     border-radius: 100%;
 }
+
+.masthead{
+    min-height: 50vh;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap:1rem;
+}
+
+.masthead h1{
+    margin: 0;
+}
+
+.masthead .action{
+    color:black;
+    background-color: aqua;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
