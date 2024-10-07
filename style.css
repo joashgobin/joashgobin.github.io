@@ -29,6 +29,8 @@ section:nth-child(odd){
 header{
     display: flex;
     padding: 0.5rem;
+    align-items: center;
+    gap:0.5rem;
 }
 
 header nav>ul{
@@ -73,4 +75,12 @@ footer{
     text-decoration: none;
     padding: 1rem;
     border-radius: 0.5rem;
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid grey;
+    color: grey;
+    border-radius: 1rem;
+    padding: 0.1rem 1rem;
 }
