@@ -95,3 +95,16 @@ footer{
     border-radius: 1rem;
     padding: 0.1rem 1rem;
 }
+
+.col-2{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width:45rem){
+    .col-2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
