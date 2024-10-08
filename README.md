@@ -1,5 +1,5 @@
 # Web Development for Noobs
-This repo will help you get started with web development and displaying your website via Github pages.
+This repo will help you get started with web development and displaying your website via Github pages. The result will be accessible at [https://joashgobin.github.io/](https://joashgobin.github.io/).
 
 ## Getting started with Github pages
 - Create a Github account at [https://github.com/join](https://github.com/join)
@@ -21,7 +21,7 @@ git remote add origin git@github.com:<username>/<username>.github.io
 git push -u origin main
 ```
 
-Now every commit you make with be available at:
+Now every commit you make will be available at:
 ```sh
 https://<username>.github.io
 ```
