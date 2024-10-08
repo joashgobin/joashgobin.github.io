@@ -59,6 +59,14 @@ footer{
     border-radius: 100%;
 }
 
+.logo-box{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: royalblue;
+}
+
 .masthead{
     min-height: 50vh;
     display: grid;
