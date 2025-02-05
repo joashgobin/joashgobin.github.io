@@ -5,3 +5,4 @@
 - Added strong to hero section
 - Modified home page
 - Fix
+- Decreased some font sizes

@@ -162,13 +162,13 @@ img{
     padding: 3rem 2rem;
     display: grid;
     align-content: center;
+    text-align: center;
 }
 
 .card-bg .card{
     background-color: wheat;
     padding: 1rem;
     border-radius: 0.5rem;
-    font-size: 1.3rem;
 }
 
 .deck{
@@ -225,7 +225,7 @@ img{
 .little-big-card .little-card{
     display: grid;
     align-content: center;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .little-big-card .little-card img{
@@ -237,11 +237,10 @@ img{
 }
 
 .little-big-card .big-card{
-    font-size: 1.3rem;
     background-color: #1f1f1f;
     color: white;
-    margin-left: -5rem;
+    margin-left: -9rem;
     padding: 2rem;
-    padding-left: 5rem;
+    padding-left: 9rem;
     z-index: -5;
 }
