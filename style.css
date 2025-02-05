@@ -37,6 +37,7 @@ header{
 }
 
 header a{
+    font-size: 1rem;
     color:white;
 }
 
@@ -66,14 +67,14 @@ img{
 .hero{
     background-color: var(--blue);
     border-radius: 1rem;
-    padding: 3rem 2rem;
+    padding: 7rem 2rem;
     color:white;
     display: grid;
     align-content: center;
     grid-template-columns: 1fr;
     gap:2rem;
-    min-height: 30vh;
-    background: linear-gradient(0.15turn,black,#1f1f1f);
+    min-height: 20vh;
+    background: linear-gradient(0.15turn,var(--blue),#1f1f1f);
 }
 
 @media screen and (min-width:700px) {
@@ -141,7 +142,7 @@ img{
     background-image: url("/static/img/backhoe-grader-loader.webp");
     background-blend-mode: darken;
     background-color: rgba(0,0,0,0.85);
-    min-height: 200px;
+    min-height: 240px;
     padding: 3rem 2rem;
     display: grid;
     align-content: center;
@@ -188,7 +189,7 @@ img{
 }
 
 .heading-card{
-    background: linear-gradient(00.35turn,black,purple);
+    background: linear-gradient(00.35turn,black,var(--blue));
     color: white;
     text-align: center;
     border-radius: 0.5rem;
