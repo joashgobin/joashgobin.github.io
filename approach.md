@@ -4,12 +4,15 @@
 - Set all default paddings and margins to 0
 
 ## Typography
-- Body: line-height 1.5, font size 1.2rem, font-family geometric-humanist, text-underline-offset 3px
+- Body: line-height 1.5, font size 1.2rem, font-family geometric-humanist, text-underline-offset 3px, color #2d2d2d
 - Headings: line height 1.3, font-family neo-grotesque
 
 ## Whitespace
 - Use a lot of whitespace
 - Let your design breathe!
+
+## Chunks of text
+- Large paragraphs should be accompanied by a heading to help with context
 
 ## Images
 - Set default image max-width to 100%
