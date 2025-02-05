@@ -75,11 +75,13 @@ img{
     gap:2rem;
     min-height: 20vh;
     background: linear-gradient(0.50turn,var(--blue),#1f1f1f);
+    text-align: center;
 }
 
 @media screen and (min-width:700px) {
     .hero {
         grid-template-columns: 1fr 1fr;
+        text-align: left;
     }
 }
 
@@ -91,6 +93,13 @@ img{
 
 .hero h1{
     font-size: 2.5rem;
+}
+
+.hero strong{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 2rem;
 }
 
 .hero .links a{

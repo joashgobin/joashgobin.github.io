@@ -2,3 +2,4 @@
 
 - Updated styles
 - Modified heading card style
+- Added strong to hero section
