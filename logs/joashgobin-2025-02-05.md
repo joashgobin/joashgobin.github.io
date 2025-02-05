@@ -4,3 +4,4 @@
 - Modified heading card style
 - Added strong to hero section
 - Modified home page
+- Fix

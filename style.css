@@ -219,7 +219,7 @@ img{
 .little-big-card{
     display: grid;
     align-content: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .little-big-card .little-card{
@@ -230,8 +230,10 @@ img{
 
 .little-big-card .little-card img{
     max-width: 100%;
-    max-height: 300px;
+    width: 100%;
+    max-height: 500px;
     padding: 3rem 0;
+    object-fit: cover;
 }
 
 .little-big-card .big-card{
