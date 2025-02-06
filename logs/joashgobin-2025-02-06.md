@@ -3,3 +3,4 @@
 - Modified little big card to look better with images left or right
 - Modified little big card padding
 - Modified image info horizontal padding
+- Added header for machines page
