@@ -26,6 +26,7 @@ h1,h2,h3,h4,h5,h6{
 section{
     padding: 0.5rem;
     animation: fade-in 0.2s ease-out 1;
+    overflow: hidden;
 }
 
 p{
@@ -266,9 +267,9 @@ img{
 .little-big-card .big-card{
     background: linear-gradient(0.95turn,#2d2d2d,var(--blue));
     color: white;
-    margin-left: -9rem;
+    margin: 0 -9rem;
     padding: 2rem;
-    padding-left: 10rem;
+    padding: 1rem 10rem;
     z-index: -5;
     display: grid;
     align-content: center;
