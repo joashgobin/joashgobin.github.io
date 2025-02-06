@@ -9,3 +9,4 @@
 - Modified padding for little big card
 - Added min height for components
 - Added some animations
+- Added linear gradient to little big card
