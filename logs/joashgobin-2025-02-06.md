@@ -4,3 +4,4 @@
 - Modified little big card padding
 - Modified image info horizontal padding
 - Added header for machines page
+- Removed animation from section elements

@@ -25,7 +25,6 @@ h1,h2,h3,h4,h5,h6{
 
 section{
     padding: 0.5rem;
-    animation: fade-in 0.2s ease-out 1;
     overflow: hidden;
 }
 
@@ -124,7 +123,7 @@ img{
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 300;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .hero .links a{
@@ -228,7 +227,7 @@ img{
     font-size: 1rem;
     color:white;
     padding: 0.5rem;
-    max-width: 7rem;
+    max-width: 70%;
     border-radius: 0.5rem;
     text-decoration: none;
     text-align: center;
