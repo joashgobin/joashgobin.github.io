@@ -268,8 +268,7 @@ img{
     background: linear-gradient(0.95turn,#2d2d2d,var(--blue));
     color: white;
     margin: 0 -9rem;
-    padding: 2rem;
-    padding: 1rem 10rem;
+    padding: 3rem 10rem;
     z-index: -5;
     display: grid;
     align-content: center;
