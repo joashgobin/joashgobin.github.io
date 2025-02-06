@@ -8,3 +8,4 @@
 - Decreased some font sizes
 - Modified padding for little big card
 - Added min height for components
+- Added some animations

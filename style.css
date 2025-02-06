@@ -25,9 +25,27 @@ h1,h2,h3,h4,h5,h6{
 
 section{
     padding: 0.5rem;
+    animation: fade-in 0.2s ease-out 1;
 }
 
-section>div{
+p{
+    animation: slide-in 0.9s ease-out 1;
+    position: relative;
+}
+
+a{
+    animation: fade-in 1.2s ease-out 1;
+}
+
+
+@keyframes slide-in{
+    from{opacity: 0;top: 1rem;}
+    to{opacity: 1;top:0;}
+}
+
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 
 header{
