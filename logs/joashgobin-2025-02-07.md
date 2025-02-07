@@ -6,3 +6,4 @@
 - Added footer to machines page and modified logo margin
 - Added more white space to some components
 - Rounded the corners of some elements
+- Adding more pages and darkened linear gradient

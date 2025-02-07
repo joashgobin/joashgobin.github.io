@@ -3,6 +3,7 @@
     --geometric-humanist: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     --blue:rgb(0, 51, 112);
     --component-min-height: 320px;
+    --bg-img: url("/static/img/backhoe-grader-loader.webp");
 }
 
 *{
@@ -26,6 +27,12 @@ h1,h2,h3,h4,h5,h6{
 section{
     padding: 0.5rem;
     overflow: hidden;
+}
+
+section>p{
+    margin-top: 2rem;
+    max-width: 35rem;
+    justify-self: center;
 }
 
 p{
@@ -68,6 +75,10 @@ header nav ul{
 
 header nav ul li{
     list-style-type: none;
+}
+
+main{
+    min-height: 1000px;
 }
 
 footer{
@@ -116,7 +127,7 @@ img{
     grid-template-columns: 1fr;
     gap:2rem;
     min-height: 20vh;
-    background: linear-gradient(0.50turn,var(--blue),#1f1f1f);
+    background: linear-gradient(0.50turn,var(--blue),black);
     text-align: center;
 }
 
@@ -178,6 +189,12 @@ img{
     min-height: var(--component-min-height);
 }
 
+@media screen and (min-width:700px){
+   .image-info{
+    padding: 2rem 1rem;
+   } 
+}
+
 .image-info .info{
     display: grid;
     align-content: center;
@@ -203,7 +220,7 @@ img{
 
 .card-bg{
     min-height: var(--component-min-height);
-    background-image: url("/static/img/backhoe-grader-loader.webp");
+    background-image: var(--bg-img);
     background-blend-mode: darken;
     background-color: rgba(0,0,0,0.85);
     border-radius: 1rem;
@@ -278,7 +295,13 @@ img{
 .little-big-card .little-card{
     display: grid;
     align-content: center;
-    padding: 0 1rem;
+    padding: 0 0rem;
+}
+
+@media screen and (min-width:700px){
+   .little-big-card .little-card{
+    padding: 0 2rem;
+   } 
 }
 
 .little-big-card .little-card img{
@@ -292,7 +315,7 @@ img{
 
 .little-big-card .big-card{
     border-radius: 0.5rem;
-    background: linear-gradient(0.95turn,#2d2d2d,var(--blue));
+    background: linear-gradient(0.95turn,black,var(--blue));
     color: white;
     margin: 0 -9rem;
     padding: 4rem 10rem;
@@ -305,6 +328,7 @@ img{
     padding: 2rem;
     display: grid;
     justify-items: center;
+    margin-bottom: 3rem;
 }
 
 .faq details{
