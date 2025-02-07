@@ -16,6 +16,7 @@
 
 ## Images
 - Set default image max-width to 100%
+- Place images within divs and modify the widths of these divs
 
 ## Grouping of Elements
 - Place the actual information for a section within a div with a specific class in order to make styling easier
