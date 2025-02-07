@@ -7,3 +7,4 @@
 - Added more white space to some components
 - Rounded the corners of some elements
 - Adding more pages and darkened linear gradient
+- Adding headings for the other pages
