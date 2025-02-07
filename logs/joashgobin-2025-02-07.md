@@ -8,3 +8,4 @@
 - Rounded the corners of some elements
 - Adding more pages and darkened linear gradient
 - Adding headings for the other pages
+- Summary for FAQ is now bold

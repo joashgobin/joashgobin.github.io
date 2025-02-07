@@ -328,7 +328,7 @@ img{
     padding: 2rem;
     display: grid;
     justify-items: center;
-    margin-bottom: 3rem;
+    margin: 2rem 0;
 }
 
 .faq details{
@@ -337,8 +337,13 @@ img{
     width: 100%;
 }
 
+.faq details:first-child{
+    border-top: 1px solid grey;
+}
+
 .faq details summary{
     padding: 1rem;
+    font-weight: bold;
 }
 
 .faq details p{
