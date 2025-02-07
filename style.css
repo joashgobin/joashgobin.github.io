@@ -306,6 +306,10 @@ img{
     width: 100%;
 }
 
+.faq details summary{
+    padding: 1rem;
+}
+
 .faq details p{
     margin-left: 1rem;
     padding: 1rem;
