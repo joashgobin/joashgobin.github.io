@@ -206,9 +206,11 @@ img{
     background-image: url("/static/img/backhoe-grader-loader.webp");
     background-blend-mode: darken;
     background-color: rgba(0,0,0,0.85);
+    border-radius: 1rem;
     padding: 3rem 2rem;
     display: grid;
     align-content: center;
+    justify-items: center;
     text-align: center;
 }
 
@@ -217,6 +219,7 @@ img{
     color:white;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
+    max-width: 35rem;
 }
 
 .deck{
@@ -284,9 +287,11 @@ img{
     max-height: 500px;
     padding: 3rem 0;
     object-fit: cover;
+    border-radius: 0.5rem;
 }
 
 .little-big-card .big-card{
+    border-radius: 0.5rem;
     background: linear-gradient(0.95turn,#2d2d2d,var(--blue));
     color: white;
     margin: 0 -9rem;
