@@ -2,7 +2,7 @@
     --neo-grotesque: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
     --geometric-humanist: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     --blue:rgb(0, 51, 112);
-    --component-min-height: 280px;
+    --component-min-height: 320px;
 }
 
 *{
@@ -174,7 +174,7 @@ img{
     grid-template-columns: 1fr;
     gap: 2rem;
     align-content: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     min-height: var(--component-min-height);
 }
 
@@ -262,6 +262,7 @@ img{
     text-align: center;
     border-radius: 2rem;
     padding: 0.5rem;
+    margin-top: 2rem;
 }
 
 .little-big-card{
@@ -289,7 +290,7 @@ img{
     background: linear-gradient(0.95turn,#2d2d2d,var(--blue));
     color: white;
     margin: 0 -9rem;
-    padding: 3rem 10rem;
+    padding: 4rem 10rem;
     z-index: -5;
     display: grid;
     align-content: center;
