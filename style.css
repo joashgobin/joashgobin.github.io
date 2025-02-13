@@ -3,7 +3,7 @@
     --geometric-humanist: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     --blue:rgb(0, 51, 112);
     --component-min-height: 320px;
-    --bg-img: url("/static/img/backhoe-grader-loader.webp");
+    --bg-img: url("/static/img/908E.webp");
 }
 
 *{
@@ -224,6 +224,7 @@ img{
     background-image: var(--bg-img);
     background-blend-mode: darken;
     background-color: rgba(0,0,0,0.85);
+    background-size: 200px;
     border-radius: 1rem;
     padding: 3rem 2rem;
     display: grid;

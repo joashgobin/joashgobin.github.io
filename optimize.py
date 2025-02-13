@@ -11,7 +11,7 @@ def optimize_image(full_path):
             # Convert to RGB if necessary
             rgb_img = img.convert('RGB')
 
-            rgb_img.thumbnail((500,400))
+            rgb_img.thumbnail((700,400))
 
             # Save as WebP
             webp_filepath = f"{os.path.splitext(full_path)[0]}.webp"
