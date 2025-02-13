@@ -4,3 +4,4 @@
 - Added webp files
 - Modified home page
 - Added new images
+- Modified the contact page image
