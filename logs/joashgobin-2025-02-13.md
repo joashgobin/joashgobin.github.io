@@ -2,3 +2,4 @@
 
 - Added more images
 - Added webp files
+- Modified home page
