@@ -311,7 +311,7 @@ img{
     max-height: 500px;
     padding: 3rem 0;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
 }
 
 .little-big-card .big-card{
