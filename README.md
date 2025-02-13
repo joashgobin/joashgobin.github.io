@@ -18,6 +18,9 @@
 - Set default image max-width to 100%
 - Place images within divs and modify the widths of these divs
 
+## Components
+- Place CSS variables in the parent component and use within that component and its children
+
 ## Grouping of Elements
 - Place the actual information for a section within a div with a specific class in order to make styling easier
 - Style according to class name
