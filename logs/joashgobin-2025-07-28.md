@@ -8,3 +8,4 @@
 - Added more content
 - Fix
 - Reduced border size
+- Center and apply max width to main
