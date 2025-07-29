@@ -11,3 +11,4 @@
 - Center and apply max width to main
 - Added some more classes
 - Divided webpage into sections
+- Modified the individual heading levels' font sizes

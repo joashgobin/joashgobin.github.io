@@ -1,5 +1,6 @@
 :root {
-    --heading-font: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;;
+    --heading-font: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    ;
     --body-font: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     --prim: white;
     --sec: #608590;
@@ -30,33 +31,54 @@ h6 {
     margin-bottom: 0.5rem;
 }
 
-p{
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+h5,
+h6 {
+    font-size: 1.6rem;
+}
+
+p {
     margin-bottom: 1rem;
 }
 
-header{
+header {
     margin-bottom: 2rem;
     padding: 0.5rem 1rem;
 }
 
-header nav ul li{
+header nav ul li {
     list-style-type: none;
 }
 
-header a{
+header a {
     padding: 0.5rem;
 }
 
-a{
+a {
     color: inherit;
     text-underline-offset: 3px;
 }
 
-main{
+main {
     max-width: 45rem;
     justify-self: center;
 }
 
-section{
+section {
     padding: 0.5rem 0;
 }
