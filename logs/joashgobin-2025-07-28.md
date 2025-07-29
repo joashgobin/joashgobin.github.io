@@ -9,3 +9,4 @@
 - Fix
 - Reduced border size
 - Center and apply max width to main
+- Added some more classes

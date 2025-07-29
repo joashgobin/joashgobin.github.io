@@ -21,3 +21,7 @@
 .os {
     border: 1px solid var(--sec);
 }
+
+.round{
+    border-radius: 1rem;
+}
