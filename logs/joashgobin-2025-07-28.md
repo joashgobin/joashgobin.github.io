@@ -12,3 +12,4 @@
 - Added some more classes
 - Divided webpage into sections
 - Modified the individual heading levels' font sizes
+- Changed card headings to h3
