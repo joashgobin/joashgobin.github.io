@@ -5,3 +5,4 @@
 - Updated heading font to humanisy
 - Increased heading letter spacing
 - Restored font weight for headings
+- Added more content
