@@ -7,3 +7,4 @@
 - Restored font weight for headings
 - Added more content
 - Fix
+- Reduced border size

@@ -15,9 +15,9 @@
 }
 
 .op {
-    border: 2px solid var(--prim);
+    border: 1px solid var(--prim);
 }
 
 .os {
-    border: 2px solid var(--sec);
+    border: 1px solid var(--sec);
 }
