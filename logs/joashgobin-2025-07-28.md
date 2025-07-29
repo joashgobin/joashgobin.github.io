@@ -6,3 +6,4 @@
 - Increased heading letter spacing
 - Restored font weight for headings
 - Added more content
+- Fix
