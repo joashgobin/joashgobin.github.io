@@ -1,0 +1,36 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.flex .right {
+    justify-content: flex-end;
+}
+
+.flex .left {
+    justify-content: flex-start;
+}
+
+.grid {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+    gap: 0.5rem;
+}
+
+.flow>*+* {
+    margin-top: var(--flow-space, 1em);
+}
+
+.center {
+    text-align: center;
+}
