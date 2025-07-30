@@ -12,3 +12,4 @@
 - Tweak
 - Added dark theme
 - Commented out dark theme code
+- Increased button padding
