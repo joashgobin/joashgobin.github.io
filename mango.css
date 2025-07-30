@@ -98,7 +98,7 @@ section {
 
 img {
     max-width: 100%;
-    transition: 200ms;
+    transition: 400ms;
     transform: translateX(0);
 }
 
