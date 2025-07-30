@@ -98,6 +98,16 @@ section {
 
 img {
     max-width: 100%;
+    transition: 200ms;
+    transform: translateX(0);
+}
+
+html.is-animating img {
+    transform: translateX(6rem);
+}
+
+html.is-leaving img {
+    transform: translateX(6rem);
 }
 
 footer {

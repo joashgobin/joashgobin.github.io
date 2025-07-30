@@ -25,3 +25,4 @@
 - Added swup js
 - Changed transition interval
 - Added swup to about page
+- Added some more transitions for swup

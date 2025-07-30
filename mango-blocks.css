@@ -3,6 +3,11 @@
     padding: 1rem;
     margin-bottom: 0.2rem;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    transition: 240ms;
+}
+
+.card:nth-child(even) {
+    transition: 340ms;
 }
 
 .card.no-pad {
@@ -43,10 +48,10 @@ html.is-animating .transition-main {
     opacity: 0;
 }
 
-html.is-animating .button {
+html.is-animating :is(.button, .card) {
     transform: translateY(6rem);
 }
 
-html.is-leaving .button {
+html.is-leaving :is(.button, .card) {
     transform: translateY(6rem);
 }
