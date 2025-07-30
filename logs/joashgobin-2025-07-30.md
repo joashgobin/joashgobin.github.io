@@ -10,3 +10,4 @@
 - Updated section vertical padding
 - Removed header bottom margin
 - Tweak
+- Added dark theme

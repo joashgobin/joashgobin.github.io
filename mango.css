@@ -7,6 +7,14 @@
     --accent: rgb(174, 71, 71);
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --prim: #000000;
+        --sec: rgb(54, 139, 80);
+        --accent: hsl(180, 32%, 50%);
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -82,6 +90,6 @@ section {
     padding: 2rem 0;
 }
 
-img{
+img {
     max-width: 100%;
 }
