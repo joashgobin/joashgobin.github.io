@@ -7,3 +7,4 @@
 - Added some more gap utils
 - Changed button box shadow color
 - Changed wording
+- Updated section vertical padding
