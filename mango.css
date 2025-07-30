@@ -7,6 +7,7 @@
     --accent: rgb(174, 71, 71);
 }
 
+/*
 @media (prefers-color-scheme: dark) {
     :root {
         --prim: #000000;
@@ -14,6 +15,7 @@
         --accent: hsl(180, 32%, 50%);
     }
 }
+*/
 
 * {
     box-sizing: border-box;
