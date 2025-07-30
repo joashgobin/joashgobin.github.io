@@ -27,4 +27,23 @@
     padding: 1rem;
     margin: 0.2rem;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    transition: 240ms;
+    transform: translateY(0);
+}
+
+html.is-changing .transition-main {
+    transition: opacity 200ms ease-in-out;
+}
+
+html.is-animating .transition-main {
+    opacity: 0;
+}
+
+
+html.is-animating .button {
+    transform: translateY(6rem);
+}
+
+html.is-leaving .button {
+    transform: translateY(6rem);
 }
