@@ -24,3 +24,4 @@
 - Refactored margins and paddings for sections, header and footer
 - Added swup js
 - Changed transition interval
+- Added swup to about page
