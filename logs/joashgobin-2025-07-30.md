@@ -21,3 +21,4 @@
 - Modified heading font sizes
 - Added footer to about page
 - Center about page hero text
+- Refactored margins and paddings for sections, header and footer
