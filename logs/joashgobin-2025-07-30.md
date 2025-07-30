@@ -23,3 +23,4 @@
 - Center about page hero text
 - Refactored margins and paddings for sections, header and footer
 - Added swup js
+- Changed transition interval
