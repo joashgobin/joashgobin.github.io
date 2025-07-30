@@ -8,3 +8,4 @@
 - Changed button box shadow color
 - Changed wording
 - Updated section vertical padding
+- Removed header bottom margin
