@@ -72,6 +72,11 @@ header {
     padding: 0.5rem 1rem;
     margin: 1rem 1rem;
     margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 header nav ul li {
@@ -90,6 +95,8 @@ a {
 main {
     max-width: 45rem;
     justify-self: center;
+    margin-top: 4rem;
+    overflow: hidden;
 }
 
 section {
