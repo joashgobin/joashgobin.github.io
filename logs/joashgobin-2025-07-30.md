@@ -14,3 +14,4 @@
 - Commented out dark theme code
 - Increased button padding
 - Added a footer section
+- Added border to img

@@ -30,6 +30,10 @@
     border: 1px solid var(--sec);
 }
 
+.oa {
+    border: 1px solid var(--accent);
+}
+
 .round {
     border-radius: 1rem;
 }
