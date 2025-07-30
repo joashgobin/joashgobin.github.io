@@ -4,3 +4,4 @@
 - Rewrote content for home page
 - Edited header
 - Modified some utility classes
+- Added some more gap utils
