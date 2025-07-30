@@ -31,3 +31,4 @@
 - Slower even cards
 - Tweak
 - Set min height for main to 100vh
+- Added some href slashes
