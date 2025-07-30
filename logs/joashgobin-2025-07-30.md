@@ -2,3 +2,4 @@
 
 - Changed secondary color
 - Rewrote content for home page
+- Edited header
