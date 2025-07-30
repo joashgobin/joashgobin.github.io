@@ -3,3 +3,4 @@
 - Changed secondary color
 - Rewrote content for home page
 - Edited header
+- Modified some utility classes

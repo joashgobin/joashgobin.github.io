@@ -33,3 +33,7 @@
 .round {
     border-radius: 1rem;
 }
+
+.pad {
+    padding: 1rem;
+}

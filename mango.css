@@ -4,7 +4,7 @@
     --body-font: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     --prim: white;
     --sec: #457570;
-    --accent: royalblue;
+    --accent: rgb(174, 71, 71);
 }
 
 * {
@@ -57,7 +57,7 @@ p {
 }
 
 header {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     padding: 0.5rem 1rem;
 }
 
