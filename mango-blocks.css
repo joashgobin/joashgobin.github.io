@@ -7,7 +7,7 @@
 }
 
 .card:nth-child(even) {
-    transition: 340ms;
+    transition: 390ms;
 }
 
 .card.no-pad {

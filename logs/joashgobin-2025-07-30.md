@@ -28,3 +28,4 @@
 - Added some more transitions for swup
 - Slower image transitions
 - Fixed header
+- Slower even cards
