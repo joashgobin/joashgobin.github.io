@@ -17,3 +17,4 @@
 - Added border to img
 - Added some new utils and new photos
 - Tweak
+- Added no-pad switch for card block
