@@ -34,6 +34,18 @@
     border: 1px solid var(--accent);
 }
 
+.t-2 {
+    border-width: 2px;
+}
+
+.t-3 {
+    border-width: 3px;
+}
+
+.t-4 {
+    border-width: 4px;
+}
+
 .round {
     border-radius: 1rem;
 }
