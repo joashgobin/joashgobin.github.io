@@ -20,3 +20,4 @@
 - Added no-pad switch for card block
 - Modified heading font sizes
 - Added footer to about page
+- Center about page hero text
