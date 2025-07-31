@@ -53,3 +53,11 @@
 .pad {
     padding: 1rem;
 }
+
+.tilt-l {
+    transform: rotateZ(-5deg);
+}
+
+.tilt-r {
+    transform: rotateZ(5deg);
+}

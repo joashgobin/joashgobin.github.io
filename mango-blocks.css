@@ -64,16 +64,7 @@ html.is-leaving :is(.button, .card) {
     -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(255, 255, 255, 0.56);
     padding: 1rem;
-    transform: rotateZ(0deg);
     transition: 400ms;
-}
-
-.glass.left {
-    transform: rotateZ(-5deg);
-}
-
-.glass.right {
-    transform: rotateZ(5deg);
 }
 
 html.is-animating :is(.glass) {
