@@ -55,3 +55,27 @@ html.is-animating :is(.button, .card) {
 html.is-leaving :is(.button, .card) {
     transform: translateY(6rem);
 }
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.56);
+    padding: 1rem;
+    transform: rotateZ(-5deg);
+    transition: 400ms;
+}
+
+.glass.right {
+    transform: rotateZ(5deg);
+}
+
+html.is-animating :is(.glass) {
+    transform: translateY(6rem);
+}
+
+html.is-leaving :is(.glass) {
+    transform: translateY(6rem);
+}
