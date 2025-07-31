@@ -32,3 +32,4 @@
 - Tweak
 - Set min height for main to 100vh
 - Added some href slashes
+- Set max height for images
