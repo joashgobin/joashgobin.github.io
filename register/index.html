@@ -24,30 +24,19 @@
     <main id="swup" class="transition-main">
         <section>
             <div class="grid bs cp round pad center">
-                <h1>About Us</h1>
-                <p>Everything about us</p>
-            </div>
-        </section>
-        <section class="bs bg round">
-            <div class="center glass tilt-l cp">
-                <h2>Under the hood</h2>
-                <p>We curated some information for you to feel more confident in your choice</p>
+                <h1>Register for Classes</h1>
+                <p>Fill up the form below to sign up for classes</p>
             </div>
         </section>
         <section>
-            <h2>Quick facts</h2>
-            <p>Here is some short info to get you up to speed:</p>
-            <div class="cols">
-                <div class="card no-pad">
-                    <img src="/static/img/students.jpg" alt="">
-                    <h3>Creation date</h3>
-                    <p>The Mathematics Method started on July 30, 2025</p>
-                </div>
-                <div class="card no-pad">
-                    <img src="/static/img/students.jpg" alt="">
-                    <h3>Expertise</h3>
-                    <p>All of our tutors have performed well at the exams they are tutoring learners to excel at</p>
-                </div>
+            <div class="bs cp round pad">
+                <form action="/register/">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                    <input type="submit" value="Register" class="ba cp card">
+                </form>
             </div>
         </section>
     </main>

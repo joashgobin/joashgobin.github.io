@@ -3,11 +3,11 @@
     padding: 1rem;
     margin-bottom: 0.2rem;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
-    transition: 240ms;
+    transition: transform 240ms;
 }
 
 .card:nth-child(even) {
-    transition: 390ms;
+    transition: transform 390ms;
 }
 
 .card.no-pad {
@@ -32,12 +32,12 @@
     padding: 1rem;
     margin: 0.2rem;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
-    transition: 240ms;
+    transition: transform 240ms;
     transform: translateY(0);
 }
 
 .button:nth-child(even) {
-    transition: 340ms;
+    transition: transform 340ms;
 }
 
 html.is-changing .transition-main {
@@ -64,7 +64,7 @@ html.is-leaving :is(.button, .card) {
     -webkit-backdrop-filter: blur(3px);
     border: 1px solid rgba(255, 255, 255, 0.56);
     padding: 1rem;
-    transition: 400ms;
+    transition: transform 400ms;
 }
 
 html.is-animating :is(.glass) {

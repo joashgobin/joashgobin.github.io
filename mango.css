@@ -94,6 +94,7 @@ a {
 
 main {
     max-width: 45rem;
+    width: 100%;
     min-height: 100vh;
     justify-self: center;
     margin-top: 4rem;
@@ -107,7 +108,7 @@ section {
 img {
     max-width: 100%;
     max-height: 100vh;
-    transition: 400ms;
+    transition: transform 400ms;
     transform: translateX(0);
 }
 
@@ -122,4 +123,37 @@ html.is-leaving img {
 footer {
     padding: 2rem 1rem;
     margin: 0 1rem;
+}
+
+form {
+    display: grid;
+    margin: 0 0.5rem;
+}
+
+label {
+    padding-top: 1rem;
+    text-transform: uppercase;
+    margin-left: 0.75rem;
+    padding-bottom: 0.25rem;
+}
+
+input {
+    border-radius: 1rem;
+    font-size: inherit;
+    padding: 0.75rem;
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 300ms;
+    transform: translateY(0);
+}
+
+html.is-animating input[type="submit"] {
+    transform: translateY(6rem);
+}
+
+html.is-leaving input[type="submit"] {
+    transform: translateY(6rem);
 }

@@ -54,6 +54,10 @@
     padding: 1rem;
 }
 
+.no-pad {
+    padding: 0;
+}
+
 .tilt-l {
     transform: rotateZ(-5deg);
 }
