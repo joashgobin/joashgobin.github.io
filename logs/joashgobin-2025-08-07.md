@@ -4,3 +4,4 @@
 - Added register href to home page button link
 - Increased card no-pad bottom padding
 - Added a README
+- Modified README
