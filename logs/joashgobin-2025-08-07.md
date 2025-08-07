@@ -2,3 +2,4 @@
 
 - Added styling for forms
 - Added register href to home page button link
+- Increased card no-pad bottom padding

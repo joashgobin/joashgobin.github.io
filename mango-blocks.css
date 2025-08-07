@@ -13,7 +13,7 @@
 .card.no-pad {
     padding: 0;
     overflow: hidden;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .card.no-pad>* {
