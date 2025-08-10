@@ -7,7 +7,7 @@
     --accent: rgb(174, 71, 71);
 
     --s0: 1.2rem;
-    --ratio: 1.5;
+    --ratio: 1.4;
     --s1: calc(var(--s0)*var(--ratio));
     --s2: calc(var(--s1)*var(--ratio));
     --s3: calc(var(--s2)*var(--ratio));
