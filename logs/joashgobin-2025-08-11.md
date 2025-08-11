@@ -6,3 +6,4 @@
 - Set max width of main in terms of characters
 - Added guiding principles for Mango CSS
 - Updated README
+- Updated ingo
