@@ -6,7 +6,7 @@
     --sec: #457570;
     --accent: rgb(174, 71, 71);
 
-    --s0: calc(1.1rem + 0.5vw);
+    --s0: calc(1.2rem + 0.2vw);
     --ratio: 1.4;
     --s1: calc(var(--s0)*var(--ratio));
     --s2: calc(var(--s1)*var(--ratio));
