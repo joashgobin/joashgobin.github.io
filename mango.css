@@ -102,7 +102,7 @@ a {
 }
 
 main {
-    max-width: 55rem;
+    max-width: 60ch;
     width: 100%;
     min-height: 100vh;
     justify-self: center;
