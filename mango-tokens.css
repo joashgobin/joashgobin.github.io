@@ -66,6 +66,10 @@
     transform: rotateZ(5deg);
 }
 
-.indent{
+.indent {
     margin-inline-start: 1rem;
+}
+
+.invert {
+    filter: invert(100%);
 }
