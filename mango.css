@@ -18,6 +18,7 @@
     --s-3: calc(var(--s-2)/var(--ratio));
     --s-4: calc(var(--s-3)/var(--ratio));
     --s-5: calc(var(--s-4)/var(--ratio));
+    --measure: 60ch;
 }
 
 /*
@@ -77,6 +78,18 @@ p {
     margin-bottom: 1rem;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+figcaption {
+    max-inline-size: var(--measure);
+}
+
 header {
     padding: 0.5rem 1rem;
     margin: 1rem 1rem;
@@ -102,7 +115,7 @@ a {
 }
 
 main {
-    max-width: 60ch;
+    max-width: var(--measure);
     width: 100%;
     min-height: 100vh;
     justify-self: center;

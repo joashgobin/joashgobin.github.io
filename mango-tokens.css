@@ -65,3 +65,7 @@
 .tilt-r {
     transform: rotateZ(5deg);
 }
+
+.indent{
+    margin-inline-start: 1rem;
+}
