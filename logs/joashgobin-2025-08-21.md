@@ -2,3 +2,4 @@
 
 - Added stack layout
 - Added cluster layout
+- Added link to test page
