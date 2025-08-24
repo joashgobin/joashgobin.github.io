@@ -2,3 +2,4 @@
 
 - Added sidebar layout
 - Added switcher layout
+- Tweaked card colors
