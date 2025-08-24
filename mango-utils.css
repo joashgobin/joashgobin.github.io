@@ -98,6 +98,25 @@
     align-items: end;
 }
 
+.with-sidebar {
+    --gutter: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+}
+
+.with-sidebar> :first-child {
+    flex-basis: 20rem;
+    flex-grow: 1;
+    margin-top: var(--top-gap);
+}
+
+.with-sidebar> :last-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 70%;
+}
+
 /* spacing */
 
 .sm {
