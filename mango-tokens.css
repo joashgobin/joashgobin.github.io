@@ -73,3 +73,15 @@
 .invert {
     filter: invert(100%);
 }
+
+.square {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+}
+
+.rect {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+}
