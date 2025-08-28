@@ -3,3 +3,4 @@
 - Updated styling for forms in the website header
 - Added styling for textarea
 - Textarea inherit font family
+- Updated images
