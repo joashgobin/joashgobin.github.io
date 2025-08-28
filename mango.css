@@ -3,7 +3,7 @@
     ;
     --body-font: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     --prim: white;
-    --sec: rgb(23,131,197);
+    --sec: rgb(23, 131, 197);
     --accent: rgb(19, 90, 138);
 
     --s0: calc(1.2rem + 0.2vw);
@@ -111,7 +111,7 @@ header a {
     padding: 0.5rem;
 }
 
-header form :is(button,input){
+header form :is(button, input) {
     background-color: transparent;
     color: inherit;
     border: none;
@@ -171,8 +171,10 @@ label {
     padding-bottom: 0.25rem;
 }
 
-input {
+input,
+textarea {
     border-radius: 1rem;
+    border: 1px solid grey;
     font-size: inherit;
     padding: 0.75rem;
 }
