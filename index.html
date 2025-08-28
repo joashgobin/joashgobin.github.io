@@ -44,6 +44,15 @@
             </div>
         </section>
         <section>
+                <form method="post" action="/admin/">
+        <input type="hidden" name="csrf" value="{{.csrf}}">
+        <label for="promo-name">Promotion Name</label>
+        <input type="text" name="promo-name" value="">
+        <label for="promo-description">Promotion Description</label>
+        <textarea rows="" cols="" id="promo-description"></textarea>
+        <input type="submit" name="submit" value="Create Promotion">
+    </form>
+
             <h2>What matters to us</h2>
             <p>Here are some of the things we love</p>
             <div class="cols">

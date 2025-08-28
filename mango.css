@@ -176,6 +176,7 @@ textarea {
     border-radius: 1rem;
     border: 1px solid grey;
     font-size: inherit;
+    font-family: inherit;
     padding: 0.75rem;
 }
 
