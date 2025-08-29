@@ -4,3 +4,4 @@
 - Added styling for textarea
 - Textarea inherit font family
 - Updated images
+- Updated accent colot

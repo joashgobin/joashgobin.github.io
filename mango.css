@@ -4,7 +4,7 @@
     --body-font: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     --prim: white;
     --sec: rgb(23, 131, 197);
-    --accent: rgb(19, 90, 138);
+    --accent: hsl(0, 76%, 46%);
 
     --s0: calc(1.2rem + 0.2vw);
     --ratio: 1.3;
