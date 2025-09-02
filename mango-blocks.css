@@ -74,3 +74,16 @@ html.is-animating :is(.glass) {
 html.is-leaving :is(.glass) {
     transform: translateY(6rem);
 }
+
+.img-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url('/static/img/bg.svg');
+    background-size: 120px;
+    filter: blur(4px) brightness(30%);
+    z-index: -100;
+    opacity: 0.1;
+}
