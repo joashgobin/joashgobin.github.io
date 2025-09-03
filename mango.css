@@ -177,6 +177,8 @@ textarea {
     font-size: inherit;
     font-family: inherit;
     padding: 0.75rem;
+    max-width: 100%;
+    min-width: 0;
 }
 
 input[type="submit"] {
