@@ -2,3 +2,4 @@
 
 - Set min width for inputs
 - Added new class
+- Tweak
