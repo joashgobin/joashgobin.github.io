@@ -85,3 +85,7 @@
     object-fit: cover;
     width: 100%;
 }
+
+.no-dec{
+    text-decoration: none;
+}
