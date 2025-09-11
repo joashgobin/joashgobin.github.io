@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="/mango-utils.css">
     <link rel="stylesheet" href="/mango-tokens.css">
     <link rel="stylesheet" href="/mango-blocks.css">
+    <style>
+        .wheel {
+            background-color: green;
+            height: 50vh;
+            width: 100%;
+            z-index: 500;
+        }
+
+        .segment {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: red;
+            width: 8rem;
+            height: 8rem;
+            clip-path: polygon(25% 0%, 100% 51%, 100% 50%, 25% 100%, 0% 50%);
+        }
+    </style>
 </head>
 
 <body class="bp cs">
@@ -26,7 +45,28 @@
             <div class="grid bs cp round pad center">
                 <h1>Promotions</h1>
                 <p>Here are the promotions we are currently running!</p>
+                <div class="wheel">
+                    <div class="segment">1</div>
+                    <div class="segment">2</div>
+                    <div class="segment">3</div>
+                    <div class="segment">4</div>
+                    <div class="segment">5</div>
+                    <div class="segment">6</div>
+                    <div class="segment">7</div>
+                </div>
             </div>
+            <script>
+                const wheel = document.querySelector('.wheel');
+                const children = wheel.querySelectorAll('*');
+                var angle = 0;
+                children.forEach(child => {
+                    child.style.transform = `rotateZ(${angle}deg) translateX(-4rem)`;
+                    child.style.backgroundColor = `hsl(${angle}deg,90%,50%)`;
+                    child.style.zIndex = Math.floor(angle);
+                    child.style.height = '5rem';
+                    angle += 360 / children.length;
+                });
+            </script>
         </section>
         <section>
             <div class="cluster xl">
