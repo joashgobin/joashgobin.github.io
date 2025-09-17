@@ -29,7 +29,9 @@
 
 .grid {
     --space: 0.5rem;
+    --width: calc(var(--measure)/3);
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--width), 1fr));
     gap: var(--space);
     align-content: center;
 }
@@ -150,7 +152,7 @@
     margin-block: 1rem;
 }
 
-.cover> .emph {
+.cover>.emph {
     margin-block: auto;
 }
 
