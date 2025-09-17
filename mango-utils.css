@@ -29,11 +29,16 @@
 
 .grid {
     --space: 0.5rem;
-    --width: calc(var(--measure)/3);
+    --minimum: calc(var(--measure)/3);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--width), 1fr));
     gap: var(--space);
     align-content: center;
+}
+
+@supports (width: min(var(--minimum), 100%)) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(var(--minimum), 100%), 1fr));
+    }
 }
 
 .cols {
