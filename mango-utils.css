@@ -35,12 +35,17 @@
     align-content: center;
 }
 
+.grid.split {
+    --minimum: calc(var(--measure)/5);
+}
+
 @supports (width: min(var(--minimum), 100%)) {
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(min(var(--minimum), 100%), 1fr));
     }
 }
 
+/* alias for grid */
 .cols {
     --space: 0.5rem;
     display: grid;

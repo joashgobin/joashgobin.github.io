@@ -18,6 +18,10 @@
     background-color: var(--accent);
 }
 
+.bm {
+    background-color: color-mix(in hsl, var(--sec) 30%, white);
+}
+
 .ca {
     color: var(--accent);
 }
@@ -48,6 +52,10 @@
 
 .round {
     border-radius: 1rem;
+}
+
+.margin {
+    margin: 1rem;
 }
 
 .pad {
@@ -88,4 +96,8 @@
 
 .no-dec {
     text-decoration: none;
+}
+
+.contain {
+    object-fit: contain;
 }
