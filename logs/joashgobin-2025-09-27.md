@@ -2,3 +2,4 @@
 
 - Testing a e-commerce layout
 - Added some more sections
+- Added color mute token

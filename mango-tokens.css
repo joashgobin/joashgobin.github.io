@@ -18,6 +18,10 @@
     background-color: var(--accent);
 }
 
+.cm {
+    color: color-mix(in hsl, var(--sec) 30%, white);
+}
+
 .bm {
     background-color: color-mix(in hsl, var(--sec) 30%, white);
 }
