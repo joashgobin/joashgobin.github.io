@@ -41,6 +41,8 @@
 body {
     font-family: var(--body-font);
     font-size: var(--s0);
+    color: var(--sec);
+    background-color: var(--prim);
 }
 
 
@@ -93,7 +95,7 @@ figcaption {
 
 header {
     padding: 0.5rem 1rem;
-    margin:0;
+    margin: 0;
     margin-bottom: 0;
     position: fixed;
     top: 0;
