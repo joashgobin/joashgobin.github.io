@@ -95,7 +95,7 @@ figcaption {
 
 header {
     padding: 0.5rem 1rem;
-    margin:0;
+    margin: 0;
     margin-bottom: 0;
     position: fixed;
     top: 0;
@@ -176,6 +176,10 @@ label {
     padding-bottom: 0.25rem;
 }
 
+textarea {
+    field-sizing: content;
+}
+
 input,
 textarea {
     border-radius: 1rem;
@@ -200,4 +204,10 @@ html.is-animating input[type="submit"] {
 
 html.is-leaving input[type="submit"] {
     transform: translateY(6rem);
+}
+
+strong,
+em {
+    hyphens: auto;
+    word-break: break-all;
 }
