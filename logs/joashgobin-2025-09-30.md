@@ -3,3 +3,4 @@
 - Modified the top-bottom margins for paragraphs and headings
 - Edit textarea styling
 - Updated text
+- Reduced ratio to 1.2
