@@ -6,7 +6,7 @@
     --accent: hsl(0, 44%, 50%);
 
     --s0: calc(1.2rem + 0.2vw);
-    --ratio: 1.2;
+    --ratio: 1.25;
     --s1: calc(var(--s0)*var(--ratio));
     --s2: calc(var(--s1)*var(--ratio));
     --s3: calc(var(--s2)*var(--ratio));
