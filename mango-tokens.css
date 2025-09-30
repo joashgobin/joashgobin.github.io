@@ -105,3 +105,8 @@
 .contain {
     object-fit: contain;
 }
+
+.wrap {
+    hyphens: auto;
+    word-break: break-all;
+}

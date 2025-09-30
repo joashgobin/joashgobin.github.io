@@ -205,9 +205,3 @@ html.is-animating input[type="submit"] {
 html.is-leaving input[type="submit"] {
     transform: translateY(6rem);
 }
-
-strong,
-em {
-    hyphens: auto;
-    word-break: break-all;
-}
