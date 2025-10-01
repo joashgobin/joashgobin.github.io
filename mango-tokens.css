@@ -26,6 +26,10 @@
     background-color: color-mix(in hsl, var(--sec) 30%, white);
 }
 
+.om {
+    border: 1px solid color-mix(in hsl, var(--sec) 30%, white);
+}
+
 .ca {
     color: var(--accent);
 }
