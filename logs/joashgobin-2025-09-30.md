@@ -5,3 +5,4 @@
 - Updated text
 - Reduced ratio to 1.2
 - Set ratio to 1.25
+- Reduced section padding
