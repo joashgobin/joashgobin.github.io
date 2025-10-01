@@ -30,6 +30,18 @@
     color: var(--accent);
 }
 
+.bb {
+    background-color: var(--black);
+}
+
+.cb {
+    color: var(--black);
+}
+
+.ob {
+    border: 1px solid var(--black);
+}
+
 .op {
     border: 1px solid var(--prim);
 }
