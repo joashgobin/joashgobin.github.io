@@ -206,3 +206,7 @@ html.is-animating input[type="submit"] {
 html.is-leaving input[type="submit"] {
     transform: translateY(6rem);
 }
+
+small {
+    font-size: 1.05rem;
+}

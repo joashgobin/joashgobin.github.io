@@ -5,3 +5,4 @@
 - Updated colors
 - Updated black color
 - Updated black color again
+- Set font size for small elements
