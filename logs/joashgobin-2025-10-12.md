@@ -4,3 +4,4 @@
 - Updated black color
 - Tweak
 - Added highlights and shadows
+- Added highlight to card block
