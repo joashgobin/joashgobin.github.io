@@ -10,3 +10,4 @@
 - Added frame layout
 - Testing more frames
 - Modified shadow variable
+- Added reel layout

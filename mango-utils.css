@@ -191,6 +191,18 @@
     object-fit: cover;
 }
 
+.reel {
+    --space: 1rem;
+    gap: var(--space);
+    display: flex;
+    overflow-x: auto;
+}
+
+.reel>* {
+    min-width: 50%;
+    max-width: 100%;
+}
+
 /* spacing */
 
 .sm {
