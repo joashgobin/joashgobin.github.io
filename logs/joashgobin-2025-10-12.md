@@ -7,3 +7,4 @@
 - Added highlight to card block
 - Fixed shadow
 - Added deep token
+- Added frame layout
