@@ -131,9 +131,9 @@
 
 .switcher {
     --space: 1rem;
+    gap: var(--space);
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space);
     --threshold: 30rem;
 }
 
@@ -175,7 +175,13 @@
 }
 
 .frame {
+    --space: 1rem;
+    gap: var(--space);
     aspect-ratio: 16/9;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .frame>img,
