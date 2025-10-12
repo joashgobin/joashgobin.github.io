@@ -6,3 +6,4 @@
 - Added highlights and shadows
 - Added highlight to card block
 - Fixed shadow
+- Added deep token
