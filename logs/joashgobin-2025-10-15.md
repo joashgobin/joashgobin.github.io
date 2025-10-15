@@ -4,3 +4,4 @@
 - Fixed text muting
 - Placed mute classes at bottom
 - Updated primary color
+- Modified the muting of text
