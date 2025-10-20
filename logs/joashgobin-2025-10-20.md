@@ -4,3 +4,4 @@
 - Added modifiers for stack layout
 - Modified s0 variable
 - Reduced section top-bottom padding
+- Set scroll behaviour to smooth
