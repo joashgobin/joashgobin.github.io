@@ -2,3 +2,4 @@
 
 - Updated margin for paragraphs and headings
 - Added modifiers for stack layout
+- Modified s0 variable
