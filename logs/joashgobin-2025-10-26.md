@@ -2,3 +2,4 @@
 
 - Updated mango sections
 - Updated the home page
+- Updated stack
