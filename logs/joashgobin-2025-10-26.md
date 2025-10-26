@@ -4,3 +4,4 @@
 - Updated the home page
 - Updated stack
 - Updated tokens
+- Updated home page
