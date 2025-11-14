@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/mango.css">
+    <link rel="stylesheet" href="/mango-utils.css">
+    <link rel="stylesheet" href="/mango-tokens.css">
+    <link rel="stylesheet" href="/mango-blocks.css">
 </head>
+
 <body>
-    <iframe src="http://localhost:1313/learn/project-nibblesprouts/" frameborder="0" width="100%"  style="min-height: 100vh;"></iframe>
-    
+    <form action="/user/class/1" method="post" data-swup-form="">
+        <input type="hidden" name="csrf" value="b6a36d18-8e64-42d4-bea8-b2e5aaf9ea4b">
+        <label for="post-type">Post Type</label>
+        <select name="post-type">
+
+            <option value="Reading">Reading</option>
+
+            <option value="Assignment">Assignment</option>
+
+            <option value="Quiz">Quiz</option>
+
+        </select>
+        <label for="class-description">Class Description</label>
+        <input type="text" name="class-description" value="">
+        <input class="bs cp" type="submit" name="submit" value="Create Class">
+    </form>
+    <iframe src="http://localhost:1313/learn/project-nibblesprouts/" frameborder="0" width="100%"
+        style="min-height: 100vh;"></iframe>
+
 </body>
+
 </html>
