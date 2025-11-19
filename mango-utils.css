@@ -109,10 +109,6 @@
     align-items: center;
 }
 
-.cluster>* {
-    align-self: stretch;
-}
-
 .cluster.right {
     justify-content: flex-end;
 }
