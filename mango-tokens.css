@@ -171,6 +171,10 @@
     text-decoration: none;
 }
 
+.full{
+    width: 100%;
+}
+
 .contain {
     object-fit: contain;
 }
