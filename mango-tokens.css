@@ -171,8 +171,12 @@
     text-decoration: none;
 }
 
-.full{
+.full-w{
     width: 100%;
+}
+
+.full-h{
+    height: 100%;
 }
 
 .contain {
