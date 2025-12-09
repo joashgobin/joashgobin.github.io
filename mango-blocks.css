@@ -16,8 +16,8 @@
     padding-bottom: 2rem;
 }
 
-.card.card.no-pad>img{
-    border-radius: 1rem;
+.card.card.no-pad>img {
+    border-radius: 1rem 1rem 0 0;
 }
 
 .card.no-pad>* {
