@@ -106,33 +106,33 @@
 }
 
 .gap_1 {
-    --spacing: 0.1rem;
+    --space: 0.1rem;
 }
 
 .gap_2 {
-    --spacing: 0.2rem;
+    --space: 0.2rem;
 }
 
 .gap_3 {
-    --spacing: 0.3rem;
+    --space: 0.3rem;
 }
 
 .gap_4 {
-    --spacing: 0.4rem;
+    --space: 0.4rem;
 }
 
 .gap-5 {
-    --spacing: 0.5rem;
+    --space: 0.5rem;
 }
 
 .gap {
-    --spacing: 1rem;
+    --space: 1rem;
 }
 
 .gap-2 {
-    --spacing: 2rem;
+    --space: 2rem;
 }
 
 .gap-3 {
-    --spacing: 3rem;
+    --space: 3rem;
 }
