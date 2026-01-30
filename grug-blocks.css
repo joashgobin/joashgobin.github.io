@@ -1,0 +1,9 @@
+.card {
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 1rem;
+}
+
+.card>*{
+    overflow-wrap: break-word;
+}
