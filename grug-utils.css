@@ -29,27 +29,24 @@
 }
 
 .grid {
+    --padding: 0;
     --space: 0.5rem;
     --item-count: 2;
-    --minimum: calc(var(--measure)/(var(--item-count) * 2));
+    --minimum: calc((var(--measure)*0.80 - (2*var(--padding) + (var(--item-count) - 1)*var(--space)))/(var(--item-count)));
+    padding: var(--padding);
     display: grid;
     gap: var(--space);
     align-content: center;
     width: 100%;
 }
 
-.i-3 {
+.fit-3 {
     --item-count: 3;
 }
 
-.i-4 {
+.fit-4 {
     --item-count: 4;
 }
-
-.i-5 {
-    --item-count: 5;
-}
-
 
 @supports (width: min(var(--minimum), 100%)) {
     .grid {

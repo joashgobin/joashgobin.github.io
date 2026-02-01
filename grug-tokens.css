@@ -101,30 +101,42 @@
 }
 
 .pad {
+    --padding: 1rem;
     padding: 1rem;
 }
 
 .pad-2 {
-    padding: 1.5rem;
+    --padding: 2rem;
+    padding: 2rem;
 }
 
 .pad-3 {
-    padding: 2.0rem;
+    --padding: 3rem;
+    padding: 3rem;
 }
 
 .pad-4 {
-    padding: 2.5rem;
+    --padding: 4rem;
+    padding: 4rem;
+}
+
+.pad_1 {
+    --padding: 0.1rem;
+    padding: 0.1rem;
 }
 
 .pad_2 {
+    --padding: 0.2rem;
     padding: 0.2rem;
 }
 
 .pad_4 {
+    --padding: 0.4rem;
     padding: 0.4rem;
 }
 
 .pad_5 {
+    --padding: 0.5rem;
     padding: 0.5rem;
 }
 
