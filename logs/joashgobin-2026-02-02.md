@@ -12,3 +12,4 @@
 - Started manual on Grug CSS
 - Tweak home page
 - Updated section padding
+- Tweak label links

@@ -101,6 +101,10 @@ button {
     border-radius: 0.5rem;
 }
 
+label a {
+    color: inherit;
+}
+
 button {
     --text-color: var(--prim);
     border: none;
