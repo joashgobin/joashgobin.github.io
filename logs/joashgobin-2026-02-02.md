@@ -10,3 +10,4 @@
 - Tweak
 - Updated home page
 - Started manual on Grug CSS
+- Tweak home page
