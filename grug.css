@@ -101,7 +101,7 @@ button {
 }
 
 option {
-    background-color: var(--black);
+    background-color: var(--bg-color);
 }
 
 
