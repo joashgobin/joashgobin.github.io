@@ -266,12 +266,20 @@
     margin-bottom: 1rem;
 }
 
+.floor-2 {
+    margin-bottom: 2rem;
+}
+
 .floor_5 {
     margin-bottom: 0.5rem;
 }
 
 .roof {
     margin-top: 1rem;
+}
+
+.roof-2 {
+    margin-top: 2rem;
 }
 
 .roof_5 {
