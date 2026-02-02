@@ -57,15 +57,18 @@ h2 {
 
 h3 {
     font-size: var(--s3);
+    font-style: italic;
 }
 
 h4,
 h5 {
     font-size: var(--s2);
+    font-style: italic;
 }
 
 h6 {
     font-size: var(--s1);
+    font-style: italic;
 }
 
 section {
