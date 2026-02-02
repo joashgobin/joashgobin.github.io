@@ -13,3 +13,4 @@
 - Tweak home page
 - Updated section padding
 - Tweak label links
+- Remove grid pad
