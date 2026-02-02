@@ -237,19 +237,19 @@
 }
 
 .darken {
-    background-color: hsl(from var(--bg-color) h s l / 0.85);
+    background-color: hsl(from var(--bg-color) h s l / 0.5);
     background-blend-mode: darken;
     background-size: cover;
 }
 
 .darken-2 {
-    background-color: hsl(from var(--bg-color) h s l / 0.9);
+    background-color: hsl(from var(--bg-color) h s l / 0.65);
     background-blend-mode: darken;
     background-size: cover;
 }
 
 .darken-3 {
-    background-color: hsl(from var(--bg-color) h s l / 0.95);
+    background-color: hsl(from var(--bg-color) h s l / 0.8);
     background-blend-mode: darken;
     background-size: cover;
 }

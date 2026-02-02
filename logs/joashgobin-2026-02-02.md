@@ -9,3 +9,4 @@
 - Updated home page
 - Tweak
 - Updated home page
+- Started manual on Grug CSS
