@@ -3,3 +3,4 @@
 - Make lower headings italic
 - Updated heading font weights
 - Changed ratio
+- Added some tokens

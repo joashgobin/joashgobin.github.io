@@ -29,10 +29,10 @@
 }
 
 .grid {
-    --padding: 0;
+    --padding: 0.5rem;
     --space: 0.5rem;
     --item-count: 2;
-    --minimum: calc((var(--measure)*0.80 - (2*var(--padding) + (var(--item-count) - 1)*var(--space)))/(var(--item-count)));
+    --minimum: calc((var(--measure)*0.70 - (2*var(--padding) + (var(--item-count) - 1)*var(--space)))/(var(--item-count)));
     padding: var(--padding);
     display: grid;
     gap: var(--space);

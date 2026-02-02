@@ -80,20 +80,28 @@
     border-width: 4px;
 }
 
+.sharp {
+    border-radius: 0;
+}
+
 .round {
     border-radius: 1rem;
 }
 
+.round_5 {
+    border-radius: 0.5rem;
+}
+
 .round-2 {
-    border-radius: 1.5rem;
+    border-radius: 2rem;
 }
 
 .round-3 {
-    border-radius: 2.0rem;
+    border-radius: 3rem;
 }
 
 .round-4 {
-    border-radius: 2.5rem;
+    border-radius: 4rem;
 }
 
 .margin {
@@ -248,4 +256,20 @@
 
 .grad {
     background-image: linear-gradient(to bottom, var(--black) 80%, hsl(from var(--bg-color) h s l / 0.2));
+}
+
+.floor {
+    margin-bottom: 1rem;
+}
+
+.floor_5 {
+    margin-bottom: 0.5rem;
+}
+
+.roof {
+    margin-top: 1rem;
+}
+
+.roof_5 {
+    margin-top: 0.5rem;
 }
