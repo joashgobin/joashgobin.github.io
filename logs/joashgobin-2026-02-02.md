@@ -4,3 +4,4 @@
 - Updated heading font weights
 - Changed ratio
 - Added some tokens
+- Added another mute class

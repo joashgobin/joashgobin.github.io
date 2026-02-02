@@ -10,7 +10,7 @@
 
 .button {
     border-radius: 1rem;
-    color: inherit;
+    color: var(--text-color);
     text-decoration: none;
     border: 2px solid var(--text-color);
     padding: 0.5rem 1rem;
