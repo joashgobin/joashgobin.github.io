@@ -14,3 +14,4 @@
 - Updated section padding
 - Tweak label links
 - Remove grid pad
+- Added more content to tutorial page

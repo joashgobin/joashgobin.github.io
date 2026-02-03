@@ -191,11 +191,13 @@
     text-decoration: none;
 }
 
-.full-w {
+.full-w,
+.fw {
     width: 100%;
 }
 
-.full-h {
+.full-h,
+.fh {
     height: 100%;
 }
 
