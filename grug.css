@@ -9,7 +9,7 @@
     --accent: pink;
     --black: #222;
     --measure: 90ch;
-    --s0: calc(1.15rem + 0.2vw);
+    --s0: calc(1.1rem + 0.1vw);
     --ratio: 1.15;
     --s1: calc(var(--s0)*var(--ratio));
     --s2: calc(var(--s1)*var(--ratio));

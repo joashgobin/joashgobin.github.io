@@ -16,3 +16,4 @@
 - Remove grid pad
 - Added more content to tutorial page
 - Removed test section from tutorial page
+- Reduced base font size
