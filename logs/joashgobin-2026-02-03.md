@@ -6,3 +6,4 @@
 - Tweaks
 - Updated main
 - Add swup
+- Added styling for images
