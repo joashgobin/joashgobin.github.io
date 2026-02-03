@@ -17,3 +17,4 @@
 - Added more content to tutorial page
 - Removed test section from tutorial page
 - Reduced base font size
+- Added a normal stack
