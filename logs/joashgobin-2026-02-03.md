@@ -5,3 +5,4 @@
 - Updated tutorial page
 - Tweaks
 - Updated main
+- Add swup
