@@ -1,11 +1,28 @@
 .card {
-    padding: 1rem;
+    --padding: 1rem;
+    padding: var(--padding);
     border: 1px solid grey;
     border-radius: 1rem;
+    overflow: hidden;
 }
 
 .card>* {
     overflow-wrap: break-word;
+}
+
+.card.no-pad {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.card.no-pad>* {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+.card.no-pad>img {
+    padding: 0;
 }
 
 .button {

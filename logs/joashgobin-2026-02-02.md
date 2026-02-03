@@ -15,3 +15,4 @@
 - Tweak label links
 - Remove grid pad
 - Added more content to tutorial page
+- Removed test section from tutorial page
