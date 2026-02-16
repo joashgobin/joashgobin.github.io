@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards</title>
+    <link rel="stylesheet" href="/grug.css">
+    <link rel="stylesheet" href="/grug-utils.css">
+    <link rel="stylesheet" href="/grug-tokens.css">
+    <link rel="stylesheet" href="/grug-blocks.css">
+    <style>
+        :root {
+            print-color-adjust: exact;
+        }
+
+        main {
+            height: 100%;
+            min-height: 100vh;
+            display: grid;
+            align-content: center;
+        }
+
+        .grid.deck {
+            height: 100%;
+            min-height: 100vh;
+            gap: 0.1rem;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .deck .card {
+            height: 30vh;
+            max-height: 30vh;
+            color: #000;
+            border: 1px solid grey;
+            position: relative;
+            align-content: center;
+        }
+
+        .deck .card::before {
+            content: "";
+            min-height: 2rem;
+            min-width: 2rem;
+            color: grey;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background-image: url("https://classcrumbs.com/static/img/logo.png");
+            background-repeat: no-repeat;
+            background-size: 2rem;
+        }
+
+        .deck .card::after{
+            content: "classcrumbs.com";
+            color: grey;
+            position: absolute;
+            bottom: 0.5rem;
+            left: 0.5rem;
+            font-size: 1rem;
+        }
+
+        @media print {
+
+            @page {
+                size: A4 portrait;
+                margin: 0;
+            }
+
+            .page-break {
+                display: block;
+                break-after: page;
+                /* Modern property */
+                /* Older property for compatibility */
+                page-break-after: always;
+            }
+        }
+
+        @media all {
+            .page-break {
+                display: none;
+                /* Hides the div on screen */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="grid deck">
+            <div class="card">
+                <div class="stack center">
+                    <p>What are the 2 methods for solving quadratic equations?</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid deck">
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>What are the 2 methods for solving quadratic equations</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Factorization & Quadratic Formula</h2>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid deck">
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>What are the 2 methods for solving quadratic equations</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="stack center">
+                    <h2>Solving Quadratic Equations</h2>
+                    <p>We can solve quadratic equations using the following methods.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
