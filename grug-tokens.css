@@ -213,7 +213,7 @@
 }
 
 .mute {
-    color: hsl(from var(--text-color) h s l / 0.8);
+    color: hsl(from var(--text-color) h s l / 0.87);
 }
 
 .mute-2 {
@@ -221,11 +221,7 @@
 }
 
 .mute-3 {
-    color: hsl(from var(--text-color) h s l / 0.4);
-}
-
-.mute-4 {
-    color: hsl(from var(--text-color) h s l / 0.2);
+    color: hsl(from var(--text-color) h s l / 0.38);
 }
 
 .darken {
