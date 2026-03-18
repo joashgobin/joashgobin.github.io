@@ -293,3 +293,19 @@
 .bkeep-50 {
     background-color: hsl(from var(--bg-color) h s l / 0.5);
 }
+
+.bkeep-40 {
+    background-color: hsl(from var(--bg-color) h s l / 0.4);
+}
+
+.bkeep-30 {
+    background-color: hsl(from var(--bg-color) h s l / 0.3);
+}
+
+.bkeep-20 {
+    background-color: hsl(from var(--bg-color) h s l / 0.2);
+}
+
+.bkeep-10 {
+    background-color: hsl(from var(--bg-color) h s l / 0.1);
+}
