@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="/grug-utils.css">
     <link rel="stylesheet" href="/grug-tokens.css">
     <link rel="stylesheet" href="/grug-blocks.css">
+    <style>
+        .bar {
+            background-color: hsl(from var(--sec) h s l / 0.3);
+            padding: 1rem;
+        }
+    </style>
 </head>
 
 <body class="bb cp">
@@ -140,6 +146,66 @@
                     <div class="card bs bkeep-20">This is a 20% card</div>
                     <div class="card bs bkeep-10">This is a 10% card</div>
                 </div>
+            </div>
+        </section>
+        <section id="layouts">
+            <div class="stack left">
+                <h2>Examine: Layouts</h2>
+                <p>Here are some layouts achievable using Grug</p>
+                <div class="grid bar gap-2">
+                    <div class="stack left">
+                        <div class="bar">
+                            <h3>Company Slogan</h3>
+                        </div>
+                        <div class="bar">
+                            <p>Tell the user about your company</p>
+                        </div>
+                        <div class="stack bar round"><strong>Cool Action</strong></div>
+                    </div>
+                    <div class="bar"><p class="stack fh">Cool Image</p></div>
+                </div>
+                <div class="grid bar gap-2">
+                    <div class="flex">
+                        <div class="bar round-3">Icon</div>
+                        <div class="bar round-3">Icon</div>
+                        <div class="bar round-3">Icon</div>
+                        <div class="bar round-3">Icon</div>
+                        <div class="bar round-3">Icon</div>
+                    </div>
+                </div>
+                <div class="grid bar gap-2">
+                    <div class="grid fit-5">
+                        <div class="bar stack">Value</div>
+                        <div class="bar stack">Value</div>
+                        <div class="bar stack">Value</div>
+                        <div class="bar stack">Value</div>
+                        <div class="bar stack">Value</div>
+                        <div class="bar stack">Value</div>
+                    </div>
+                    <div class="stack left">
+                        <div class="bar">
+                            <h3>Some Heading</h3>
+                        </div>
+                        <div class="bar">
+                            <p>Some text to go with the heading</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stack bar fw">
+                    <div class="flex">
+                        <div class="stack basis-20 bar">
+                            <div class="bar"><p>This is some cool statement</p></div>
+                            <div class="bar"><p>This is some cool statement</p></div>
+                            <div class="bar"><p>This is some cool statement</p></div>
+                        </div>
+                        <div class="stack basis-50 bar">
+                            <div class="bar"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
+                            <div class="bar"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
+                            <div class="bar"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
+                            <div class="bar"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
+                        </div>
+                    </div>
+                    </div>
             </div>
         </section>
     </main>
