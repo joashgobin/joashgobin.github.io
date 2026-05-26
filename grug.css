@@ -6,7 +6,7 @@
     --system-ui: system-ui, sans-serif;
     --body-font: var(--humanist);
     --heading-font: var(--system-ui);
-    --prim: white;
+    --prim: #e6e6e6;
     --sec: royalblue;
     --accent: pink;
     --black: #222;
