@@ -2,3 +2,4 @@
 
 - Updated prim color
 - Updated black color
+- Updated components
