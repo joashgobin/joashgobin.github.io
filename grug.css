@@ -157,6 +157,13 @@ button {
     max-width: 100%;
 }
 
+input::placeholder,
+label::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: hsl(from var(--text-color) h s l / var(--text-lightness-3));
+}
+
 form {
     max-width: 100%;
 }
