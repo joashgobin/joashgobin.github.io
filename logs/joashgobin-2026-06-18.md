@@ -5,3 +5,4 @@
 - Remove padding and margin from form elements
 - Fixed shadows
 - Styled placeholders for form elements
+- Reduce shadow deep
