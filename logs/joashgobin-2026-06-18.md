@@ -2,3 +2,4 @@
 
 - Updated min width for inputs
 - Max width set
+- Remove padding and margin from form elements
