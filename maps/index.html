@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Tracking Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body { padding: 0; margin: 0; }
+        html, body, #map { height: 100%; width: 100vw; }
+        #info-box {
+            position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+            background: white; padding: 10px 20px; border-radius: 8px; z-index: 1000;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2); font-family: sans-serif; font-size: 14px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+</head>
+<body>
+
+    <div id="map"></div>
+    <div id="info-box">Waiting for GPS signal...</div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <script>
+        // 1. Initialize the map with a temporary world view
+        var map = L.map('map').setView([0, 0], 2);
+        var userMarker, accuracyCircle;
+        var firstLocationBoundsSet = false;
+
+        // 2. Add OpenStreetMap Base Layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        var routingControl = L.Routing.control({
+            waypoints: [
+                L.latLng(6.7998, -58.1498), // Point A: Near Princess St
+                L.latLng(6.8101, -58.1601)  // Point B: Near Regent St
+            ],
+            router: L.Routing.osrmv1({
+                serviceUrl: 'http://localhost:5000/route/v1' // Points to your Docker container
+            }),
+            lineOptions: {
+                styles: [{ color: '#1E90FF', weight: 6, opacity: 0.8 }]
+            },
+            routeWhileDragging: true // Allows users to drag route endpoints interactively
+        }).addTo(map);
+
+        // 3. Success callback function when position is retrieved
+        function onLocationSuccess(position) {
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            var accuracy = position.coords.accuracy; // accuracy radius in meters
+
+            document.getElementById('info-box').innerHTML = `Lat: ${lat.toFixed(5)}, Lng: ${lng.toFixed(5)} (Accurate to ${Math.round(accuracy)}m)`;
+
+            // If marker already exists, just move it. Otherwise, create it.
+            if (userMarker) {
+                userMarker.setLatLng([lat, lng]);
+                accuracyCircle.setLatLng([lat, lng]).setRadius(accuracy);
+            } else {
+                userMarker = L.marker([lat, lng]).addTo(map).bindPopup("You are here").openPopup();
+                accuracyCircle = L.circle([lat, lng], { radius: accuracy, color: '#0078FF', opacity: 0.15 }).addTo(map);
+            }
+
+            // Only snap/zoom the camera view on the initial load so it doesn't fight manual panning
+            if (!firstLocationBoundsSet) {
+                var group = new L.featureGroup([userMarker, accuracyCircle]);
+                map.fitBounds(group.getBounds());
+                firstLocationBoundsSet = true;
+            }
+        }
+
+        // 4. Error handling callback function
+        function onLocationError(error) {
+            var box = document.getElementById('info-box');
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    box.innerHTML = "Error: Location permission denied by user.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    box.innerHTML = "Error: Location information unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    box.innerHTML = "Error: Location request timed out.";
+                    break;
+                default:
+                    box.innerHTML = "An unknown error occurred matching GPS.";
+            }
+        }
+
+        // 5. Active tracking configuration options
+        var geoOptions = {
+            enableHighAccuracy: true, // Forces hardware GPS usage instead of rough IP lookups
+            maximumAge: 0,            // Prevents the browser from caching old location data
+            timeout: 10000            // Give up if it takes longer than 10 seconds
+        };
+
+        // 6. Initiate continuous background watching
+        if ("geolocation" in navigator) {
+            navigator.geolocation.watchPosition(onLocationSuccess, onLocationError, geoOptions);
+        } else {
+            document.getElementById('info-box').innerHTML = "Geolocation is not supported by your browser.";
+        }
+    </script>
+</body>
+</html>
