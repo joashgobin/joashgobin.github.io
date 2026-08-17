@@ -9,3 +9,4 @@
 - Updated colors
 - Updated header
 - Updated images
+- Fix warning
