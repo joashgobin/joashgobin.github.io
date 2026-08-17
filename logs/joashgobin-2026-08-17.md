@@ -3,3 +3,4 @@
 - Updated reel util and added ecommerce template
 - Updated font to outfit
 - Updated color scheme
+- Updated layout
