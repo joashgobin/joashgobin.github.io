@@ -13,9 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..400&display=swap"
         rel="stylesheet">
     <style>
+        :root{
+            --prim: white;
+            --black: #222;
+            --sec: forestgreen;
+            --accent: crimson;
+        }
+
         .tall {
             aspect-ratio: 9/16;
             object-fit: cover;
@@ -31,7 +38,7 @@
         }
 
 
-        h1,h2,h3,h4,h5,h6{
+        h1,h2,h3,h4,h5,h6,strong{
             font-weight: normal;
         }
 
@@ -42,7 +49,7 @@
 </head>
 
 <body>
-    <header class="fixed flex left pad_5 bb cp">
+    <header class="fixed flex left pad_5 shadow bp">
         <a href="#" class="grow"><img src="/static/img/dave-logo.png" style="max-height: 2.5rem;" alt="Dave's Logo"></a>
         <nav>
             <ul class="flex gap_2 right">
@@ -56,7 +63,7 @@
         <section class="">
             <div class="stack left">
                 <h1 class="cb">Caribbean home essentials at every price</h1>
-                <div class="reel fw ba pad round">
+                <div class="reel fw bs bkeep-50 pad_5 round">
                     <img class="tall round" src="https://picsum.photos/seed/book/600/600" alt="">
                     <img class="tall round" src="https://picsum.photos/seed/book/600/600" alt="">
                     <img class="tall round" src="https://picsum.photos/seed/book/600/600" alt="">
@@ -64,6 +71,7 @@
                     <img class="tall round" src="https://picsum.photos/seed/book/600/600" alt="">
                     <img class="tall round" src="https://picsum.photos/seed/book/600/600" alt="">
                 </div>
+                <div class="stack center"><a href="#" class="no-dec ba round-2 pad cp">See full catalogue</a></div>
             </div>
         </section>
         <section class="darken-70 bs" style="background-image: url('https://picsum.photos/seed/go/600/600');">
