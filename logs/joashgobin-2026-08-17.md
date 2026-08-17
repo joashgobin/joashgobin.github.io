@@ -7,3 +7,4 @@
 - Updated product images
 - Added other item
 - Updated colors
+- Updated header
