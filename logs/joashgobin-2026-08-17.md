@@ -6,3 +6,4 @@
 - Updated layout
 - Updated product images
 - Added other item
+- Updated colors
