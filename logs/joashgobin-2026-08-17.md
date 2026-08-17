@@ -4,3 +4,4 @@
 - Updated font to outfit
 - Updated color scheme
 - Updated layout
+- Updated product images
