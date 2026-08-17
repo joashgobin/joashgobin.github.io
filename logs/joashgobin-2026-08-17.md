@@ -1,3 +1,4 @@
 # Monday (August 17, 2026)
 
 - Updated reel util and added ecommerce template
+- Updated font to outfit

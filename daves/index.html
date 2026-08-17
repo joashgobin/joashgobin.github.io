@@ -9,18 +9,50 @@
     <link rel="stylesheet" href="/grug-utils.css">
     <link rel="stylesheet" href="/grug-tokens.css">
     <link rel="stylesheet" href="/grug-blocks.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
     <style>
         .tall {
             aspect-ratio: 9/16;
             object-fit: cover;
             max-height: 30vh;
         }
+
+        @font-face {
+            font-family: 'BDO';
+            src: url("/static/fonts/BDOGrotesk-Regular.woff2") format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+
+        h1,h2,h3,h4,h5,h6{
+            font-weight: normal;
+        }
+
+        body * {
+            font-family: "Outfit", sans-serif;
+        }
     </style>
 </head>
 
 <body>
-    <header></header>
+    <header class="fixed flex left pad_5 bb cp">
+        <a href="#" class="grow"><img src="/static/img/dave-logo.png" style="max-height: 2.5rem;" alt="Dave's Logo"></a>
+        <nav>
+            <ul class="flex gap_2 right">
+                <li><a href="#"><em>Products</em></a></li>
+                <li><a href="#"><em>About</em></a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
+        <div class="pad-2"></div>
         <section class="">
             <div class="stack left">
                 <h1 class="cb">Caribbean home essentials at every price</h1>
@@ -65,6 +97,17 @@
             </div>
         </section>
     </main>
+    <footer class="grid fit-3 fill pad-3 bb cp">
+        <div class="stack left">
+            <strong>Dave Guyana Fish and Grovery Market</strong>
+            <p>118-08 Liberty Ave, New York, 11419</p>
+        </div>
+        <div class="stack left">
+            <strong>The Caribbean Market</strong>
+            <p>7505 New Hampshire Ave, Takoma Park, MD, 20912</p>
+        </div>
+        <div class="stack left"></div>
+    </footer>
 </body>
 
 </html>
