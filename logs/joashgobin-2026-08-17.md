@@ -8,3 +8,4 @@
 - Added other item
 - Updated colors
 - Updated header
+- Updated images
