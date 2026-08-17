@@ -5,3 +5,4 @@
 - Updated color scheme
 - Updated layout
 - Updated product images
+- Added other item
