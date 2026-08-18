@@ -17,3 +17,4 @@
 - Updated the image display in reel
 - Updated style
 - Added graphic
+- Updated footer
