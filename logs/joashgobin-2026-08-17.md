@@ -14,3 +14,4 @@
 - Added login section
 - Updated the home page
 - Import one font weight
+- Updated the image display in reel

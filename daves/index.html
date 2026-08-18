@@ -21,8 +21,15 @@
             --accent: forestgreen;
         }
 
-        .tall {
+        .tile {
             aspect-ratio: 9/16;
+            display: flex;
+            flex-direction: column;
+            min-height: 35vh;
+        }
+
+        .tall {
+            flex-grow: 1;
             object-fit: cover;
             max-height: 45vh;
         }
@@ -69,16 +76,34 @@
             <div class="stack left">
                 <h1 class="">Caribbean home essentials at every price</h1>
                 <div class="reel fw bs bkeep-50 pad_5 round">
-                    <img class="tall round" src="/static/img/daves/dave-ackee.jpg" alt="">
-                    <img class="tall round" src="/static/img/daves/dave-channa.jpg" alt="">
-                    <img class="tall round" src="/static/img/daves/dave-chowmein.jpg" alt="">
-                    <img class="tall round" src="/static/img/daves/dave-fruit-mix.jpg" alt="">
-                    <img class="tall round" src="/static/img/daves/dave-garam.jpg" alt="">
-                    <img class="tall round" src="/static/img/daves/dave-icee.jpg" alt="">
-                    <img class="tall round" src="/static/img/daves/dave-rice.jpg" alt="">
-                    <img class="tall round" src="/static/img/daves/dave-sauce.jpg" alt="">
-                    <img class="tall round" src="/static/img/daves/dave-sugar.jpg" alt="">
-                    <img class="tall round" src="/static/img/daves/dave-wiri.jpg" alt="">
+                    <div class="stack tile center">
+                        <img class="tall round" src="/static/img/daves/dave-ackee.jpg" alt="">
+                        <small class="cp">Ackee</small>
+                    </div>
+                    <div class="stack tile center">
+                        <img class="tall round" src="/static/img/daves/dave-channa.jpg" alt="">
+                        <small class="cp">Split Channa</small>
+                    </div>
+                    <div class="stack tile center">
+                        <img class="tall round" src="/static/img/daves/dave-chowmein.jpg" alt="">
+                        <small class="cp">Split Channa</small>
+                    </div>
+                    <div class="stack tile center">
+                        <img class="tall round" src="/static/img/daves/dave-fruit-mix.jpg" alt="">
+                        <small class="cp">Split Channa</small>
+                    </div>
+                    <div class="stack tile center">
+                        <img class="tall round" src="/static/img/daves/dave-garam.jpg" alt="">
+                        <small class="cp">Split Channa</small>
+                    </div>
+                    <div class="stack tile center">
+                        <img class="tall round" src="/static/img/daves/dave-icee.jpg" alt="">
+                        <small class="cp">Split Channa</small>
+                    </div>
+                    <div class="stack tile center">
+                        <img class="tall round" src="/static/img/daves/dave-rice.jpg" alt="">
+                        <small class="cp">Split Channa</small>
+                    </div>
                 </div>
                 <div class="stack center"><a href="#" class="no-dec ba round-2 pad cp">See full catalogue</a></div>
             </div>
@@ -86,7 +111,7 @@
         <section class="darken-90 bb" style="background-image: url('/static/img/daves/imports.png');">
             <div class="stack">
                 <div class="stack center cp">
-                <h2>Categories</h2>
+                    <h2>Categories</h2>
                 </div>
                 <div class="grid cb pad_5 fit-5 fill">
                     <div class="bp pad">
