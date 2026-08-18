@@ -11,3 +11,4 @@
 - Updated images
 - Fix warning
 - Tweak
+- Added login section
