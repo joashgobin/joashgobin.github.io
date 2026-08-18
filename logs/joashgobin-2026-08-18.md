@@ -5,3 +5,4 @@
 - Updated home page for Dave's
 - Experimenting with gradients
 - More gradient tweaks
+- Updated home page
