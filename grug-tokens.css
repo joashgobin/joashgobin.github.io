@@ -70,7 +70,8 @@
 .grad {
     --from-color: transparent;
     --to-color: transparent;
-    background-image: linear-gradient(to bottom, var(--from-color), var(--to-color));
+    --direction:to bottom;
+    background-image: linear-gradient(var(--direction), var(--from-color), var(--to-color));
 }
 
 .tb {
@@ -105,7 +106,7 @@
     --from-color: var(--accent);
 }
 
-.floating {
+.curtain {
     z-index: 1;
     position: absolute;
     height: 100%;
@@ -116,7 +117,7 @@
     right: 0;
 }
 
-:has(.floating) {
+:has(.curtain) {
     position: relative;
 }
 
