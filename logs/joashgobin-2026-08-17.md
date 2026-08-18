@@ -13,3 +13,4 @@
 - Tweak
 - Added login section
 - Updated the home page
+- Import one font weight
