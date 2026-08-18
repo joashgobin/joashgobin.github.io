@@ -12,3 +12,4 @@
 - Fix warning
 - Tweak
 - Added login section
+- Updated the home page
