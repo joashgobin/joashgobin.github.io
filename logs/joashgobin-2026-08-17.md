@@ -18,3 +18,4 @@
 - Updated style
 - Added graphic
 - Updated footer
+- Updated look
