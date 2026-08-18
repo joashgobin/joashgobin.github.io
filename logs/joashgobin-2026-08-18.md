@@ -9,3 +9,4 @@
 - Added view for products page
 - Added comment
 - Updated contact section
+- Updated spacing
