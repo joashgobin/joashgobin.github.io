@@ -19,3 +19,4 @@
 - Added graphic
 - Updated footer
 - Updated look
+- Round item cards
