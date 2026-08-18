@@ -16,3 +16,4 @@
 - Import one font weight
 - Updated the image display in reel
 - Updated style
+- Added graphic
