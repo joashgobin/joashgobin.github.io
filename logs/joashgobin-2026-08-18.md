@@ -7,3 +7,4 @@
 - More gradient tweaks
 - Updated home page
 - Added view for products page
+- Added comment
