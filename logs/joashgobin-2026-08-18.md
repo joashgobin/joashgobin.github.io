@@ -2,3 +2,4 @@
 
 - Updated grug
 - Changed layout
+- Updated home page for Dave's
