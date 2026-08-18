@@ -16,7 +16,7 @@
     <style>
         :root {
             --prim: white;
-            --black: #333;
+            --black: #222;
             --sec: #DF1F26;
             --accent: #228b22;
         }
@@ -164,6 +164,29 @@
                 </div>
             </div>
         </section>
+        <section class="bb cp">
+            <div class="stack">
+                <div class="grid pad">
+                    <div class="stack">
+                        <h2>Contact Us</h2>
+                        <p>Leave a message and we'll reach out to you</p>
+                    </div>
+                    <div class="stack pad">
+                        <form action="#" class="stack gap">
+                            <div class="stack gap_1">
+                                <label for="name">Name</label>
+                                <input type="text">
+                            </div>
+                            <div class="stack gap_1">
+                                <label for="email">Email</label>
+                                <input type="email">
+                            </div>
+                            <input type="submit" class="bs" value="Submit Message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--Login Page-->
         <section>
             <div class="stack">
@@ -185,17 +208,25 @@
             </div>
         </section>
     </main>
-    <footer class="pad-2 bb cp" style="background-position: 0;background-repeat: none;background-image: url('/static/img/daves/circle-scatter-haikei.svg');">
-        <div class="grid gap-3 fit-3 fill bb bkeep-70 pad">
-        <div class="stack left top">
-            <strong>Dave Guyana Fish and Grocery Market</strong>
-            <p>118-08 Liberty Ave, New York, 11419</p>
-        </div>
-        <div class="stack left top">
-            <strong>The Caribbean Market</strong>
-            <p>7505 New Hampshire Ave, Takoma Park, MD, 20912</p>
-        </div>
-        <div class="stack left top"></div>
+    <footer class="pad bb cp darken-0" style="background-image: url('/static/img/daves/blob-scene-haikei.svg');">
+        <div class="grid gap-3 fit-3 fill bb bkeep-70 pad-2">
+            <div class="stack left top">
+                <img src="/static/img/daves/dave-logo.png" alt="">
+                <strong>Dave's West Indian Imports</strong>
+                <ul style="margin-left: 1rem;">
+                    <li>718 323-1200</li>
+                    <li>718 323-2041</li>
+                    <li>Monday-Friday 9AM-4PM</li>
+                </ul>
+            </div>
+            <div class="stack left top">
+                <strong>Dave Guyana Fish and Grocery Market</strong>
+                <p>118-08 Liberty Ave, New York, 11419</p>
+            </div>
+            <div class="stack left top">
+                <strong>The Caribbean Market</strong>
+                <p>7505 New Hampshire Ave, Takoma Park, MD, 20912</p>
+            </div>
         </div>
     </footer>
 </body>

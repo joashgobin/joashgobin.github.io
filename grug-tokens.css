@@ -241,6 +241,11 @@ p.trim {
     color: hsl(from var(--text-color) h s l / var(--text-lightness-4));
 }
 
+.darken-0 {
+    background-color: transparent;
+    background-size: cover;
+}
+
 .darken-10 {
     background-color: hsl(from var(--bg-color) h s l / 0.1);
     background-blend-mode: darken;
