@@ -20,3 +20,4 @@
 - Updated footer
 - Updated look
 - Round item cards
+- Tweaks
