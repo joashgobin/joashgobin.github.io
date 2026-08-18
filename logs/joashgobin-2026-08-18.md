@@ -6,3 +6,4 @@
 - Experimenting with gradients
 - More gradient tweaks
 - Updated home page
+- Added view for products page
