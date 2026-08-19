@@ -7,3 +7,4 @@
 - Updated the grug home page
 - Updated button
 - Updates
+- Moved mango css into deprecated folder
