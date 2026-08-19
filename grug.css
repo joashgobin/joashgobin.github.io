@@ -12,7 +12,7 @@
     --black: #111111;
     --measure: 75ch;
     --s0: calc(1.1rem + 0.2vw);
-    --ratio: 1.18;
+    --ratio: 1.20;
     --s1: calc(var(--s0)*var(--ratio));
     --s2: calc(var(--s1)*var(--ratio));
     --s3: calc(var(--s2)*var(--ratio));

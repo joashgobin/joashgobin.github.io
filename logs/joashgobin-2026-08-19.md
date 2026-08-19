@@ -9,3 +9,4 @@
 - Updates
 - Moved mango css into deprecated folder
 - Set heading font to geometric humanist
+- Increased ratio
