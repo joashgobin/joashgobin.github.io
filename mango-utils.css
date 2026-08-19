@@ -7,14 +7,6 @@
     justify-content: center;
 }
 
-.flex.column {
-    flex-direction: column;
-}
-
-.flex.column-reverse {
-    flex-direction: column-reverse;
-}
-
 .grow {
     flex-grow: 1;
 }
