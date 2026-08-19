@@ -5,3 +5,4 @@
 - Updated home page
 - Use paragraph text color for list elements as well
 - Updated the grug home page
+- Updated button
