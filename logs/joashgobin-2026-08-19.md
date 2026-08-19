@@ -2,3 +2,4 @@
 
 - Added more patterns
 - Updated home page
+- Updated home page
