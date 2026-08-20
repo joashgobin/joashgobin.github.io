@@ -11,3 +11,4 @@
 - Set heading font to geometric humanist
 - Increased ratio
 - Updated li and ul styling
+- Updated link styling
