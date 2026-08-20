@@ -12,3 +12,4 @@
 - Increased ratio
 - Updated li and ul styling
 - Updated link styling
+- Updated heading transforms
