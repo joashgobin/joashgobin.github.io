@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,64 +11,62 @@
     <link rel="stylesheet" href="/grug-tokens.css">
     <link rel="stylesheet" href="/grug-blocks.css">
     <style>
-        :root{
-            --sec: #117464;
-            --accent: rgb(104, 79, 180);
+        :root {
+            /*--sec: #117464;*/
+            --sec: #0f5134;
+            --accent: rgb(182, 24, 69);
+        }
+
+        .hero{
+            min-height: 50vh;
         }
     </style>
 </head>
-<body>
-    <header class="flex bs cp pad_5 left">
-        <a href="#" class="grow">
-            <strong>BuyInGuyana</strong>
+
+<body class="bs cp">
+    <header class="flex cp pad_5 left fixed">
+        <a href="#" class="grow no-dec">
+            <strong class="bs pad_5 round op">BuyInGuyana</strong>
         </a>
         <nav>
-            <ul class="flex right gap_1">
-                <li><a href="#">Businesses</a></li>
-                <li><a href="#">About</a></li>
+            <ul class="flex right gap_1 cs bp round pad_5">
+                <li><a href="#"><strong><em>Register</em></strong></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="bs cp hero">
             <div class="stack center pad-3">
                 <h1 class="trim">Super Fast Directory</h1>
                 <p class="trim">Your business is Our business</p>
-                <input class="oa t-3 ca" type="text" name="" id="" placeholder="Name or keyword...">
+                <input class="op t-3 cp" type="text" name="" id="" placeholder="Search for business...">
             </div>
         </section>
-        <section class="bs cp">
-            <div class="grid">
-            <div class="stack left">
-                <h2>Why Wait?</h2>
-                <p>Find the businesses you need the instant you need them.</p>
-            </div>
-            <div class="stack">
-                    <img class="rect round-2" src="https://chickenfrybytes.com/img/pepe.jpg" alt="">
-            </div>
-            </div>
-        </section>
-        <section>
+        <section class="bb cp">
             <div class="stack center">
                 <h2>Pricing</h2>
-                <p>A one-time fee is all you pay. We handle the rest.</p>
-                <div class="stack"><strong class="ba cp pad round">Just $20,000 GYD</strong></div>
+                <p>A one-time fee of <strong>$20,000 GYD</strong> is all you pay. We handle the rest.</p>
+                <a href="#" class="stack"><strong class="ba cp pad round">Register Now</strong></a>
             </div>
         </section>
     </main>
     <footer>
-        <div class="grid fit-3 pad-3 bb cp">
+        <div class="grid fit-3 pad-3 bb bkeep-50 cp">
             <div class="stack left">
                 <h3>Contact</h3>
                 <p>Phone: +592 601-9952</p>
             </div>
             <div class="stack left">
                 <h3>Quick Links</h3>
-                <a href="#"><p>Home</p></a>
-                <a href="#"><p>Register</p></a>
-                <a href="#"><p>About</p></a>
+                <a href="#">
+                    <p>Home</p>
+                </a>
+                <a href="#">
+                    <p>Register</p>
+                </a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
