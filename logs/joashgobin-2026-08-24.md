@@ -2,3 +2,4 @@
 
 - Updated gap
 - Updated gap
+- Updated cover
