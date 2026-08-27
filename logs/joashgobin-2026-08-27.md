@@ -2,3 +2,4 @@
 
 - Added more examples
 - Added some two column layouts
+- Updated wording
