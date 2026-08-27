@@ -13,3 +13,4 @@
 - Updated app
 - Updated sections
 - Tweaks
+- Format css

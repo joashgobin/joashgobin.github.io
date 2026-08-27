@@ -220,8 +220,8 @@ code {
     font-size: var(--s1);
 }
 
-blockquote::before{
-    content:"\"";
+blockquote::before {
+    content: "\"";
     font-size: 3rem;
     line-height: 1;
 }
