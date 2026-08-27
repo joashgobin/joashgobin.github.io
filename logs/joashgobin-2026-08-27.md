@@ -10,3 +10,4 @@
 - Updated color scheming of body
 - Tweaks
 - Added another section
+- Updated app
