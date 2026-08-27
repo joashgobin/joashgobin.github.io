@@ -4,3 +4,4 @@
 - Added some two column layouts
 - Updated wording
 - Added more layouts
+- Updated feature section
