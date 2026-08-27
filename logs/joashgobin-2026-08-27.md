@@ -9,3 +9,4 @@
 - Updated styling
 - Updated color scheming of body
 - Tweaks
+- Added another section
