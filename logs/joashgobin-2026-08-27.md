@@ -5,3 +5,4 @@
 - Updated wording
 - Added more layouts
 - Updated feature section
+- Added bento box section
