@@ -11,3 +11,4 @@
 - Tweaks
 - Added another section
 - Updated app
+- Updated sections
