@@ -4,3 +4,4 @@
 - Format html
 - Updated sections
 - Updated s0
+- Added text size section
