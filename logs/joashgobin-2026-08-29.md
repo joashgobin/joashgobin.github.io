@@ -5,3 +5,4 @@
 - Updated sections
 - Updated s0
 - Added text size section
+- Font size tweaks
