@@ -2,3 +2,4 @@
 
 - Added css classes for text gradients
 - Format html
+- Updated sections
