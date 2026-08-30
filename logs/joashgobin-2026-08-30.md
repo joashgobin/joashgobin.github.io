@@ -4,3 +4,4 @@
 - Updated sections
 - Updated sections
 - Updated sections
+- Updated shadow colors
