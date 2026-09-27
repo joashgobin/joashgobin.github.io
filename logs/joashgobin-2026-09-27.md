@@ -2,3 +2,4 @@
 
 - Center images for backgrounds
 - Tweak
+- Updated picture
