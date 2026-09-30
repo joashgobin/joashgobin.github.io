@@ -11,3 +11,4 @@
 - Defined default variables for text color and bg color in body element
 - Updated home page
 - Tweaks
+- Updated images
