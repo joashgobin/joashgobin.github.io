@@ -210,6 +210,11 @@ p.trim {
     padding: 0.2rem;
 }
 
+.pad_3 {
+    --padding: 0.3rem;
+    padding: 0.3rem;
+}
+
 .pad_4 {
     --padding: 0.4rem;
     padding: 0.4rem;
@@ -220,8 +225,9 @@ p.trim {
     padding: 0.5rem;
 }
 
-.no-pad,
-.pad-0 {
+.pad-0,
+.pad_0,
+.no-pad {
     padding: 0;
 }
 

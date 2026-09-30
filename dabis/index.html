@@ -18,15 +18,25 @@
             --accent: #7fac2d;
         }
 
-        h1,h2,h3,h4,h5,h6,strong{
-            font-family: var(--transitional);;
-            font-weight: normal;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        strong {
+            font-family: var(--transitional);
+            ;
         }
 
         .hero {
             min-height: 30vh;
         }
 
+        .action-tile{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
     </style>
 </head>
 
@@ -47,7 +57,7 @@
             <div class="curtain grad to-right fp pad darken-10 bp"></div>
             <div class="stack">
                 <div class="grid fill">
-                    <div class="stack left cs">
+                    <div class="stack left cs gap_1">
                         <small class="upper">Dabi's Kitchen</small>
                         <h1 class="trim">From Our Kitchen to Yours</h1>
                         <strong>Easy recipes. Familiar flavours. Better everyday choices.</strong>
@@ -59,8 +69,31 @@
                 </div>
             </div>
         </section>
-        <img src="/static/img/dabis/reference-1.jpeg" alt="">
-        <img src="/static/img/dabis/reference-2.jpeg" alt="">
+        <section class="pad_5">
+            <div class="stack">
+                <div class="grid fit-3 fill">
+                    <div class="round bs bkeep-10 pad action-tile">
+                        <div class="cp pad ba circle stack">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>
+                        </div>
+                        <div class="stack pad_4 left">
+                            <strong>Call Us</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="stack">
+                <h2>Reference Screenshots</h2>
+                <img src="/static/img/dabis/reference-1.jpeg" alt="">
+                <img src="/static/img/dabis/reference-2.jpeg" alt="">
+            </div>
+        </section>
     </main>
     <footer class="pad bb cp darken-0" style="background-image: url('/static/img/daves/blob-scene-haikei.svg');">
         <div class="grid gap-3 fit-3 bb bkeep-70 pad-2">
