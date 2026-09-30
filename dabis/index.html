@@ -68,6 +68,33 @@
             padding-left: 0;
             padding-right: 0;
         }
+
+        .req {
+            color: crimson;
+        }
+
+        .enquiry-types {
+            line-height: 1.1;
+        }
+
+        .enquiry-types .card {
+            box-shadow: none;
+            border: 1px solid var(--sec);
+        }
+
+        .enquiry-types .icon {
+            max-width: 3rem;
+        }
+
+        .enquiry-types .enquiry {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            place-items: end;
+        }
+
+        .enquiry-types .arrow-right {
+            max-width: 4rem;
+        }
     </style>
 </head>
 
@@ -85,7 +112,7 @@
     <main>
         <div class="pad-4"></div>
         <section class="hero darken-10" style="background-image: url('/static/img/dabis/hero.png');">
-            <div class="curtain full-grad slant to-right fp pad"></div>
+            <div class="curtain full-grad slant fp pad"></div>
             <div class="stack">
                 <div class="grid fill">
                     <div class="stack left cs gap_1 hero-text">
@@ -155,32 +182,170 @@
             </div>
         </section>
         <section>
-            <div class="stack">
-                <div class="grid fill">
-                    <div class="stack left top">
-                        <form action="#">
-                            <div class="grid fit-5 pad">
+            <div class="stack fw">
+                <div class="grid gap-2 fw fill">
+                    <div class="stack fw left top">
+                        <form action="#" class="fw">
+                            <div class="grid fit-5">
                                 <div class="stack left bottom">
-                                    <label for="full-name">Full Name</label>
+                                    <label for="full-name">Full Name <span class="req">*</span></label>
                                     <input type="text" name="full-name" id="full-name">
                                 </div>
                                 <div class="stack left bottom">
-                                    <label for="email">Email Address</label>
+                                    <label for="email">Email Address <span class="req">*</span></label>
                                     <input type="email" name="email" id="full-name">
                                 </div>
                             </div>
-                            <div class="grid fit-5 pad">
+                            <div class="grid fit-5">
                                 <div class="stack left bottom">
-                                    <label for="full-name">Full Name</label>
+                                    <label for="full-name">Full Name <span class="req">*</span></label>
                                     <input type="text" name="full-name" id="full-name">
                                 </div>
                                 <div class="stack left bottom">
-                                    <label for="email">Email Address</label>
+                                    <label for="email">Email Address <span class="req">*</span></label>
                                     <input type="email" name="email" id="full-name">
                                 </div>
                             </div>
-                            <input type="submit" class="bs cp round-3" value="Send Message">
+                            <div class="stack">
+                                <input type="submit" class="bs cp round-3" value="Send Message">
+                            </div>
                         </form>
+                    </div>
+                    <div class="stack left enquiry-types cs">
+                        <div class="grid fill fit-4 lb round pad">
+                            <div class="card stack left bottom enquiry darken-50 bb"
+                                style="background-image: url('/static/img/dabis/reference-1.jpeg');">
+                                <div class="curtain full-grad fp slant"></div>
+                                <div class="stack left pad_2">
+                                    <div class="cp bs pad_5 circle stack icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                        </svg>
+                                    </div>
+                                    <strong>General Enquiry</strong>
+                                    <small>Have a question about Dabi's, our products or our services?</small>
+                                </div>
+                                <div class="cs pad_5 circle stack arrow-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card stack left bottom enquiry darken-50 bb"
+                                style="background-image: url('/static/img/dabis/reference-1.jpeg');">
+                                <div class="curtain full-grad fp slant"></div>
+                                <div class="stack left pad_2">
+                                    <div class="cp bs pad_5 circle stack icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                        </svg>
+                                    </div>
+                                    <strong>General Enquiry</strong>
+                                    <small>Have a question about Dabi's, our products or our services?</small>
+                                </div>
+                                <div class="cs pad_5 circle stack arrow-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card stack left bottom enquiry darken-50 bb"
+                                style="background-image: url('/static/img/dabis/reference-1.jpeg');">
+                                <div class="curtain full-grad fp slant"></div>
+                                <div class="stack left pad_2">
+                                    <div class="cp bs pad_5 circle stack icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                        </svg>
+                                    </div>
+                                    <strong>General Enquiry</strong>
+                                    <small>Have a question about Dabi's, our products or our services?</small>
+                                </div>
+                                <div class="cs pad_5 circle stack arrow-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card stack left bottom enquiry darken-50 bb"
+                                style="background-image: url('/static/img/dabis/reference-1.jpeg');">
+                                <div class="curtain full-grad fp slant"></div>
+                                <div class="stack left pad_2">
+                                    <div class="cp bs pad_5 circle stack icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                        </svg>
+                                    </div>
+                                    <strong>General Enquiry</strong>
+                                    <small>Have a question about Dabi's, our products or our services?</small>
+                                </div>
+                                <div class="cs pad_5 circle stack arrow-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card stack left bottom enquiry darken-50 bb"
+                                style="background-image: url('/static/img/dabis/reference-1.jpeg');">
+                                <div class="curtain full-grad fp slant"></div>
+                                <div class="stack left pad_2">
+                                    <div class="cp bs pad_5 circle stack icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                        </svg>
+                                    </div>
+                                    <strong>General Enquiry</strong>
+                                    <small>Have a question about Dabi's, our products or our services?</small>
+                                </div>
+                                <div class="cs pad_5 circle stack arrow-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card stack left bottom enquiry darken-50 bb"
+                                style="background-image: url('/static/img/dabis/reference-1.jpeg');">
+                                <div class="curtain full-grad fp slant"></div>
+                                <div class="stack left pad_2">
+                                    <div class="cp bs pad_5 circle stack icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                        </svg>
+                                    </div>
+                                    <strong>General Enquiry</strong>
+                                    <small>Have a question about Dabi's, our products or our services?</small>
+                                </div>
+                                <div class="cs pad_5 circle stack arrow-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -135,6 +135,10 @@
     position: relative;
 }
 
+.curtain~* {
+    z-index: 10;
+}
+
 .t-2 {
     border-width: 2px;
 }
