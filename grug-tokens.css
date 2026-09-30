@@ -135,7 +135,7 @@
     position: relative;
 }
 
-.curtain~* {
+:has(.curtain) :not(.curtain) {
     z-index: 10;
 }
 
