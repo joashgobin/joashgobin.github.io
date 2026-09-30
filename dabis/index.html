@@ -79,7 +79,6 @@
 
         .enquiry-types .card {
             box-shadow: none;
-            border: 1px solid var(--sec);
         }
 
         .enquiry-types .icon {
@@ -185,35 +184,53 @@
             <div class="stack fw">
                 <div class="grid gap-2 fw fill">
                     <div class="stack fw left top">
-                        <form action="#" class="fw">
+                        <form action="#" class="fw help-form">
                             <div class="grid fit-5">
-                                <div class="stack left bottom">
+                                <div class="stack gap_1 left bottom">
                                     <label for="full-name">Full Name <span class="req">*</span></label>
-                                    <input type="text" name="full-name" id="full-name">
+                                    <input type="text" name="full-name" id="full-name" placeholder="Your name">
                                 </div>
-                                <div class="stack left bottom">
+                                <div class="stack gap_1 left bottom">
                                     <label for="email">Email Address <span class="req">*</span></label>
-                                    <input type="email" name="email" id="full-name">
+                                    <input type="email" name="email" id="email" placeholder="you@example.com">
                                 </div>
                             </div>
                             <div class="grid fit-5">
-                                <div class="stack left bottom">
-                                    <label for="full-name">Full Name <span class="req">*</span></label>
-                                    <input type="text" name="full-name" id="full-name">
+                                <div class="stack gap_1 left bottom">
+                                    <label for="phone-number">Phone Number <span class="req">*</span></label>
+                                    <input type="text" name="phone-number" id="phone-number"
+                                        placeholder="+592 XXX XXXX">
                                 </div>
-                                <div class="stack left bottom">
-                                    <label for="email">Email Address <span class="req">*</span></label>
-                                    <input type="email" name="email" id="full-name">
+                                <div class="stack gap_1 left bottom">
+                                    <label for="topic">I'm contacting Dabi's about... <span class="req">*</span></label>
+                                    <select name="topic" id="">
+                                        <option value="general">General Enquiry</option>
+                                        <option value="natura">Natura</option>
+                                        <option value="miclara">MiClara</option>
+                                        <option value="retail">Retail/Wholesale</option>
+                                        <option value="distribution">Distribution & Partnerships</option>
+                                        <option value="other">Other</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="stack">
+                            <div class="stack gap_1 left bottom">
+                                <label for="subject">Subject <span class="req">*</span></label>
+                                <input type="text" name="subject" id="subject"
+                                    placeholder="Brief subject of your enquiry">
+                            </div>
+                            <div class="stack gap_1 left bottom">
+                                <label for="message">Message <span class="req">*</span></label>
+                                <textarea name="message" id="message" placeholder="Tell us how we can help you...">
+                                </textarea>
+                            </div>
+                            <div class="stack pad-2">
                                 <input type="submit" class="bs cp round-3" value="Send Message">
                             </div>
                         </form>
                     </div>
                     <div class="stack left enquiry-types cs">
                         <div class="grid fill fit-4 lb round pad">
-                            <div class="card stack left bottom enquiry darken-50 bb"
+                            <div class="card stack left bottom enquiry darken-30 bs"
                                 style="background-image: url('/static/img/dabis/reference-1.jpeg');">
                                 <div class="curtain full-grad fp slant"></div>
                                 <div class="stack left pad_2">
@@ -235,7 +252,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="card stack left bottom enquiry darken-50 bb"
+                            <div class="card stack left bottom enquiry darken-30 bs"
                                 style="background-image: url('/static/img/dabis/reference-1.jpeg');">
                                 <div class="curtain full-grad fp slant"></div>
                                 <div class="stack left pad_2">
@@ -257,7 +274,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="card stack left bottom enquiry darken-50 bb"
+                            <div class="card stack left bottom enquiry darken-30 bs"
                                 style="background-image: url('/static/img/dabis/reference-1.jpeg');">
                                 <div class="curtain full-grad fp slant"></div>
                                 <div class="stack left pad_2">
@@ -279,7 +296,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="card stack left bottom enquiry darken-50 bb"
+                            <div class="card stack left bottom enquiry darken-30 bs"
                                 style="background-image: url('/static/img/dabis/reference-1.jpeg');">
                                 <div class="curtain full-grad fp slant"></div>
                                 <div class="stack left pad_2">
@@ -301,7 +318,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="card stack left bottom enquiry darken-50 bb"
+                            <div class="card stack left bottom enquiry darken-30 bs"
                                 style="background-image: url('/static/img/dabis/reference-1.jpeg');">
                                 <div class="curtain full-grad fp slant"></div>
                                 <div class="stack left pad_2">
@@ -323,7 +340,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="card stack left bottom enquiry darken-50 bb"
+                            <div class="card stack left bottom enquiry darken-30 bs"
                                 style="background-image: url('/static/img/dabis/reference-1.jpeg');">
                                 <div class="curtain full-grad fp slant"></div>
                                 <div class="stack left pad_2">
