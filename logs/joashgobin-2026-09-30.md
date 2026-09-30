@@ -3,3 +3,4 @@
 - Added to grug
 - Added token to change direction of the gradient
 - Standardize gap and pad tokens
+- Updated home page for dabis

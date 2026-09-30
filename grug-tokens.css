@@ -74,6 +74,14 @@
     background-image: linear-gradient(var(--direction), var(--from-color), var(--to-color));
 }
 
+.full-grad {
+    --from-color: transparent;
+    --to-color: transparent;
+    --direction: to bottom;
+    --grad-percent: 50%;
+    background-image: linear-gradient(var(--direction), var(--from-color) var(--grad-percent), var(--to-color));
+}
+
 .to-right {
     --direction: to right;
 }
