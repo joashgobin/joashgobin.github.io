@@ -18,9 +18,15 @@
             --accent: #7fac2d;
         }
 
-        .hero{
+        h1,h2,h3,h4,h5,h6,strong{
+            font-family: var(--transitional);;
+            font-weight: normal;
+        }
+
+        .hero {
             min-height: 30vh;
         }
+
     </style>
 </head>
 
@@ -38,8 +44,19 @@
     <main>
         <div class="pad-4"></div>
         <section class="hero darken-10" style="background-image: url('/static/img/dabis/hero.png');">
+            <div class="curtain grad to-right fp pad darken-10 bp"></div>
             <div class="stack">
-                <small>LET'S TALK</small>
+                <div class="grid fill">
+                    <div class="stack left cs">
+                        <small class="upper">Dabi's Kitchen</small>
+                        <h1 class="trim">From Our Kitchen to Yours</h1>
+                        <strong>Easy recipes. Familiar flavours. Better everyday choices.</strong>
+                        <p>Discover simple meals, family favourites andd delicious ways to cook with our products!</p>
+                        <div class="flex">
+                            <a href="#" class="ba cp round-3 pad no-dec">Explore Recipes</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <img src="/static/img/dabis/reference-1.jpeg" alt="">

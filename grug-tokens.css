@@ -74,6 +74,10 @@
     background-image: linear-gradient(var(--direction), var(--from-color), var(--to-color));
 }
 
+.to-right {
+    --direction: to right;
+}
+
 .tb {
     --to-color: var(--black);
 }
