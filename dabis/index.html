@@ -94,6 +94,26 @@
         .enquiry-types .arrow-right {
             max-width: 4rem;
         }
+
+        .help-form textarea {
+            min-height: 10vh;
+        }
+
+        footer a {
+            font-style: italic;
+        }
+
+        .contacts .tile {
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .contacts .tile .circle {
+            max-width: 1rem;
+            padding: 0 1.5rem;
+        }
     </style>
 </head>
 
@@ -182,7 +202,7 @@
         </section>
         <section>
             <div class="stack fw">
-                <div class="grid gap-2 fw fill">
+                <div class="grid gap-2 fw fill lb round">
                     <div class="stack fw left top">
                         <form action="#" class="fw help-form">
                             <div class="grid fit-5">
@@ -229,7 +249,7 @@
                         </form>
                     </div>
                     <div class="stack left enquiry-types cs">
-                        <div class="grid fill fit-4 lb round pad">
+                        <div class="grid fill fit-4 round pad">
                             <div class="card stack left bottom enquiry darken-30 bs"
                                 style="background-image: url('/static/img/dabis/reference-1.jpeg');">
                                 <div class="curtain full-grad fp slant"></div>
@@ -368,35 +388,106 @@
             </div>
         </section>
         <section>
-            <div class="stack">
-                <h2>Reference Screenshots</h2>
-                <img src="/static/img/dabis/reference-1.jpeg" alt="">
-                <img src="/static/img/dabis/reference-2.jpeg" alt="">
+            <div class="stack cs">
+                <div class="grid fill fit-3 pad gap">
+                    <div class="stack top left gap_1 contacts">
+                        <h2>Our Location</h2>
+                        <p>We're located in the heart of Georgetown at 40 Robb Street, Bourda.</p>
+                        <div class="tile">
+                            <div class="ca pad_5 circle stack">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                                </svg>
+                            </div>
+                            <span class="cs">40 Robb Street, Bourda, Georgetown, Guyana</span>
+                        </div>
+                        <div class="tile">
+                            <div class="ca pad_5 circle stack">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                </svg>
+                            </div>
+                            <span class="cs">+592 231-3224</span>
+                        </div>
+                        <div class="tile">
+                            <div class="ca pad_5 circle stack">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                                </svg>
+                            </div>
+                            <span class="cs">info@dabisvariety.com</span>
+                        </div>
+                    </div>
+                    <div class="stack pad_5 span-2-col">
+                        <img src="/static/img/dabis/map.png" alt="" class="">
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
-    <footer class="pad bb cp darken-0" style="background-image: url('/static/img/daves/blob-scene-haikei.svg');">
-        <div class="grid gap-3 fit-3 bb bkeep-70 pad-2">
-            <div class="stack left top">
-                <img src="/static/img/daves/dave-logo.png" alt="">
-                <strong>Dave's West Indian Imports</strong>
-                <ul>
-                    <li>718 323-1200</li>
-                    <li>718 323-2041</li>
-                    <li>Monday-Friday 9AM-4PM</li>
-                </ul>
+    <footer class="pad-2 bb cp grid fill gap-3 fit-3" style="">
+        <div class="stack left top">
+            <img src="/static/img/dabis/logo.webp" alt="">
+            <p>Supporting a Healthy Lifestyle on a Budget.</p>
+        </div>
+        <div class="stack left top">
+            <strong>Company</strong>
+            <a href="#">About Us</a>
+            <a href="#">Our Brands</a>
+            <a href="#">Products</a>
+            <a href="#">Recipes</a>
+            <a href="#">Where to Buy</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="stack left top">
+            <strong>Brands</strong>
+            <a href="#">Natura</a>
+            <a href="#">MiClara</a>
+        </div>
+        <div class="stack left top">
+            <strong>Product Categories</strong>
+            <a href="#">Health & Wellness</a>
+            <a href="#">Personal Care</a>
+            <a href="#">Food & Nutrition</a>
+            <a href="#">Household Care</a>
+            <a href="#">Laundry Care</a>
+        </div>
+        <div class="stack top left contacts">
+            <div class="tile">
+                <div class="pad_5 circle stack">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                </div>
+                <span class="">40 Robb Street, Bourda, Georgetown, Guyana</span>
             </div>
-            <div class="stack top left">
-                <strong>Quick Links</strong>
-                <a href="#">Home Page</a>
-                <a href="#">View Products</a>
-                <a href="#">Access Account</a>
+            <div class="tile">
+                <div class="pad_5 circle stack">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                </div>
+                <span class="">+592 231-3224</span>
             </div>
-            <div class="stack left top">
-                <strong>Dave Guyana Fish and Grocery Market</strong>
-                <p>118-08 Liberty Ave, New York, 11419</p>
-                <strong>The Caribbean Market</strong>
-                <p>7505 New Hampshire Ave, Takoma Park, MD, 20912</p>
+            <div class="tile">
+                <div class="pad_5 circle stack">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                    </svg>
+                </div>
+                <span class="">info@dabisvariety.com</span>
             </div>
         </div>
     </footer>
