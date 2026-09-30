@@ -559,3 +559,11 @@ p.trim {
 .minw-5 {
     min-width: 25ch;
 }
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
