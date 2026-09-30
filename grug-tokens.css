@@ -131,11 +131,11 @@
     right: 0;
 }
 
-:has(.curtain) {
+*:has(.curtain) {
     position: relative;
 }
 
-:has(.curtain) :not(.curtain) {
+*:has(.curtain)>div:not(.curtain) {
     z-index: 10;
 }
 
