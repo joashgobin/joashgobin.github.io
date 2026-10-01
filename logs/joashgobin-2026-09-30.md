@@ -17,3 +17,4 @@
 - Updated home page
 - Tweak
 - Fix
+- Updated colors
