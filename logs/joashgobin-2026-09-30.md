@@ -20,3 +20,4 @@
 - Updated colors
 - Empty textarea
 - Tweaks
+- Updated the recipe section
