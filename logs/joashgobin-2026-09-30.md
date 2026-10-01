@@ -21,3 +21,4 @@
 - Empty textarea
 - Tweaks
 - Updated the recipe section
+- Fixed header padding
