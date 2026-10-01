@@ -18,3 +18,4 @@
 - Tweak
 - Fix
 - Updated colors
+- Empty textarea
