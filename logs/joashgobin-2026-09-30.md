@@ -14,3 +14,4 @@
 - Updated images
 - Tweaks
 - Fix
+- Updated home page

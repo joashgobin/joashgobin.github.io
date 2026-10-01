@@ -13,7 +13,7 @@
     <style>
         :root {
             --prim: white;
-            --black: #1e3147;
+            --black: #012c63;
             --sec: #040BA5;
             --accent: #4a8f1f;
             --base-font-size: 0.9rem;
@@ -50,13 +50,13 @@
         }
 
         .action-tile {
+            border: 1px solid var(--prim);
             display: grid;
             grid-template-columns: 1fr 4fr;
             gap: 0.2rem;
             align-items: start;
             padding: 1rem;
             line-height: 1.3;
-            background-color: var(--light-blue);
         }
 
         .full-grad.slant {
@@ -117,6 +117,10 @@
             max-width: 1rem;
             padding: 0 0.5rem;
         }
+
+        footer {
+            padding: 5rem 1rem !important;
+        }
     </style>
 </head>
 
@@ -149,10 +153,11 @@
                 </div>
             </div>
         </section>
-        <section class="pad_5">
+        <section class="ba cp pad_5">
+            <div class="curtain bb bkeep-40"></div>
             <div class="stack action-tiles">
-                <div class="grid fit-3 cs">
-                    <div class="round action-tile">
+                <div class="grid fit-3">
+                    <div class="round action-tile bb bkeep-40">
                         <div class="stack">
                             <div class="cp ba pad_5 circle stack">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -168,7 +173,7 @@
                             <strong>+592 231-3224</strong>
                         </div>
                     </div>
-                    <div class="round action-tile">
+                    <div class="round action-tile bb bkeep-40">
                         <div class="stack">
                             <div class="cp bs pad_5 circle stack">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -184,7 +189,7 @@
                             <strong class="wrap">info@dabisvariety.com</strong>
                         </div>
                     </div>
-                    <div class="round action-tile">
+                    <div class="round action-tile bb bkeep-40">
                         <div class="stack">
                             <div class="cp ba pad_5 circle stack">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -197,15 +202,15 @@
                         <div class="stack pad_4 left">
                             <strong><em>Visit Us</em></strong>
                             <small>40 Robb Street, Bourda Georgetown, Guyana</small>
-                            <strong class="ca">Get Directions</strong>
+                            <strong class="cp pad_4 round ba">Get Directions</strong>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="lb">
             <div class="stack fw">
-                <div class="grid gap-2 fw fill lb round">
+                <div class="grid gap-2 fw fill round">
                     <div class="stack fw left top card bp">
                         <form action="#" class="fw help-form">
                             <div class="grid fit-5">
@@ -391,7 +396,7 @@
             </div>
         </section>
         <section>
-            <div class="stack cs">
+            <div class="stack cb">
                 <div class="grid fill fit-3 pad gap">
                     <div class="stack top left gap_1 contacts">
                         <h2>Our Location</h2>
@@ -404,7 +409,7 @@
                                         d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                                 </svg>
                             </div>
-                            <span class="cs">40 Robb Street, Bourda, Georgetown, Guyana</span>
+                            <span class="">40 Robb Street, Bourda, Georgetown, Guyana</span>
                         </div>
                         <div class="tile">
                             <div class="ca pad_5 circle stack">
@@ -414,7 +419,7 @@
                                         d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                                 </svg>
                             </div>
-                            <span class="cs">+592 231-3224</span>
+                            <span class="">+592 231-3224</span>
                         </div>
                         <div class="tile">
                             <div class="ca pad_5 circle stack">
@@ -424,7 +429,7 @@
                                         d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
                                 </svg>
                             </div>
-                            <span class="cs">info@dabisvariety.com</span>
+                            <span class="">info@dabisvariety.com</span>
                         </div>
                     </div>
                     <div class="stack pad_5 span-2-col">
@@ -434,8 +439,46 @@
             </div>
             </div>
         </section>
+        <section class="ba cp">
+            <div class="curtain bb bkeep-40"></div>
+            <div class="stack fw">
+                <div class="grid fit-4 gap-2">
+                    <div class="stack left span-2-col">
+                        <h1 class="trim">Company Values</h1>
+                        <p>The things that matter to our present and future teams</p>
+                        <div class="grid fill fit-4">
+                            <div class="card bp cb">
+                                <strong>This is a statement</strong>
+                                <p>These are the details of the statement</p>
+                            </div>
+                            <div class="card bb bkeep-40">
+                                <strong>This is a statement</strong>
+                                <p>These are the details of the statement</p>
+                            </div>
+                            <div class="card bb bkeep-40">
+                                <strong>This is a statement</strong>
+                                <p>These are the details of the statement</p>
+                            </div>
+                            <div class="card bp cb">
+                                <strong>This is a statement</strong>
+                                <p>These are the details of the statement</p>
+                            </div>
+                            <div class="card bp ca">
+                                <strong>This is a statement</strong>
+                                <p>These are the details of the statement</p>
+                            </div>
+                            <div class="card bb bkeep-40">
+                                <strong>This is a statement</strong>
+                                <p>These are the details of the statement</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="round square span-2-col" src="/static/img/dabis/hero.png" alt="Hero Image">
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="pad-2 bb cp grid fill gap-3 fit-3">
+    <footer class="bb cp grid fill gap-3 fit-3">
         <div class="stack left top">
             <img src="/static/img/dabis/logo.webp" alt="">
             <p>Supporting a Healthy Lifestyle on a Budget.</p>
