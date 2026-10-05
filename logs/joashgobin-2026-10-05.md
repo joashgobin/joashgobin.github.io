@@ -2,3 +2,4 @@
 
 - Reset padding for grid
 - Link grug blocks before grug utils and tokens
+- Tweaks to blocks
